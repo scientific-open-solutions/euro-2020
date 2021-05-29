@@ -1,69 +1,208 @@
 <script src="libraries/jquery-3.3.1.min.js"></script>
 <script src="libraries/bootstrap.4.0.min.js"></script>
+<script src="libraries/bootbox.5.4.min.js"></script>
+
+
 <script src="libraries/papaparse.4.3.6.min.js"></script>
 <script src="libraries/popper.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="libraries/bootstrapCollector.css">
-
-<h1>Hello</h1>
-
-<div class="row">
-  <div class="col-3">
-    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+<link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">
 
 
-      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
-        Home
-      </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#v-pills-predictions" role="tab" aria-controls="v-pills-predictions" aria-selected="false">Predictions</a>
+    </li>
+  </ul>
+  <span class="navbar-text">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Sign in/Register
+    </button>
+  </span>
+</nav>
+
+<div class="tab-content" id="v-pills-tabContent">
+  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">iframe for dashboard</div>
+  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+    <form style="margin:50px">
+      <p>You can't change your username or email.</p>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="inputEmail3" readonly>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputEmail3" readonly>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Crew name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputEmail3" placeholder="(Optional)">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">I am supporting</label>
+        <div class="col-sm-10">
+          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+            <option selected>Choose...</option>
+            <option>Austria</option>
+            <option>Belgium</option>
+            <option>Croatia</option>
+            <option>Czech Republic</option>
+            <option>Denmark</option>
+            <option>England</option>
+            <option>Finland</option>
+            <option>France</option>
+            <option>Germany</option>
+            <option>Hungary</option>
+            <option>Italy</option>
+            <option>Netherlands</option>
+            <option>North Macedonia</option>
+            <option>Poland</option>
+            <option>Portugal</option>
+            <option>Russia</option>
+            <option>Scotland</option>
+            <option>Slovakia</option>
+            <option>Spain</option>
+            <option>Sweden</option>
+            <option>Switzerland</option>
+            <option>Turkey</option>
+            <option>Ukraine</option>
+            <option>Wales</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-primary">Submit</button>
+    </form>
 
 
-      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
-        Profile/Account
-      </a>
-
-      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
-        Messages
-      </a>
-
-      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-
-    </div>
   </div>
-  <div class="col-9">
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">iframe for dashboard</div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-      User management
-      Users set up account on Collector
-      need confirmation email
-      Username and login (hashed)
-      Choose crew name (in user details or general predictions)
-      Possible to choose from a list of existing names?
-      Which team are you supporting? (in user details or general predictions)
-        ...</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
-      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+  <div class="tab-pane fade" id="v-pills-predictions" role="tabpanel" aria-labelledby="v-pills-predictions-tab">
+
+    ?accordian?
+
+
+    General predictions
+    Champions (from list?)
+    Total number of goals
+    Top scorer (from list?)
+    We will later be able to (fuzzy) match with scorers in the leaderboard, based on country and name
+
+    Predictions per round
+    Explain that predictions are for the score at Full Time (+Extra Time, if applicable). For the knockouts: if a match is decided by a penalty shootout, the score before the penalty shootout counts (which is a draw)
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Group Stage
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Collapsible Group Item #2
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Collapsible Group Item #3
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            do the eye thing which hides or shows the password
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            Notes about security
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="" class="btn btn-primary">Login</button>
+        <button type="button" id="register_btn" class="btn btn-primary">Register</button>
+        <button type="button" class="btn btn-primary">Forgot Password</button>
+      </div>
     </div>
   </div>
 </div>
 
+<script>
+$("#register_btn").on("click", function(){
+  bootbox.prompt("Confirm password:", function(){
+    alert("hi");
+  });
+});
+</script>
+
 <!--
-  User management
-Users set up account on Collector
+
+User management
 need confirmation email
 Username and login (hashed)
-Choose crew name (in user details or general predictions)
-Possible to choose from a list of existing names?
-Which team are you supporting? (in user details or general predictions)
 
-General predictions
-Champions (from list?)
-Total number of goals
-Top scorer (from list?)
-We will later be able to (fuzzy) match with scorers in the leaderboard, based on country and name
-
-Predictions per round
-Explain that predictions are for the score at Full Time (+Extra Time, if applicable). For the knockouts: if a match is decided by a penalty shootout, the score before the penalty shootout counts (which is a draw)
 
 Every form
 Log submission time
@@ -74,5 +213,4 @@ File management
 Store forms as MySQL / CSV
 Maximum number of submissions per user (let the user know)
 How to export to R (Kris’ computer?)
-
 -->
