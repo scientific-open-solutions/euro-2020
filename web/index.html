@@ -44,27 +44,27 @@
     <form style="margin:50px">
       <p>You can't change your username or email.</p>
       <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <label for="input_Email" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
-          <input type="email" class="form-control" id="inputEmail3" readonly>
+          <input type="email" class="form-control" id="input_Email" readonly>
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Username</label>
+        <label for="input_User" class="col-sm-2 col-form-label">Username</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputEmail3" readonly>
+          <input type="text" class="form-control" id="input_User" readonly>
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">Crew name</label>
+        <label for="input_Crew" class="col-sm-2 col-form-label">Crew name</label>
         <div class="col-sm-10">
-          <input type="text" class="form-control" id="inputEmail3" placeholder="(Optional)">
+          <input type="text" class="form-control" id="input_Crew" placeholder="(Optional)">
         </div>
       </div>
       <div class="form-group row">
-        <label for="inputEmail3" class="col-sm-2 col-form-label">I am supporting</label>
+        <label for="input_Support" class="col-sm-2 col-form-label">I am supporting</label>
         <div class="col-sm-10">
-          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+          <select class="custom-select mr-sm-2" id="input_Support">
             <option selected>Choose...</option>
             <option>Austria</option>
             <option>Belgium</option>
@@ -100,21 +100,17 @@
   </div>
   <div class="tab-pane fade" id="v-pills-predictions" role="tabpanel" aria-labelledby="v-pills-predictions-tab">
 
-    ?accordian?
-
-
-    General predictions
-    Champions (from list?)
-    Total number of goals
-    Top scorer (from list?)
-    We will later be able to (fuzzy) match with scorers in the leaderboard, based on country and name
-
-    Predictions per round
-    Explain that predictions are for the score at Full Time (+Extra Time, if applicable). For the knockouts: if a match is decided by a penalty shootout, the score before the penalty shootout counts (which is a draw)
-
+Predictions are per round...
 <br>
-
-You can change your predictions as often as you like, before the round starts
+Deadlines...
+<br>
+More info...
+<br>
+Predictions are for the score at full time (this includes stoppage time, and extra time, if applicable.)
+<br>
+If a match is decided by a penalty shootout, the score before the penalty shootout counts.
+<br>
+You can change your predictions as often as you like, before the round starts.
 
     <div class="accordion" id="accordionExample">
       <div class="card">
@@ -139,7 +135,91 @@ You can change your predictions as often as you like, before the round starts
                   <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-home-general">
                     <p>Deadline for this round's predictions: 10 June, 23:59 CEST</p>
 
-                    <p>Champ, top scorer, goals</p>
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Champions</label>
+                      <div class="col-sm-10">
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect_champs">
+                          <option selected>Choose...</option>
+                          <option>Austria</option>
+                          <option>Belgium</option>
+                          <option>Croatia</option>
+                          <option>Czech Republic</option>
+                          <option>Denmark</option>
+                          <option>England</option>
+                          <option>Finland</option>
+                          <option>France</option>
+                          <option>Germany</option>
+                          <option>Hungary</option>
+                          <option>Italy</option>
+                          <option>Netherlands</option>
+                          <option>North Macedonia</option>
+                          <option>Poland</option>
+                          <option>Portugal</option>
+                          <option>Russia</option>
+                          <option>Scotland</option>
+                          <option>Slovakia</option>
+                          <option>Spain</option>
+                          <option>Sweden</option>
+                          <option>Switzerland</option>
+                          <option>Turkey</option>
+                          <option>Ukraine</option>
+                          <option>Wales</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Top scorer's country</label>
+                      <div class="col-sm-10">
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect_topCountry">
+                          <option selected>Choose...</option>
+                          <option>Austria</option>
+                          <option>Belgium</option>
+                          <option>Croatia</option>
+                          <option>Czech Republic</option>
+                          <option>Denmark</option>
+                          <option>England</option>
+                          <option>Finland</option>
+                          <option>France</option>
+                          <option>Germany</option>
+                          <option>Hungary</option>
+                          <option>Italy</option>
+                          <option>Netherlands</option>
+                          <option>North Macedonia</option>
+                          <option>Poland</option>
+                          <option>Portugal</option>
+                          <option>Russia</option>
+                          <option>Scotland</option>
+                          <option>Slovakia</option>
+                          <option>Spain</option>
+                          <option>Sweden</option>
+                          <option>Switzerland</option>
+                          <option>Turkey</option>
+                          <option>Ukraine</option>
+                          <option>Wales</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    This helps us to identify the player you have predicted to be the top scorer.
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Top scorer</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="First name + surname">
+                      </div>
+                    </div>
+
+                    Try to spell the name of the player exactly (but not necessary... bla bla)
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Total number of goals</label>
+                      <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputEmail3" placeholder=0 min=0 max=999>
+                      </div>
+                    </div>
+
+                    <button class="btn btn-primary">Submit</button>
 
                   </div>
                 </div>
