@@ -10,6 +10,15 @@
 <link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">
 
 
+<style>
+.goal_input{
+  width: 100px;
+  text-align: center;
+}
+</style>
+
+
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item" role="presentation">
@@ -114,6 +123,17 @@
         </div>
 
         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Group Stage
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="card-body">
             <div class="row">
               <div class="col-3">
@@ -126,35 +146,23 @@
               <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContent">
                   <div class="tab-pane fade show active" id="v-pills-round1" role="tabpanel" aria-labelledby="v-pills-home-round1">
-                    Friday 11 June
+                    <p>Deadlines based on central european summer time.</p>
 
-                    Group A: Turkey vs Italy (21:00, Rome)
+                    <table class="table table-hover" id="round_1_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
 
-                    Saturday 12 June
-
-                    Group A: Wales vs Switzerland (15:00, Baku)
-                    Group B: Denmark vs Finland (18:00, Copenhagen)
-                    Group B: Belgium vs Russia (21:00, St Petersburg)
-
-                    Sunday 13 June
-
-                    Group D: England vs Croatia (15:00, London)
-                    Group C: Austria vs North Macedonia (18:00, Bucharest)
-                    Group C: Netherlands vs Ukraine (21:00, Amsterdam)
-
-                    Monday 14 June
-
-                    Every goal on Spain's road to EURO 2020
-                    Group D: Scotland vs Czech Republic (15:00, Glasgow)
-                    Group E: Poland vs Slovakia (18:00, St Petersburg)
-                    Group E: Spain vs Sweden (21:00, Seville)
-
-                    Tuesday 15 June
-
-                    Group F: Hungary vs Portugal (18:00, Budapest)
-                    Group F: France vs Germany (21:00, Munich)
                   </div>
                   <div class="tab-pane fade" id="v-pills-round2" role="tabpanel" aria-labelledby="v-pills-round2-tab">
+                    <p>Deadlines based on central european summer time.</p>
                     Wednesday 16 June
 
                     Group B: Finland vs Russia (15:00, St Petersburg)
@@ -181,6 +189,7 @@
                     Group E: Spain vs Poland (21:00, Seville)
                   </div>
                   <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
+                    <p>Deadlines based on central european summer time.</p>
                     Sunday 20 June
 
                     Group A: Italy vs Wales (18:00, Rome)
@@ -210,27 +219,7 @@
             </div>
 
 
-
-            <h2>Round 1</h2>
-            <p>Predict matches for round 1 (deadline: X)</p>
-            <h2>Round 2</h2>
-            <p>Predict matches for round 2 (deadline: X)</p>
-            <h2>Round 3</h2>
-            <p>Predict matches for round 3 (deadline: X)</p>
-          </div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-header" id="headingTwo">
-          <h2 class="mb-0">
-            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Group Stage
-            </button>
-          </h2>
-        </div>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-          <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            general text about this panel
           </div>
         </div>
       </div>
@@ -291,6 +280,73 @@
 </div>
 
 <script>
+var match_data;
+var match_obj = {
+  phases: {}
+};
+$.get("match_data.csv", function(match_get){
+  match_data = Papa.parse(match_get, {
+    header: true
+  }).data;
+  match_data = match_data.filter(
+    row => row.Year == 2020
+  );
+
+  match_obj.phases.group_match_1 = match_data.filter(
+    row => row.Round_selector == "Group match 1"
+  );
+
+  match_obj.phases.group_match_2 = match_data.filter(
+    row => row.Round_selector == "Group match 2"
+  );
+
+  match_obj.phases.group_match_3 = match_data.filter(
+    row => row.Round_selector == "Group match 3"
+  );
+
+  match_obj.phases.round_16 = match_data.filter(
+    row => row.Round_selector == "Round of 16"
+  );
+
+  match_obj.phases.quarter_final = match_data.filter(
+    row => row.Round_selector == "Quarterfinal"
+  );
+
+  match_obj.phases.semi_final = match_data.filter(
+    row => row.Round_selector == "Semifinal"
+  );
+
+  match_obj.phases.final = match_data.filter(
+    row => row.Round_selector == "Final"
+  );
+
+  populate_group_tables();
+});
+
+function populate_group_tables(){
+
+  match_obj.phases.group_match_1.forEach(function(row){
+    $("#round_1_table")
+      .append($("<tr>")
+        .append($("<td>").append(row.Group))
+        .append($("<td>").append(row.Home))
+        .append($("<td>").append(
+          "<input type='number' class='form-control goal_input'>"
+        ))
+        .append($("<td>").append(
+          "<input type='number' class='form-control goal_input'>"
+        ))
+        .append($("<td>").append(row.Away))
+      );
+
+
+
+  });
+
+
+
+}
+
 $("#register_btn").on("click", function(){
   bootbox.prompt("Confirm password:", function(){
     alert("hi");

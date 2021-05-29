@@ -1,0 +1,549 @@
+"","Year","Match_ID","Phase","Phase_num","Group","Round","Round_selector","Home","Away","Result","Points_Home","Points_Away","Advances","n_Goals_Home","n_Goals_Away","Goals_Home","Goals_Away","n_Pens_Home","n_Pens_Away","Pens_Home","Pens_Away","Time","Date","Venue","City","Attendance","Referee","Possession_Home","Possession_Away","PassAcc_Home","PassAcc_Away","n_Passes_Attempt_Home","n_Passes_Attempt_Away","n_Passes_Compl_Home","n_Passes_Compl_Away","Distance_Home","Distance_Away","OnTarget_Home","OnTarget_Away","OffTarget_Home","OffTarget_Away","ShotsBlocked_Home","ShotsBlocked_Away","Corners_Home","Corners_Away","Offsides_Home","Offsides_Away","Blocks_Home","Blocks_Away","BallsRec_Home","BallsRec_Away","Tackles_Home","Tackles_Away","Fouls_Home","Fouls_Away","Yellow_Home","Yellow_Away","Red_Home","Red_Away","Result_bare","youtube_url"
+"1",2020,"2020_Group_A_1_Turkey_Italy","Group",1,"A",1,"Group match 1","Turkey","Italy","Match 1",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-11","Stadio Olimpico","Rome",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","n-R8c_D1GT8"
+"2",2020,"2020_Group_A_1_Wales_Switzerland","Group",1,"A",1,"Group match 1","Wales","Switzerland","Match 2",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15:00 (17:00 UTC+4)","2021-06-12","Olympic Stadium","Baku",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"3",2020,"2020_Group_A_2_Turkey_Wales","Group",1,"A",2,"Group match 2","Turkey","Wales","Match 13",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (20:00 UTC+4)","2021-06-16","Olympic Stadium","Baku",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"4",2020,"2020_Group_A_2_Italy_Switzerland","Group",1,"A",2,"Group match 2","Italy","Switzerland","Match 14",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-16","Stadio Olimpico","Rome",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"5",2020,"2020_Group_A_3_Switzerland_Turkey","Group",1,"A",3,"Group match 3","Switzerland","Turkey","Match 25",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (20:00 UTC+4)","2021-06-20","Olympic Stadium","Baku",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"6",2020,"2020_Group_A_3_Italy_Wales","Group",1,"A",3,"Group match 3","Italy","Wales","Match 26",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-20","Stadio Olimpico","Rome",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"7",2020,"2020_Group_B_1_Denmark_Finland","Group",1,"B",1,"Group match 1","Denmark","Finland","Match 3",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-12","Parken Stadium","Copenhagen",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"8",2020,"2020_Group_B_1_Belgium_Russia","Group",1,"B",1,"Group match 1","Belgium","Russia","Match 4",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (22:00 UTC+3)","2021-06-12","Krestovsky Stadium","Saint Petersburg",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"9",2020,"2020_Group_B_2_Finland_Russia","Group",1,"B",2,"Group match 2","Finland","Russia","Match 15",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15:00 (16:00 UTC+3)","2021-06-16","Krestovsky Stadium","Saint Petersburg",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"10",2020,"2020_Group_B_2_Denmark_Belgium","Group",1,"B",2,"Group match 2","Denmark","Belgium","Match 16",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-17","Parken Stadium","Copenhagen",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"11",2020,"2020_Group_B_3_Russia_Denmark","Group",1,"B",3,"Group match 3","Russia","Denmark","Match 27",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-21","Parken Stadium","Copenhagen",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"12",2020,"2020_Group_B_3_Finland_Belgium","Group",1,"B",3,"Group match 3","Finland","Belgium","Match 28",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (22:00 UTC+3)","2021-06-21","Krestovsky Stadium","Saint Petersburg",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"13",2020,"2020_Group_C_1_Austria_North Macedonia","Group",1,"C",1,"Group match 1","Austria","North Macedonia","Match 6",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (19:00 UTC+3)","2021-06-13","Arena Na<U+021B>ionala","Bucharest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"14",2020,"2020_Group_C_1_Netherlands_Ukraine","Group",1,"C",1,"Group match 1","Netherlands","Ukraine","Match 5",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-13","Johan Cruyff Arena","Amsterdam",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"15",2020,"2020_Group_C_2_Ukraine_North Macedonia","Group",1,"C",2,"Group match 2","Ukraine","North Macedonia","Match 18",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15:00 (16:00 UTC+3)","2021-06-17","Arena Na<U+021B>ionala","Bucharest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"16",2020,"2020_Group_C_2_Netherlands_Austria","Group",1,"C",2,"Group match 2","Netherlands","Austria","Match 17",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-17","Johan Cruyff Arena","Amsterdam",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"17",2020,"2020_Group_C_3_North Macedonia_Netherlands","Group",1,"C",3,"Group match 3","North Macedonia","Netherlands","Match 29",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-21","Johan Cruyff Arena","Amsterdam",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"18",2020,"2020_Group_C_3_Ukraine_Austria","Group",1,"C",3,"Group match 3","Ukraine","Austria","Match 30",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (19:00 UTC+3)","2021-06-21","Arena Na<U+021B>ionala","Bucharest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"19",2020,"2020_Group_D_1_England_Croatia","Group",1,"D",1,"Group match 1","England","Croatia","Match 7",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15:00 (14:00 UTC+1)","2021-06-13","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"20",2020,"2020_Group_D_1_Scotland_Czech Republic","Group",1,"D",1,"Group match 1","Scotland","Czech Republic","Match 8",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15:00 (14:00 UTC+1)","2021-06-14","Hampden Park","Glasgow",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"21",2020,"2020_Group_D_2_Croatia_Czech Republic","Group",1,"D",2,"Group match 2","Croatia","Czech Republic","Match 19",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (17:00 UTC+1)","2021-06-18","Hampden Park","Glasgow",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"22",2020,"2020_Group_D_2_England_Scotland","Group",1,"D",2,"Group match 2","England","Scotland","Match 20",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-06-18","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"23",2020,"2020_Group_D_3_Croatia_Scotland","Group",1,"D",3,"Group match 3","Croatia","Scotland","Match 31",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-06-22","Hampden Park","Glasgow",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"24",2020,"2020_Group_D_3_Czech Republic_England","Group",1,"D",3,"Group match 3","Czech Republic","England","Match 32",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-06-22","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"25",2020,"2020_Group_E_1_Poland_Slovakia","Group",1,"E",1,"Group match 1","Poland","Slovakia","Match 10",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (19:00 UTC+3)","2021-06-14","Krestovsky Stadium","Saint Petersburg",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"26",2020,"2020_Group_E_1_Spain_Sweden","Group",1,"E",1,"Group match 1","Spain","Sweden","Match 9",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-14","La Cartuja","Seville",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"27",2020,"2020_Group_E_2_Sweden_Slovakia","Group",1,"E",2,"Group match 2","Sweden","Slovakia","Match 21",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15:00 (16:00 UTC+3)","2021-06-18","Krestovsky Stadium","Saint Petersburg",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"28",2020,"2020_Group_E_2_Spain_Poland","Group",1,"E",2,"Group match 2","Spain","Poland","Match 22",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-19","La Cartuja","Seville",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"29",2020,"2020_Group_E_3_Slovakia_Spain","Group",1,"E",3,"Group match 3","Slovakia","Spain","Match 33",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-23","La Cartuja","Seville",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"30",2020,"2020_Group_E_3_Sweden_Poland","Group",1,"E",3,"Group match 3","Sweden","Poland","Match 34",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (19:00 UTC+3)","2021-06-23","Krestovsky Stadium","Saint Petersburg",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"31",2020,"2020_Group_F_1_Hungary_Portugal","Group",1,"F",1,"Group match 1","Hungary","Portugal","Match 11",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-15","Puskás Aréna","Budapest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"32",2020,"2020_Group_F_1_France_Germany","Group",1,"F",1,"Group match 1","France","Germany","Match 12",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-15","Allianz Arena","Munich",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"33",2020,"2020_Group_F_2_Hungary_France","Group",1,"F",2,"Group match 2","Hungary","France","Match 23",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"15:00","2021-06-19","Puskás Aréna","Budapest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"34",2020,"2020_Group_F_2_Portugal_Germany","Group",1,"F",2,"Group match 2","Portugal","Germany","Match 24",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-19","Allianz Arena","Munich",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"35",2020,"2020_Group_F_3_Portugal_France","Group",1,"F",3,"Group match 3","Portugal","France","Match 35",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-23","Puskás Aréna","Budapest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"36",2020,"2020_Group_F_3_Germany_Hungary","Group",1,"F",3,"Group match 3","Germany","Hungary","Match 36",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-23","Allianz Arena","Munich",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match","6iFbuIpe68k"
+"37",2020,"2020_Round of 16_A_NA_NA","Round of 16",2,"A",NA,"Round of 16",NA,NA,"Match 38",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-26","Johan Cruyff Arena","Amsterdam",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"38",2020,"2020_Round of 16_B_NA_NA","Round of 16",2,"B",NA,"Round of 16",NA,NA,"Match 37",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-06-26","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"39",2020,"2020_Round of 16_C_NA_NA","Round of 16",2,"C",NA,"Round of 16",NA,NA,"Match 40",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-27","Puskás Aréna","Budapest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"40",2020,"2020_Round of 16_D_NA_NA","Round of 16",2,"D",NA,"Round of 16",NA,NA,"Match 39",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-06-27","La Cartuja","Seville",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"41",2020,"2020_Round of 16_E_NA_NA","Round of 16",2,"E",NA,"Round of 16",NA,NA,"Match 42",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00","2021-06-28","Parken Stadium","Copenhagen",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"42",2020,"2020_Round of 16_F_NA_NA","Round of 16",2,"F",NA,"Round of 16",NA,NA,"Match 41",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (22:00 UTC+3)","2021-06-28","Arena Na<U+021B>ionala","Bucharest",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"43",2020,"2020_Round of 16_G_NA_NA","Round of 16",2,"G",NA,"Round of 16",NA,NA,"Match 44",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (17:00 UTC+1)","2021-06-29","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"44",2020,"2020_Round of 16_H_NA_NA","Round of 16",2,"H",NA,"Round of 16",NA,NA,"Match 43",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-06-29","Hampden Park","Glasgow",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"45",2020,"2020_Quarterfinal_A_NA_NA","Quarterfinal",3,"A",NA,"Quarterfinal",NA,NA,"Match 45",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (19:00 UTC+3)","2021-07-02","Krestovsky Stadium","Saint Petersburg",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"46",2020,"2020_Quarterfinal_B_NA_NA","Quarterfinal",3,"B",NA,"Quarterfinal",NA,NA,"Match 46",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-07-02","Allianz Arena","Munich",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"47",2020,"2020_Quarterfinal_C_NA_NA","Quarterfinal",3,"C",NA,"Quarterfinal",NA,NA,"Match 47",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"18:00 (20:00 UTC+4)","2021-07-03","Olympic Stadium","Baku",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"48",2020,"2020_Quarterfinal_D_NA_NA","Quarterfinal",3,"D",NA,"Quarterfinal",NA,NA,"Match 48",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00","2021-07-03","Stadio Olimpico","Rome",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"49",2020,"2020_Semifinal_A_NA_NA","Semifinal",4,"A",NA,"Semifinal",NA,NA,"Match 49",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-07-06","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"50",2020,"2020_Semifinal_B_NA_NA","Semifinal",4,"B",NA,"Semifinal",NA,NA,"Match 50",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-07-07","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"51",2020,"2020_Final_A_NA_NA","Final",5,"A",NA,"Final",NA,NA,"Match 51",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"21:00 (20:00 UTC+1)","2021-07-11","Wembley Stadium","London",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"Match",NA
+"52",2016,"2016_Group_A_1_France_Romania","Group",1,"A",1,"Group match 1","France","Romania","2–1",3,0,NA,2,1,"Giroud  57'
+Payet  89'","Stancu  65' (pen.)",NA,NA,NA,NA,"21:00","2016-06-10","Stade de France","Saint-Denis","Attendance: 75,113[1]","Referee: Viktor Kassai (Hungary)","59","41","84","71","502","280","422","199","105","106","5","2","6","5","3","3","5","4","5","1","3","3","54","42","5","6","6","14","1","3","0","0","2–1","6iFbuIpe68k"
+"53",2016,"2016_Group_A_1_Albania_Switzerland","Group",1,"A",1,"Group match 1","Albania","Switzerland","0–1",0,3,NA,0,1,NA,"Schär  5'",NA,NA,NA,NA,"15:00","2016-06-11","Stade Bollaert-Delelis","Lens","Attendance: 33,805[5]","Referee: Carlos Velasco Carballo (Spain)","45","55","88","92","414","553","365","510","103","109","2","7","2","5","3","5","5","4","2","6","5","3","42","44","10","4","10","17","5","2","1","0","0–1","6iFbuIpe68k"
+"54",2016,"2016_Group_A_2_Romania_Switzerland","Group",1,"A",2,"Group match 2","Romania","Switzerland","1–1",1,1,NA,1,1,"Stancu  18' (pen.)","Mehmedi  57'",NA,NA,NA,NA,"18:00","2016-06-15","Parc des Princes","Paris","Attendance: 43,576[8]","Referee: Sergei Karasev (Russia)","38","62","76","88","237","522","179","459","103","107","4","6","6","7","4","6","4","7","1","5","6","4","39","40","10","9","24","11","4","2","0","0","1–1","6iFbuIpe68k"
+"55",2016,"2016_Group_A_2_France_Albania","Group",1,"A",2,"Group match 2","France","Albania","2–0",3,0,NA,2,0,"Griezmann  90'
+Payet  90+6'",NA,NA,NA,NA,NA,"21:00","2016-06-15","Stade Vélodrome","Marseille","Attendance: 63,670[11]","Referee: Willie Collum (Scotland)","59","41","88","76","529","357","466","270","107","108","2","0","10","4","9","5","6","4","1","1","5","9","42","40","3","6","16","13","1","2","0","0","2–0","6iFbuIpe68k"
+"56",2016,"2016_Group_A_3_Romania_Albania","Group",1,"A",3,"Group match 3","Romania","Albania","0–1",0,3,NA,0,1,NA,"Sadiku  43'",NA,NA,NA,NA,"21:00","2016-06-19","Parc Olympique Lyonnais","Décines-Charpieu","Attendance: 49,752[14]","Referee: Pavel Královec (Czech Republic)","59","41","85","78","522","281","446","220","101","104","3","6","8","6","5","2","2","6","1","5","2","5","43","57","9","15","14","12","3","3","0","0","0–1","6iFbuIpe68k"
+"57",2016,"2016_Group_A_3_Switzerland_France","Group",1,"A",3,"Group match 3","Switzerland","France","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"21:00","2016-06-19","Stade Pierre-Mauroy","Villeneuve-d'Ascq","Attendance: 45,616[17]","Referee: Damir Skomina (Slovenia)","58","42","92","87","492","334","451","290","108","106","0","4","3","3","3","6","5","10","4","0","6","3","37","34","6","9","9","10","0","2","0","0","0–0","6iFbuIpe68k"
+"58",2016,"2016_Group_B_1_Wales_Slovakia","Group",1,"B",1,"Group match 1","Wales","Slovakia","2–1",3,0,NA,2,1,"Bale  10'
+Robson-Kanu  81'","Duda  61'",NA,NA,NA,NA,"18:00","2016-06-11","Nouveau Stade de Bordeaux","Bordeaux","Attendance: 37,831[1]","Referee: Svein Oddvar Moen (Norway)","44","56","79","85","352","510","277","432","109","110","8","2","3","7","0","4","2","3","0","3","4","0","60","46","9","7","17","16","0","5","0","0","2–1","6iFbuIpe68k"
+"59",2016,"2016_Group_B_1_England_Russia","Group",1,"B",1,"Group match 1","England","Russia","1–1",1,1,NA,1,1,"Dier  73'","V. Berezutski  90+2'",NA,NA,NA,NA,"21:00","2016-06-11","Stade Vélodrome","Marseille","Attendance: 62,343[5]","Referee: Nicola Rizzoli (Italy)","52","48","87","80","426","406","371","323","111","110","6","2","8","3","2","1","6","4","6","2","1","2","42","40","6","7","9","16","1","1","0","0","1–1","6iFbuIpe68k"
+"60",2016,"2016_Group_B_2_Russia_Slovakia","Group",1,"B",2,"Group match 2","Russia","Slovakia","1–2",0,3,NA,1,2,"Glushakov  80'","Weiss  32'
+Hamšík  45'",NA,NA,NA,NA,"15:00","2016-06-15","Stade Pierre-Mauroy","Villeneuve-d'Ascq","Attendance: 38,989[8]","Referee: Damir Skomina (Slovenia)","62","38","89","80","548","294","490","234","112","111","2","3","7","4","6","2","6","5","0","5","2","6","33","41","7","3","8","12","0","1","0","0","1–2","6iFbuIpe68k"
+"61",2016,"2016_Group_B_2_England_Wales","Group",1,"B",2,"Group match 2","England","Wales","2–1",3,0,NA,2,1,"Vardy  56'
+Sturridge  90+2'","Bale  42'",NA,NA,NA,NA,"15:00","2016-06-16","Stade Bollaert-Delelis","Lens","Attendance: 34,033[11]","Referee: Felix Brych (Germany)","64","36","88","72","493","201","435","145","106","106","4","2","9","3","8","2","9","3","1","1","2","8","33","44","2","11","10","9","0","1","0","0","2–1","6iFbuIpe68k"
+"62",2016,"2016_Group_B_3_Russia_Wales","Group",1,"B",3,"Group match 3","Russia","Wales","0–3",0,3,NA,0,3,NA,"Ramsey  11'
+Taylor  20'
+Bale  67'",NA,NA,NA,NA,"21:00","2016-06-20","Stadium Municipal","Toulouse","Attendance: 28,840[14]","Referee: Jonas Eriksson (Sweden)","48","52","85","88","434","455","368","401","108","107","2","11","7","5","4","3","4","5","1","3","3","4","50","63","8","4","9","7","1","1","0","0","0–3","6iFbuIpe68k"
+"63",2016,"2016_Group_B_3_Slovakia_England","Group",1,"B",3,"Group match 3","Slovakia","England","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"21:00","2016-06-20","Stade Geoffroy-Guichard","Saint-Étienne","Attendance: 39,051[17]","Referee: Carlos Velasco Carballo (Spain)","43","57","82","92","365","557","301","510","106","110","2","5","2","9","0","14","0","11","1","1","14","0","42","43","15","2","7","12","1","1","0","0","0–0","6iFbuIpe68k"
+"64",2016,"2016_Group_C_1_Poland_Northern Ireland","Group",1,"C",1,"Group match 1","Poland","Northern Ireland","1–0",3,0,NA,1,0,"Milik  51'",NA,NA,NA,NA,NA,"18:00","2016-06-12","Stade de Nice","Nice","Attendance: 33,742[1]","Referee: Ovidiu Ha<U+021B>egan (Romania)","60","40","88","74","487","254","427","189","105","103","4","0","7","1","7","1","8","1","1","2","1","7","38","37","5","10","11","12","2","1","0","0","1–0","6iFbuIpe68k"
+"65",2016,"2016_Group_C_1_Germany_Ukraine","Group",1,"C",1,"Group match 1","Germany","Ukraine","2–0",3,0,NA,2,0,"Mustafi  19'
+Schweinsteiger  90+2'",NA,NA,NA,NA,NA,"21:00","2016-06-12","Stade Pierre-Mauroy","Villeneuve-d'Ascq","Attendance: 43,035[5]","Referee: Martin Atkinson (England)","63","37","92","79","678","288","621","227","114","115","9","3","5","2","4","2","6","12","2","2","2","4","40","33","7","8","10","9","0","1","0","0","2–0","6iFbuIpe68k"
+"66",2016,"2016_Group_C_2_Ukraine_Northern Ireland","Group",1,"C",2,"Group match 2","Ukraine","Northern Ireland","0–2",0,3,NA,0,2,NA,"McAuley  49'
+McGinn  90+6'",NA,NA,NA,NA,"18:00","2016-06-16","Parc Olympique Lyonnais","Décines-Charpieu","Attendance: 51,043[8]","Referee: Pavel Královec (Czech Republic)","66","34","87","64","511","205","443","131","110","114","5","7","8","4","4","2","2","3","3","1","2","4","33","41","7","4","14","14","2","3","0","0","0–2","6iFbuIpe68k"
+"67",2016,"2016_Group_C_2_Germany_Poland","Group",1,"C",2,"Group match 2","Germany","Poland","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"21:00","2016-06-16","Stade de France","Saint-Denis","Attendance: 73,648[11]","Referee: Björn Kuipers (Netherlands)","63","37","89","78","585","237","523","184","110","112","3","0","9","3","3","4","8","2","2","3","4","3","56","49","5","7","14","9","3","3","0","0","0–0","6iFbuIpe68k"
+"68",2016,"2016_Group_C_3_Ukraine_Poland","Group",1,"C",3,"Group match 3","Ukraine","Poland","0–1",0,3,NA,0,1,NA,"Blaszczykowski  54'",NA,NA,NA,NA,"18:00","2016-06-21","Stade Vélodrome","Marseille","Attendance: 58,874[14]","Referee: Svein Oddvar Moen (Norway)","64","36","87","73","547","267","477","194","112","111","5","3","9","4","5","2","3","2","2","2","2","5","47","36","12","5","23","12","2","1","0","0","0–1","6iFbuIpe68k"
+"69",2016,"2016_Group_C_3_Northern Ireland_Germany","Group",1,"C",3,"Group match 3","Northern Ireland","Germany","0–1",0,3,NA,0,1,NA,"Gómez  30'",NA,NA,NA,NA,"18:00","2016-06-21","Parc des Princes","Paris","Attendance: 44,125[17]","Referee: Clément Turpin (France)","29","71","64","92","176","704","112","650","113","111","1","9","0","12","1","5","3","6","2","3","5","1","41","39","7","2","10","8","0","0","0","0","0–1","6iFbuIpe68k"
+"70",2016,"2016_Group_D_1_Turkey_Croatia","Group",1,"D",1,"Group match 1","Turkey","Croatia","0–1",0,3,NA,0,1,NA,"Modric  41'",NA,NA,NA,NA,"15:00","2016-06-12","Parc des Princes","Paris","Attendance: 43,842[1]","Referee: Jonas Eriksson (Sweden)","51","49","81","79","370","344","298","272","102","105","2","6","4","11","3","1","3","5","1","1","1","3","41","42","8","10","13","15","3","1","0","0","0–1","6iFbuIpe68k"
+"71",2016,"2016_Group_D_1_Spain_Czech Republic","Group",1,"D",1,"Group match 1","Spain","Czech Republic","1–0",3,0,NA,1,0,"Piqué  87'",NA,NA,NA,NA,NA,"15:00","2016-06-13","Stadium Municipal","Toulouse","Attendance: 29,400[5]","Referee: Szymon Marciniak (Poland)","67","33","91","74","694","240","632","178","107","110","5","3","8","1","4","3","14","3","7","1","3","4","36","32","2","9","11","12","0","1","0","0","1–0","6iFbuIpe68k"
+"72",2016,"2016_Group_D_2_Czech Republic_Croatia","Group",1,"D",2,"Group match 2","Czech Republic","Croatia","2–2",1,1,NA,2,2,"Škoda  76'
+Necid  89' (pen.)","Perišic  37'
+Rakitic  59'",NA,NA,NA,NA,"18:00","2016-06-17","Stade Geoffroy-Guichard","Saint-Étienne","Attendance: 38,376[8]","Referee: Mark Clattenburg (England)","44","56","79","83","331","390","262","324","114","109","4","6","0","8","3","5","2","11","1","0","5","3","40","50","11","11","15","13","1","3","0","0","2–2","6iFbuIpe68k"
+"73",2016,"2016_Group_D_2_Spain_Turkey","Group",1,"D",2,"Group match 2","Spain","Turkey","3–0",3,0,NA,3,0,"Morata  34', 48'
+Nolito  37'",NA,NA,NA,NA,NA,"21:00","2016-06-17","Stade de Nice","Nice","Attendance: 33,409[11]","Referee: Milorad Mažic (Serbia)","57","43","93","87","674","421","628","365","109","106","6","0","8","6","4","2","7","3","1","4","2","4","41","37","4","7","15","13","1","2","0","0","3–0","6iFbuIpe68k"
+"74",2016,"2016_Group_D_3_Czech Republic_Turkey","Group",1,"D",3,"Group match 3","Czech Republic","Turkey","0–2",0,3,NA,0,2,NA,"Yilmaz  10'
+Tufan  65'",NA,NA,NA,NA,"21:00","2016-06-21","Stade Bollaert-Delelis","Lens","Attendance: 32,836[14]","Referee: Willie Collum (Scotland)","51","49","82","75","380","319","310","240","112","105","5","2","7","5","1","2","8","3","3","5","2","1","36","42","7","5","16","14","3","2","0","0","0–2","6iFbuIpe68k"
+"75",2016,"2016_Group_D_3_Croatia_Spain","Group",1,"D",3,"Group match 3","Croatia","Spain","2–1",3,0,NA,2,1,"N. Kalinic  45'
+Perišic  87'","Morata  7'",NA,NA,NA,NA,"21:00","2016-06-21","Nouveau Stade de Bordeaux","Bordeaux","Attendance: 37,245[17]","Referee: Björn Kuipers (Netherlands)","40","60","84","94","290","655","244","616","106","104","4","3","7","6","2","6","3","7","1","1","6","2","38","34","8","7","10","11","4","0","0","0","2–1","6iFbuIpe68k"
+"76",2016,"2016_Group_E_1_Republic of Ireland_Sweden","Group",1,"E",1,"Group match 1","Republic of Ireland","Sweden","1–1",1,1,NA,1,1,"Hoolahan  48'","Clark  71' (o.g.)",NA,NA,NA,NA,"18:00","2016-06-13","Stade de France","Saint-Denis","Attendance: 73,419[1]","Referee: Milorad Mažic (Serbia)","47","53","70","78","279","385","195","301","102","101","4","0","5","4","0","3","5","5","3","4","3","0","29","29","4","4","11","15","2","1","0","0","1–1","6iFbuIpe68k"
+"77",2016,"2016_Group_E_1_Belgium_Italy","Group",1,"E",1,"Group match 1","Belgium","Italy","0–2",0,3,NA,0,2,NA,"Giaccherini  32'
+Pellè  90+3'",NA,NA,NA,NA,"21:00","2016-06-13","Parc Olympique Lyonnais","Décines-Charpieu","Attendance: 55,408[5]","Referee: Mark Clattenburg (England)","56","44","85","78","529","422","452","330","108","120","2","5","7","3","9","3","8","6","1","0","3","9","43","42","6","8","10","12","1","4","0","0","0–2","6iFbuIpe68k"
+"78",2016,"2016_Group_E_2_Italy_Sweden","Group",1,"E",2,"Group match 2","Italy","Sweden","1–0",3,0,NA,1,0,"Éder  88'",NA,NA,NA,NA,NA,"15:00","2016-06-17","Stadium Municipal","Toulouse","Attendance: 29,600[8]","Referee: Viktor Kassai (Hungary)","47","53","84","85","445","448","376","379","114","108","3","0","2","3","3","1","7","4","0","4","1","3","34","42","4","3","16","14","2","1","0","0","1–0","6iFbuIpe68k"
+"79",2016,"2016_Group_E_2_Belgium_Republic of Ireland","Group",1,"E",2,"Group match 2","Belgium","Republic of Ireland","3–0",3,0,NA,3,0,"R. Lukaku  48', 70'
+Witsel  61'",NA,NA,NA,NA,NA,"15:00","2016-06-18","Nouveau Stade de Bordeaux","Bordeaux","Attendance: 39,493[11]","Referee: Cüneyt Çakir (Turkey)","54","46","89","82","455","337","407","278","102","103","7","2","8","5","3","4","5","4","3","1","4","3","42","43","6","4","8","10","1","1","0","0","3–0","6iFbuIpe68k"
+"80",2016,"2016_Group_E_3_Italy_Republic of Ireland","Group",1,"E",3,"Group match 3","Italy","Republic of Ireland","0–1",0,3,NA,0,1,NA,"Brady  85'",NA,NA,NA,NA,"21:00","2016-06-22","Stade Pierre-Mauroy","Villeneuve-d'Ascq","Attendance: 44,268[14]","Referee: Ovidiu Ha<U+021B>egan (Romania)","54","46","84","81","372","277","313","225","104","103","1","4","4","6","0","2","4","4","1","0","2","0","21","38","2","5","21","19","4","2","0","0","0–1","6iFbuIpe68k"
+"81",2016,"2016_Group_E_3_Sweden_Belgium","Group",1,"E",3,"Group match 3","Sweden","Belgium","0–1",0,3,NA,0,1,NA,"Nainggolan  84'",NA,NA,NA,NA,"21:00","2016-06-22","Stade de Nice","Nice","Attendance: 34,011[17]","Referee: Felix Brych (Germany)","50","50","83","83","358","344","296","285","106","102","3","8","5","8","4","7","4","12","0","4","7","4","34","34","4","5","10","14","2","2","0","0","0–1","6iFbuIpe68k"
+"82",2016,"2016_Group_F_1_Austria_Hungary","Group",1,"F",1,"Group match 1","Austria","Hungary","0–2",0,3,NA,0,2,NA,"Szalai  62'
+Stieber  87'",NA,NA,NA,NA,"18:00","2016-06-14","Nouveau Stade de Bordeaux","Bordeaux","Attendance: 34,424[1]","Referee: Clément Turpin (France)","50","50","81","82","402","387","324","318","106","110","3","8","6","5","5","2","4","4","0","1","2","5","47","51","6","12","10","16","2","1","1","0","0–2","6iFbuIpe68k"
+"83",2016,"2016_Group_F_1_Portugal_Iceland","Group",1,"F",1,"Group match 1","Portugal","Iceland","1–1",1,1,NA,1,1,"Nani  31'","B. Bjarnason  50'",NA,NA,NA,NA,"21:00","2016-06-14","Stade Geoffroy-Guichard","Saint-Étienne","Attendance: 38,742[10]","Referee: Cüneyt Çakir (Turkey)","66","34","92","73","605","185","556","135","111","112","10","4","7","0","10","0","11","2","3","2","0","10","47","38","2","11","9","17","0","2","0","0","1–1","6iFbuIpe68k"
+"84",2016,"2016_Group_F_2_Iceland_Hungary","Group",1,"F",2,"Group match 2","Iceland","Hungary","1–1",1,1,NA,1,1,"G. Sigurðsson  40' (pen.)","Sævarsson  88' (o.g.)",NA,NA,NA,NA,"18:00","2016-06-18","Stade Vélodrome","Marseille","Attendance: 60,842[13]","Referee: Sergei Karasev (Russia)","33","67","71","89","207","606","147","538","110","107","2","4","2","5","4","3","3","5","1","2","3","4","43","47","3","7","15","15","3","3","0","0","1–1","6iFbuIpe68k"
+"85",2016,"2016_Group_F_2_Portugal_Austria","Group",1,"F",2,"Group match 2","Portugal","Austria","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"21:00","2016-06-18","Parc des Princes","Paris","Attendance: 44,291[16]","Referee: Nicola Rizzoli (Italy)","59","41","86","81","512","335","442","273","108","109","6","1","10","2","7","0","10","0","5","2","0","7","53","49","4","14","15","16","2","4","0","0","0–0","6iFbuIpe68k"
+"86",2016,"2016_Group_F_3_Iceland_Austria","Group",1,"F",3,"Group match 3","Iceland","Austria","2–1",3,0,NA,2,1,"Böðvarsson  18'
+Traustason  90+4'","Schöpf  60'",NA,NA,NA,NA,"18:00","2016-06-22","Stade de France","Saint-Denis","Attendance: 68,714[19]","Referee: Szymon Marciniak (Poland)","37","63","73","88","272","630","199","556","110","106","3","6","5","9","1","8","3","7","2","2","8","1","54","43","5","4","10","10","4","1","0","0","2–1","6iFbuIpe68k"
+"87",2016,"2016_Group_F_3_Hungary_Portugal","Group",1,"F",3,"Group match 3","Hungary","Portugal","3–3",1,1,NA,3,3,"Gera  19'
+Dzsudzsák  47', 55'","Nani  42'
+Ronaldo  50', 62'",NA,NA,NA,NA,"18:00","2016-06-22","Parc Olympique Lyonnais","Décines-Charpieu","Attendance: 55,514[22]","Referee: Martin Atkinson (England)","42","58","83","90","308","517","255","463","105","100","5","6","3","11","2","2","3","9","2","4","2","2","29","31","10","4","15","8","4","0","0","0","3–3","6iFbuIpe68k"
+"88",2016,"2016_Round of 16_A_Switzerland_Poland","Round of 16",2,"A",NA,"Round of 16","Switzerland","Poland","1–1 (a.e.t.)",1,1,"Poland",1,1,"Shaqiri  82'","Blaszczykowski  39'",4,5,"
+Lichtsteiner 
+Xhaka 
+Shaqiri 
+Schär 
+Rodríguez ","
+Lewandowski
+Milik
+Glik
+Blaszczykowski
+Krychowiak","15:00","2016-06-25","Stade Geoffroy-Guichard","Saint-Étienne","Attendance: 38,842[4]","Referee: Mark Clattenburg (England)","55","45","90","85","587","476","527","406","140","137","7","5","10","12","12","4","13","5","2","2","4","12","46","51","7","11","16","14","2","2","0","0","1–1",NA
+"89",2016,"2016_Round of 16_B_Croatia_Portugal","Round of 16",2,"B",NA,"Round of 16","Croatia","Portugal","0–1 (a.e.t.)",0,3,"Portugal",0,1,NA,"Quaresma  117'",NA,NA,NA,NA,"21:00","2016-06-25","Stade Bollaert-Delelis","Lens","Attendance: 33,523[11]","Referee: Carlos Velasco Carballo (Spain)","59","41","87","81","676","460","590","374","143","148","0","2","14","3","3","0","6","2","0","1","0","3","60","66","10","3","12","28","0","1","0","0","0–1",NA
+"90",2016,"2016_Round of 16_C_Wales_Northern Ireland","Round of 16",2,"C",NA,"Round of 16","Wales","Northern Ireland","1–0",3,0,"Wales",1,0,"McAuley  75' (o.g.)",NA,NA,NA,NA,NA,"18:00","2016-06-25","Parc des Princes","Paris","Attendance: 44,342[8]","Referee: Martin Atkinson (England)","55","45","80","78","386","285","308","223","100","104","1","3","3","1","3","2","0","6","2","1","2","3","42","44","4","3","8","19","2","2","0","0","1–0",NA
+"91",2016,"2016_Round of 16_D_Hungary_Belgium","Round of 16",2,"D",NA,"Round of 16","Hungary","Belgium","0–4",0,3,"Belgium",0,4,NA,"Alderweireld  10'
+Batshuayi  78'
+Hazard  80'
+Carrasco  90+1'",NA,NA,NA,NA,"21:00","2016-06-26","Stadium Municipal","Toulouse","Attendance: 28,921[20]","Referee: Milorad Mažic (Serbia)","55","45","90","87","475","395","429","342","107","105","6","14","7","8","3","3","6","8","0","3","3","3","34","42","7","5","12","10","4","3","0","0","0–4",NA
+"92",2016,"2016_Round of 16_E_Germany_Slovakia","Round of 16",2,"E",NA,"Round of 16","Germany","Slovakia","3–0",3,0,"Germany",3,0,"Boateng  8'
+Gómez  43'
+Draxler  63'",NA,NA,NA,NA,NA,"18:00","2016-06-26","Stade Pierre-Mauroy","Villeneuve-d'Ascq","Attendance: 44,312[17]","Referee: Szymon Marciniak (Poland)","59","41","89","85","601","397","536","337","112","109","7","2","7","5","5","0","8","1","1","3","0","5","49","43","7","4","14","12","2","2","0","0","3–0",NA
+"93",2016,"2016_Round of 16_F_Italy_Spain","Round of 16",2,"F",NA,"Round of 16","Italy","Spain","2–0",3,0,"Italy",2,0,"Chiellini  33'
+Pellè  90+1'",NA,NA,NA,NA,NA,"18:00","2016-06-27","Stade de France","Saint-Denis","Attendance: 76,165[23]","Referee: Cüneyt Çakir (Turkey)","41","59","81","86","387","539","314","464","118","110","7","5","2","6","2","2","5","9","0","2","2","2","50","42","7","7","19","13","3","4","0","0","2–0",NA
+"94",2016,"2016_Round of 16_G_France_Republic of Ireland","Round of 16",2,"G",NA,"Round of 16","France","Republic of Ireland","2–1",3,0,"France",2,1,"Griezmann  58', 61'","Brady  2' (pen.)",NA,NA,NA,NA,"15:00","2016-06-26","Parc Olympique Lyonnais","Décines-Charpieu","Attendance: 56,279[14]","Referee: Nicola Rizzoli (Italy)","60","40","90","76","494","226","447","171","107","105","10","2","8","2","6","2","9","1","0","0","2","6","31","41","9","8","8","12","2","3","0","1","2–1",NA
+"95",2016,"2016_Round of 16_H_England_Iceland","Round of 16",2,"H",NA,"Round of 16","England","Iceland","1–2",0,3,"Iceland",1,2,"Rooney  4' (pen.)","R. Sigurðsson  6'
+Sigþórsson  18'",NA,NA,NA,NA,"21:00","2016-06-27","Stade de Nice","Nice","Attendance: 33,901[31]","Referee: Damir Skomina (Slovenia)","63","37","86","71","525","243","451","173","105","109","5","5","10","3","3","0","7","2","2","1","0","3","40","49","2","6","6","15","1","2","0","0","1–2",NA
+"96",2016,"2016_Quarterfinal_A_Poland_Portugal","Quarterfinal",3,"A",NA,"Quarterfinal","Poland","Portugal","1–1 (a.e.t.)",1,1,"Portugal",1,1,"Lewandowski  2'","Sanches  33'",3,5,"
+Lewandowski 
+Milik 
+Glik 
+Blaszczykowski ","
+Ronaldo
+Sanches
+Moutinho
+Nani
+Quaresma","21:00","2016-06-30","Stade Vélodrome","Marseille","Attendance: 62,940[34]","Referee: Felix Brych (Germany)","54","46","86","87","650","558","558","484","140","141","5","6","5","5","4","10","2","7","3","3","10","4","49","51","7","9","16","11","3","2","0","0","1–1",NA
+"97",2016,"2016_Quarterfinal_B_Wales_Belgium","Quarterfinal",3,"B",NA,"Quarterfinal","Wales","Belgium","3–1",3,0,"Wales",3,1,"A. Williams  31'
+Robson-Kanu  55'
+Vokes  86'","Nainggolan  13'",NA,NA,NA,NA,"21:00","2016-07-01","Stade Pierre-Mauroy","Villeneuve-d'Ascq","Attendance: 45,936[37]","Referee: Damir Skomina (Slovenia)","48","52","88","88","422","494","371","437","110","105","7","4","5","7","3","3","7","8","1","1","3","3","42","42","11","11","12","8","4","2","0","0","3–1",NA
+"98",2016,"2016_Quarterfinal_C_Germany_Italy","Quarterfinal",3,"C",NA,"Quarterfinal","Germany","Italy","1–1 (a.e.t.)",1,1,"Germany",1,1,"Özil  65'","Bonucci  78' (pen.)",6,5,"
+Kroos 
+Müller 
+Özil 
+Draxler 
+Schweinsteiger 
+Hummels 
+Kimmich 
+Boateng 
+Hector ","
+Insigne
+Zaza
+Barzagli
+Pellè
+Bonucci
+Giaccherini
+Parolo
+De Sciglio
+Darmian","21:00","2016-07-02","Nouveau Stade de Bordeaux","Bordeaux","Attendance: 38,764[40]","Referee: Viktor Kassai (Hungary)","59","41","90","84","815","511","734","431","146","153","3","3","7","4","3","5","7","5","0","2","5","3","64","58","11","11","15","13","2","5","0","0","1–1",NA
+"99",2016,"2016_Quarterfinal_D_France_Iceland","Quarterfinal",3,"D",NA,"Quarterfinal","France","Iceland","5–2",3,0,"France",5,2,"Giroud  12', 59'
+Pogba  20'
+Payet  43'
+Griezmann  45'","Sigþórsson  56'
+B. Bjarnason  84'",NA,NA,NA,NA,"21:00","2016-07-03","Stade de France","Saint-Denis","Attendance: 76,833[43]","Referee: Björn Kuipers (Netherlands)","59","41","91","88","651","388","593","341","106","109","8","5","4","6","3","0","4","4","1","0","0","3","40","37","12","12","8","11","1","1","0","0","5–2",NA
+"100",2016,"2016_Semifinal_A_Portugal_Wales","Semifinal",4,"A",NA,"Semifinal","Portugal","Wales","2–0",3,0,"Portugal",2,0,"Ronaldo  50'
+Nani  53'",NA,NA,NA,NA,NA,"21:00","2016-07-06","Parc Olympique Lyonnais","Décines-Charpieu","Attendance: 55,679[46]","Referee: Jonas Eriksson (Sweden)","46","54","83","89","406","517","335","458","106","103","6","3","8","3","3","3","6","2","0","0","3","3","31","34","8","11","10","12","2","3","0","0","2–0",NA
+"101",2016,"2016_Semifinal_B_Germany_France","Semifinal",4,"B",NA,"Semifinal","Germany","France","0–2",0,3,"France",0,2,NA,"Griezmann  45+2' (pen.), 72'",NA,NA,NA,NA,"21:00","2016-07-07","Stade Vélodrome","Marseille","Attendance: 64,078[49]","Referee: Nicola Rizzoli (Italy)","65","35","90","84","637","299","575","250","113","109","6","7","6","4","5","5","6","5","4","0","5","5","47","44","10","9","8","12","4","2","0","0","0–2",NA
+"102",2016,"2016_Final_A_Portugal_France","Final",5,"A",NA,"Final","Portugal","France","1–0 (a.e.t.)",3,0,"Portugal",1,0,"Eder  109'",NA,NA,NA,NA,NA,"21:00","2016-07-10","Stade de France","Saint-Denis","Attendance: 75,868[52]","Referee: Mark Clattenburg (England)","47","53","86","91","575","710","496","644","144","138","3","7","5","7","1","4","5","9","1","2","4","1","50","49","13","13","12","13","6","4","0","0","1–0",NA
+"103",2012,"2012_Group_A_1_Poland_Greece","Group",1,"A",1,"Group match 1","Poland","Greece","1–1",1,1,NA,1,1,"Lewandowski  17'","Salpingidis  51'",NA,NA,NA,NA,"18:00","2012-06-08","National Stadium","Warsaw","Attendance: 56,070[2]","Referee: Carlos Velasco Carballo (Spain)","53","47",NA,NA,"530","457","376","302","103","96","4","3","9","5",NA,NA,"4","3","0","3",NA,NA,NA,NA,NA,NA,"22","16","0","4","1","1","1–1","6iFbuIpe68k"
+"104",2012,"2012_Group_A_1_Russia_Czech Republic","Group",1,"A",1,"Group match 1","Russia","Czech Republic","4–1",3,0,NA,4,1,"Dzagoev  15', 79'
+Shirokov  24'
+Pavlyuchenko  82'","Pilar  52'",NA,NA,NA,NA,"20:45","2012-06-08","Stadion Miejski","Wroclaw","Attendance: 40,803[5]","Referee: Howard Webb (England)","49","51",NA,NA,"586","629","419","455","113","119","7","10","10","6",NA,NA,"3","5","2","4",NA,NA,NA,NA,NA,NA,"13","15",NA,NA,NA,NA,"4–1","6iFbuIpe68k"
+"105",2012,"2012_Group_A_2_Greece_Czech Republic","Group",1,"A",2,"Group match 2","Greece","Czech Republic","1–2",0,3,NA,1,2,"Gekas  53'","Jirácek  3'
+Pilar  6'",NA,NA,NA,NA,"18:00","2012-06-12","Stadion Miejski","Wroclaw","Attendance: 41,105[8]","Referee: Stéphane Lannoy (France)","54","46",NA,NA,"528","477","375","317","110","113","5","3","2","5",NA,NA,"1","4","6","0",NA,NA,NA,NA,NA,NA,"14","26","3","3",NA,NA,"1–2","6iFbuIpe68k"
+"106",2012,"2012_Group_A_2_Poland_Russia","Group",1,"A",2,"Group match 2","Poland","Russia","1–1",1,1,NA,1,1,"Blaszczykowski  57'","Dzagoev  37'",NA,NA,NA,NA,"20:45","2012-06-12","National Stadium","Warsaw","Attendance: 55,920[11]","Referee: Wolfgang Stark (Germany)","43","57",NA,NA,"486","712","323","549","114","111","9","3","6","4",NA,NA,"4","6","2","2",NA,NA,NA,NA,NA,NA,"12","13","2","2",NA,NA,"1–1","6iFbuIpe68k"
+"107",2012,"2012_Group_A_3_Czech Republic_Poland","Group",1,"A",3,"Group match 3","Czech Republic","Poland","1–0",3,0,NA,1,0,"Jirácek  72'",NA,NA,NA,NA,NA,"20:45","2012-06-16","Stadion Miejski","Wroclaw","Attendance: 41,480[14]","Referee: Craig Thomson (Scotland)","58","42",NA,NA,"557","414","426","270","112","111","7","7","4","9",NA,NA,"6","6","3","1",NA,NA,NA,NA,NA,NA,"20","22","3","5",NA,NA,"1–0","6iFbuIpe68k"
+"108",2012,"2012_Group_A_3_Greece_Russia","Group",1,"A",3,"Group match 3","Greece","Russia","1–0",3,0,NA,1,0,"Karagounis  45+2'",NA,NA,NA,NA,NA,"20:45","2012-06-16","National Stadium","Warsaw","Attendance: 55,614[17]","Referee: Jonas Eriksson (Sweden)","38","62",NA,NA,"374","706","196","553","101","106","2","10","3","15",NA,NA,"5","12","1","0",NA,NA,NA,NA,NA,NA,"8","14","2","4",NA,NA,"1–0","6iFbuIpe68k"
+"109",2012,"2012_Group_B_1_Netherlands_Denmark","Group",1,"B",1,"Group match 1","Netherlands","Denmark","0–1",0,3,NA,0,1,NA,"Krohn-Dehli  24'",NA,NA,NA,NA,"19:00","2012-06-09","Metalist Stadium","Kharkiv","Attendance: 35,923[14]","Referee: Damir Skomina (Slovenia)","53","47",NA,NA,"654","526","496","377","109","113","8","8","20","0",NA,NA,"11","4","1","2",NA,NA,NA,NA,NA,NA,"8","12","1","2",NA,NA,"0–1","6iFbuIpe68k"
+"110",2012,"2012_Group_B_1_Germany_Portugal","Group",1,"B",1,"Group match 1","Germany","Portugal","1–0",3,0,NA,1,0,"Gómez  72'",NA,NA,NA,NA,NA,"21:45","2012-06-09","Arena Lviv","Lviv","Attendance: 32,990[17]","Referee: Stéphane Lannoy (France)","56","44",NA,NA,"600","495","421","333","112","113","4","7","8","4",NA,NA,"2","11","1","1",NA,NA,NA,NA,NA,NA,"14","19","2","2",NA,NA,"1–0","6iFbuIpe68k"
+"111",2012,"2012_Group_B_2_Denmark_Portugal","Group",1,"B",2,"Group match 2","Denmark","Portugal","2–3",0,3,NA,2,3,"Bendtner  41', 80'","Pepe  24'
+Postiga  36'
+Varela  87'",NA,NA,NA,NA,"19:00","2012-06-13","Arena Lviv","Lviv","Attendance: 31,840[20]","Referee: Craig Thomson (Scotland)","58","42",NA,NA,"613","413","466","256","113","114","6","12","3","5",NA,NA,"7","6","2","0",NA,NA,NA,NA,NA,NA,"18","17","2","2",NA,NA,"2–3","6iFbuIpe68k"
+"112",2012,"2012_Group_B_2_Netherlands_Germany","Group",1,"B",2,"Group match 2","Netherlands","Germany","1–2",0,3,NA,1,2,"Van Persie  73'","Gómez  24', 38'",NA,NA,NA,NA,"21:45","2012-06-13","Metalist Stadium","Kharkiv","Attendance: 37,750[23]","Referee: Jonas Eriksson (Sweden)","52","48",NA,NA,"676","538","515","386","109","111","6","9","7","3",NA,NA,"6","5","1","4",NA,NA,NA,NA,NA,NA,"11","7","2","1",NA,NA,"1–2","6iFbuIpe68k"
+"113",2012,"2012_Group_B_3_Portugal_Netherlands","Group",1,"B",3,"Group match 3","Portugal","Netherlands","2–1",3,0,NA,2,1,"Ronaldo  28', 74'","Van der Vaart  11'",NA,NA,NA,NA,"21:45","2012-06-17","Metalist Stadium","Kharkiv","Attendance: 37,445[26]","Referee: Nicola Rizzoli (Italy)","42","58",NA,NA,"428","673","286","516","113","111","9","5","13","8",NA,NA,"7","5","4","1",NA,NA,NA,NA,NA,NA,"17","12","1","2",NA,NA,"2–1","6iFbuIpe68k"
+"114",2012,"2012_Group_B_3_Denmark_Germany","Group",1,"B",3,"Group match 3","Denmark","Germany","1–2",0,3,NA,1,2,"Krohn-Dehli  24'","Podolski  19'
+Bender  80'",NA,NA,NA,NA,"21:45","2012-06-17","Arena Lviv","Lviv","Attendance: 32,990[29]","Referee: Carlos Velasco Carballo (Spain)","43","57",NA,NA,"561","743","404","584","113","112","6","6","4","6",NA,NA,"5","3","4","2",NA,NA,NA,NA,NA,NA,"8","6",NA,NA,NA,NA,"1–2","6iFbuIpe68k"
+"115",2012,"2012_Group_C_1_Spain_Italy","Group",1,"C",1,"Group match 1","Spain","Italy","1–1",1,1,NA,1,1,"Fàbregas  64'","Di Natale  61'",NA,NA,NA,NA,"18:00","2012-06-10","PGE Arena","Gdansk","Attendance: 38,869[5]","Referee: Viktor Kassai (Hungary)","60","40",NA,NA,"834","517","672","341","111","117","9","6","9","4",NA,NA,"7","2","2","3",NA,NA,NA,NA,NA,NA,"12","19","3","4",NA,NA,"1–1","6iFbuIpe68k"
+"116",2012,"2012_Group_C_1_Republic of Ireland_Croatia","Group",1,"C",1,"Group match 1","Republic of Ireland","Croatia","1–3",0,3,NA,1,3,"St Ledger  19'","Mandžukic  3', 49'
+Jelavic  43'",NA,NA,NA,NA,"20:45","2012-06-10","Stadion Miejski","Poznan","Attendance: 39,550[8]","Referee: Björn Kuipers (Netherlands)","45","55",NA,NA,"501","583","305","394","111","114","5","9","8","6",NA,NA,"1","7","2","1",NA,NA,NA,NA,NA,NA,"12","18","1","2",NA,NA,"1–3","6iFbuIpe68k"
+"117",2012,"2012_Group_C_2_Italy_Croatia","Group",1,"C",2,"Group match 2","Italy","Croatia","1–1",1,1,NA,1,1,"Pirlo  39'","Mandžukic  72'",NA,NA,NA,NA,"18:00","2012-06-14","Stadion Miejski","Poznan","Attendance: 37,096[11]","Referee: Howard Webb (England)","52","48",NA,NA,"578","526","410","353","116","112","7","8","8","2",NA,NA,"6","3","3","1",NA,NA,NA,NA,NA,NA,"15","22","2","1",NA,NA,"1–1","6iFbuIpe68k"
+"118",2012,"2012_Group_C_2_Spain_Republic of Ireland","Group",1,"C",2,"Group match 2","Spain","Republic of Ireland","4–0",3,0,NA,4,0,"Torres  4', 70'
+Silva  49'
+Fàbregas  83'",NA,NA,NA,NA,NA,"20:45","2012-06-14","PGE Arena","Gdansk","Attendance: 39,150[14]","Referee: Pedro Proença (Portugal)","66","34",NA,NA,"929","397","779","224","111","114","20","4","6","2",NA,NA,"8","2","6","1",NA,NA,NA,NA,NA,NA,"9","16","2","3",NA,NA,"4–0","6iFbuIpe68k"
+"119",2012,"2012_Group_C_3_Croatia_Spain","Group",1,"C",3,"Group match 3","Croatia","Spain","0–1",0,3,NA,0,1,NA,"Navas  88'",NA,NA,NA,NA,"20:45","2012-06-18","PGE Arena","Gdansk","Attendance: 39,076[17]","Referee: Wolfgang Stark (Germany)","36","64",NA,NA,"381","774","231","639","112","110","3","10","2","4",NA,NA,"4","11","0","1",NA,NA,NA,NA,NA,NA,"21","16","6","0",NA,NA,"0–1","6iFbuIpe68k"
+"120",2012,"2012_Group_C_3_Italy_Republic of Ireland","Group",1,"C",3,"Group match 3","Italy","Republic of Ireland","2–0",3,0,NA,2,0,"Cassano  35'
+Balotelli  90'",NA,NA,NA,NA,NA,"20:45","2012-06-18","Stadion Miejski","Poznan","Attendance: 38,794[20]","Referee: Cüneyt Çakir (Turkey)","60","40",NA,NA,"626","351","489","196","109","106","17","2","10","4",NA,NA,"12","5","3","7",NA,NA,NA,NA,NA,NA,"15","23","3","4","0","1","2–0","6iFbuIpe68k"
+"121",2012,"2012_Group_D_1_France_England","Group",1,"D",1,"Group match 1","France","England","1–1",1,1,NA,1,1,"Nasri  39'","Lescott  30'",NA,NA,NA,NA,"19:00","2012-06-11","Donbass Arena","Donetsk","Attendance: 47,400[9]","Referee: Nicola Rizzoli (Italy)","60","40",NA,NA,"776","455","634","307","104","105","15","1","4","2",NA,NA,"11","4","0","5",NA,NA,NA,NA,NA,NA,"9","7","0","2",NA,NA,"1–1","6iFbuIpe68k"
+"122",2012,"2012_Group_D_1_Ukraine_Sweden","Group",1,"D",1,"Group match 1","Ukraine","Sweden","2–1",3,0,NA,2,1,"Shevchenko  55', 62'","Ibrahimovic  52'",NA,NA,NA,NA,"21:45","2012-06-11","Olympic Stadium","Kyiv","Attendance: 64,290[12]","Referee: Cüneyt Çakir (Turkey)","53","47",NA,NA,"536","500","373","335","112","112","5","6","8","6",NA,NA,"3","2","2","1",NA,NA,NA,NA,NA,NA,"12","20","0","2",NA,NA,"2–1","6iFbuIpe68k"
+"123",2012,"2012_Group_D_2_Ukraine_France","Group",1,"D",2,"Group match 2","Ukraine","France","0–2",0,3,NA,0,2,NA,"Ménez  53'
+Cabaye  56'",NA,NA,NA,NA,"19:00","2012-06-15","Donbass Arena","Donetsk","Attendance: 48,000[17]","Referee: Björn Kuipers (Netherlands)","48","52",NA,NA,"530","614","362","467","112","114","2","11","7","5",NA,NA,"5","6","2","3",NA,NA,NA,NA,NA,NA,"7","16","2","3",NA,NA,"0–2","6iFbuIpe68k"
+"124",2012,"2012_Group_D_2_Sweden_England","Group",1,"D",2,"Group match 2","Sweden","England","2–3",0,3,NA,2,3,"Johnson  49' (o.g.)
+Mellberg  59'","Carroll  23'
+Walcott  64'
+Welbeck  78'",NA,NA,NA,NA,"22:00[note 1]","2012-06-15","Olympic Stadium","Kyiv","Attendance: 64,640[20]","Referee: Damir Skomina (Slovenia)","48","52",NA,NA,"606","616","433","437","114","112","8","9","4","6",NA,NA,"3","3",NA,NA,NA,NA,NA,NA,NA,NA,"14","10","3","1",NA,NA,"2–3","6iFbuIpe68k"
+"125",2012,"2012_Group_D_3_England_Ukraine","Group",1,"D",3,"Group match 3","England","Ukraine","1–0",3,0,NA,1,0,"Rooney  48'",NA,NA,NA,NA,NA,"21:45","2012-06-19","Donbass Arena","Donetsk","Attendance: 48,700[23]","Referee: Viktor Kassai (Hungary)","42","58",NA,NA,"446","590","301","437","113","110","5","5","4","11",NA,NA,"6","10",NA,NA,NA,NA,NA,NA,NA,NA,"13","12","2","3",NA,NA,"1–0","6iFbuIpe68k"
+"126",2012,"2012_Group_D_3_Sweden_France","Group",1,"D",3,"Group match 3","Sweden","France","2–0",3,0,NA,2,0,"Ibrahimovic  54'
+Larsson  90+1'",NA,NA,NA,NA,NA,"21:45","2012-06-19","Olympic Stadium","Kyiv","Attendance: 63,010[26]","Referee: Pedro Proença (Portugal)","43","57",NA,NA,"501","619","354","490","114","108","7","10","5","14",NA,NA,"2","8","6","1",NA,NA,NA,NA,NA,NA,"17","14","2","1",NA,NA,"2–0","6iFbuIpe68k"
+"127",2012,"2012_Quarterfinal_A_Czech Republic_Portugal","Quarterfinal",3,"A",NA,"Quarterfinal","Czech Republic","Portugal","0–1",0,3,"Portugal",0,1,NA,"Ronaldo  79'",NA,NA,NA,NA,"20:45 CEST","2012-06-21","National Stadium","Warsaw","Attendance: 55,590[4]","Referee: Howard Webb (England)","44","56",NA,NA,"462","597","271","430","110","109","0","5","2","15",NA,NA,"6","11","1","3",NA,NA,NA,NA,NA,NA,"13","7","1","2",NA,NA,"0–1",NA
+"128",2012,"2012_Quarterfinal_B_Spain_France","Quarterfinal",3,"B",NA,"Quarterfinal","Spain","France","2–0",3,0,"Spain",2,0,"Alonso  19', 90+1' (pen.)",NA,NA,NA,NA,NA,"21:45 EEST","2012-06-23","Donbass Arena","Donetsk","Attendance: 47,000[10]","Referee: Nicola Rizzoli (Italy)","55","45",NA,NA,"800","602","638","429","110","113","5","1","4","3",NA,NA,"7","3","6","1",NA,NA,NA,NA,NA,NA,"6","12","1","2",NA,NA,"2–0",NA
+"129",2012,"2012_Quarterfinal_C_Germany_Greece","Quarterfinal",3,"C",NA,"Quarterfinal","Germany","Greece","4–2",3,0,"Germany",4,2,"Lahm  39'
+Khedira  61'
+Klose  68'
+Reus  74'","Samaras  55'
+Salpingidis  89' (pen.)",NA,NA,NA,NA,"20:45 CEST","2012-06-22","PGE Arena","Gdansk","Attendance: 38,751[7]","Referee: Damir Skomina (Slovenia)","66","34",NA,NA,"786","384","661","218","111","104","14","5","10","4",NA,NA,"10","1","5","2",NA,NA,NA,NA,NA,NA,"9","10","0","2",NA,NA,"4–2",NA
+"130",2012,"2012_Quarterfinal_D_England_Italy","Quarterfinal",3,"D",NA,"Quarterfinal","England","Italy","0–0 (a.e.t.)",1,1,"Italy",0,0,NA,NA,2,4,"Gerrard 
+Rooney 
+Young 
+Cole ","Balotelli
+Montolivo
+Pirlo
+Nocerino
+Diamanti","21:45 EEST","2012-06-24","Olympic Stadium","Kyiv","Attendance: 64,340[13]","Referee: Pedro Proença (Portugal)","36","64",NA,NA,"522","1003","320","815","146","149","4","20","5","15",NA,NA,"3","7","1","2",NA,NA,NA,NA,NA,NA,"15","11","0","2",NA,NA,"0–0",NA
+"131",2012,"2012_Semifinal_A_Portugal_Spain","Semifinal",4,"A",NA,"Semifinal","Portugal","Spain","0–0 (a.e.t.)",1,1,"Spain",0,0,NA,NA,2,4,"Moutinho 
+Pepe 
+Nani 
+Alves ","Alonso
+Iniesta
+Piqué
+Ramos
+Fàbregas","21:45 EEST","2012-06-27","Donbass Arena","Donetsk","Attendance: 48,000[17]","Referee: Cüneyt Çakir (Turkey)","43","57",NA,NA,"547","885","331","658","144","140","2","5","8","6",NA,NA,"6","7","2","3",NA,NA,NA,NA,NA,NA,"31","21","5","4",NA,NA,"0–0",NA
+"132",2012,"2012_Semifinal_B_Germany_Italy","Semifinal",4,"B",NA,"Semifinal","Germany","Italy","1–2",0,3,"Italy",1,2,"Özil  90+2' (pen.)","Balotelli  20', 36'",NA,NA,NA,NA,"20:45 CEST","2012-06-28","National Stadium","Warsaw","Attendance: 55,540[20]","Referee: Stéphane Lannoy (France)","54","46",NA,NA,"652","587","474","407","111","117","8","5","7","5",NA,NA,"14","0","0","2",NA,NA,NA,NA,NA,NA,"13","19","1","4",NA,NA,"1–2",NA
+"133",2012,"2012_Final_A_Spain_Italy","Final",5,"A",NA,"Final","Spain","Italy","4–0",3,0,"Spain",4,0,"Silva  14'
+Alba  41'
+Torres  84'
+Mata  88'",NA,NA,NA,NA,NA,"21:45 EEST","2012-07-01","Olympic Stadium","Kyiv","Attendance: 63,170[23]","Referee: Pedro Proença (Portugal)","52","48",NA,NA,"671","607","529","451","109","103","9","6","5","5",NA,NA,"3","3","3","3",NA,NA,NA,NA,NA,NA,"17","10","1","1",NA,NA,"4–0",NA
+"134",2008,"2008_Group_A_1_Switzerland_Czech Republic","Group",1,"A",1,"Group match 1","Switzerland","Czech Republic","0–1",0,3,NA,0,1,NA,"Sverkoš  71'",NA,NA,NA,NA,"18:00","2008-06-07","St. Jakob-Park","Basel","Attendance: 39,730[4]","Referee: Roberto Rosetti (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7","4","5","2","1","2","6","3","3","3","3","6",NA,NA,NA,NA,"18","21","3","0",NA,NA,"0–1","6iFbuIpe68k"
+"135",2008,"2008_Group_A_1_Portugal_Turkey","Group",1,"A",1,"Group match 1","Portugal","Turkey","2–0",3,0,NA,2,0,"Pepe  61'
+Meireles  90+3'",NA,NA,NA,NA,NA,"20:45","2008-06-07","Stade de Genève","Geneva","Attendance: 29,106[7]","Referee: Herbert Fandel (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","1","4","4","4","1","7","5","6","3","1","3",NA,NA,NA,NA,"10","24","0","3",NA,NA,"2–0","6iFbuIpe68k"
+"136",2008,"2008_Group_A_2_Czech Republic_Portugal","Group",1,"A",2,"Group match 2","Czech Republic","Portugal","1–3",0,3,NA,1,3,"Sionko  17'","Deco  8'
+Ronaldo  63'
+Quaresma  90+1'",NA,NA,NA,NA,"18:00","2008-06-11","Stade de Genève","Geneva","Attendance: 29,016[9]","Referee: Kyros Vassaras (Greece)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","11","7","4","3","3","6","6","0","3","7","1",NA,NA,NA,NA,"16","15","1","1",NA,NA,"1–3","6iFbuIpe68k"
+"137",2008,"2008_Group_A_2_Switzerland_Turkey","Group",1,"A",2,"Group match 2","Switzerland","Turkey","1–2",0,3,NA,1,2,"Yakin  32'","Semih  57'
+Turan  90+2'",NA,NA,NA,NA,"20:45","2008-06-11","St. Jakob-Park","Basel","Attendance: 39,730[11]","Referee: Luboš Michel (Slovakia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7","4","7","4","1","1","6","5","4","3","1","6",NA,NA,NA,NA,"22","24","1","3",NA,NA,"1–2","6iFbuIpe68k"
+"138",2008,"2008_Group_A_3_Switzerland_Portugal","Group",1,"A",3,"Group match 3","Switzerland","Portugal","2–0",3,0,NA,2,0,"Yakin  71', 83' (pen.)",NA,NA,NA,NA,NA,"20:45","2008-06-15","St. Jakob-Park","Basel","Attendance: 39,730[13]","Referee: Konrad Plautz (Austria)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9","5","5","2","3","2","5","2","1","6","4","7",NA,NA,NA,NA,"26","27","4","4",NA,NA,"2–0","6iFbuIpe68k"
+"139",2008,"2008_Group_A_3_Turkey_Czech Republic","Group",1,"A",3,"Group match 3","Turkey","Czech Republic","3–2",3,0,NA,3,2,"Turan  75'
+Nihat  87', 89'","Koller  34'
+Plašil  62'",NA,NA,NA,NA,"20:45","2008-06-15","Stade de Genève","Geneva","Attendance: 29,016[15]","Referee: Peter Fröjdfeldt (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","5","7","8","1","1","6","2","0","1","2","5",NA,NA,NA,NA,"16","13","4","3","1","0","3–2","6iFbuIpe68k"
+"140",2008,"2008_Group_B_1_Austria_Croatia","Group",1,"B",1,"Group match 1","Austria","Croatia","0–1",0,3,NA,0,1,NA,"Modric  4' (pen.)",NA,NA,NA,NA,"18:00","2008-06-08","Ernst-Happel-Stadion","Vienna","Attendance: 51,428[1]","Referee: Pieter Vink (Netherlands)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","1","9","7","1","2","4","7","0","3","0","6",NA,NA,NA,NA,"17","17","3","1",NA,NA,"0–1","6iFbuIpe68k"
+"141",2008,"2008_Group_B_1_Germany_Poland","Group",1,"B",1,"Group match 1","Germany","Poland","2–0",3,0,NA,2,0,"Podolski  20', 72'",NA,NA,NA,NA,NA,"20:45","2008-06-08","Wörthersee Stadion","Klagenfurt","Attendance: 30,461[4]","Referee: Tom Henning Øvrebø (Norway)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","5","5","6","2","3","4","3","5","4","5","3",NA,NA,NA,NA,"15","18","1","2",NA,NA,"2–0","6iFbuIpe68k"
+"142",2008,"2008_Group_B_2_Croatia_Germany","Group",1,"B",2,"Group match 2","Croatia","Germany","2–1",3,0,NA,2,1,"Srna  24'
+Olic  62'","Podolski  79'",NA,NA,NA,NA,"18:00","2008-06-12","Wörthersee Stadion","Klagenfurt","Attendance: 30,461[6]","Referee: Frank De Bleeckere (Belgium)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","4","3","3","2","4","7","7","1","3","2","5",NA,NA,NA,NA,"16","16","4","2","0","1","2–1","6iFbuIpe68k"
+"143",2008,"2008_Group_B_2_Austria_Poland","Group",1,"B",2,"Group match 2","Austria","Poland","1–1",1,1,NA,1,1,"Vastic  90+3' (pen.)","Guerreiro  30'",NA,NA,NA,NA,"20:45","2008-06-12","Ernst-Happel-Stadion","Vienna","Attendance: 51,428[8]","Referee: Howard Webb (England)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","7","6","4","2","2","9","8","1","2","4","3",NA,NA,NA,NA,"13","25","2","3",NA,NA,"1–1","6iFbuIpe68k"
+"144",2008,"2008_Group_B_3_Poland_Croatia","Group",1,"B",3,"Group match 3","Poland","Croatia","0–1",0,3,NA,0,1,NA,"Klasnic  53'",NA,NA,NA,NA,"20:45","2008-06-16","Wörthersee Stadion","Klagenfurt","Attendance: 30,461[10]","Referee: Kyros Vassaras (Greece)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","7","11","9","3","1","5","1","5","2","5","3",NA,NA,NA,NA,"24","16","2","2",NA,NA,"0–1","6iFbuIpe68k"
+"145",2008,"2008_Group_B_3_Austria_Germany","Group",1,"B",3,"Group match 3","Austria","Germany","0–1",0,3,NA,0,1,NA,"Ballack  49'",NA,NA,NA,NA,"20:45","2008-06-16","Ernst-Happel-Stadion","Vienna","Attendance: 51,428[12]","Referee: Manuel Mejuto González (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","6","5","8","4","1","8","6","0","2","5","3",NA,NA,NA,NA,"22","11","3","0",NA,NA,"0–1","6iFbuIpe68k"
+"146",2008,"2008_Group_C_1_Romania_France","Group",1,"C",1,"Group match 1","Romania","France","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"18:00","2008-06-09","Letzigrund","Zürich","Attendance: 30,585[4]","Referee: Manuel Mejuto González (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"0","1","4","8","3","2","3","3","1","1","2","0",NA,NA,NA,NA,"17","22","3","1",NA,NA,"0–0","6iFbuIpe68k"
+"147",2008,"2008_Group_C_1_Netherlands_Italy","Group",1,"C",1,"Group match 1","Netherlands","Italy","3–0",3,0,NA,3,0,"Van Nistelrooy  26'
+Sneijder  31'
+Van Bronckhorst  79'",NA,NA,NA,NA,NA,"20:45","2008-06-09","Stade de Suisse","Bern","Attendance: 30,777[7]","Referee: Peter Fröjdfeldt (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9","5","4","11","5","0","3","5","4","3","4","5",NA,NA,NA,NA,"19","10","1","3",NA,NA,"3–0","6iFbuIpe68k"
+"148",2008,"2008_Group_C_2_Italy_Romania","Group",1,"C",2,"Group match 2","Italy","Romania","1–1",1,1,NA,1,1,"Panucci  56'","Mutu  55'",NA,NA,NA,NA,"18:00","2008-06-13","Letzigrund","Zürich","Attendance: 30,585[9]","Referee: Tom Henning Øvrebø (Norway)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","6","5","5","1","5","12","5","6","4","3","3",NA,NA,NA,NA,"12","19","2","3",NA,NA,"1–1","6iFbuIpe68k"
+"149",2008,"2008_Group_C_2_Netherlands_France","Group",1,"C",2,"Group match 2","Netherlands","France","4–1",3,0,NA,4,1,"Kuyt  9'
+Van Persie  59'
+Robben  72'
+Sneijder  90+2'","Henry  71'",NA,NA,NA,NA,"20:45","2008-06-13","Stade de Suisse","Bern","Attendance: 30,777[11]","Referee: Herbert Fandel (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9","9","4","9","3","5","2","6",NA,NA,"8","5",NA,NA,NA,NA,"17","17","1","2",NA,NA,"4–1","6iFbuIpe68k"
+"150",2008,"2008_Group_C_3_Netherlands_Romania","Group",1,"C",3,"Group match 3","Netherlands","Romania","2–0",3,0,NA,2,0,"Huntelaar  54'
+Van Persie  87'",NA,NA,NA,NA,NA,"20:45","2008-06-17","Stade de Suisse","Bern","Attendance: 30,777[13]","Referee: Massimo Busacca (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","2","9","7","2","2","2","1","2","5","2","3",NA,NA,NA,NA,"17","11","0","1",NA,NA,"2–0","6iFbuIpe68k"
+"151",2008,"2008_Group_C_3_France_Italy","Group",1,"C",3,"Group match 3","France","Italy","0–2",0,3,NA,0,2,NA,"Pirlo  25' (pen.)
+De Rossi  62'",NA,NA,NA,NA,"20:45","2008-06-17","Letzigrund","Zürich","Attendance: 30,585[15]","Referee: Luboš Michel (Slovakia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","5","7","8","3","2","3","3","2","2","3","3",NA,NA,NA,NA,"22","23","4","3","1","0","0–2","6iFbuIpe68k"
+"152",2008,"2008_Group_D_1_Spain_Russia","Group",1,"D",1,"Group match 1","Spain","Russia","4–1",3,0,NA,4,1,"Villa  20', 44', 75'
+Fàbregas  90+1'","Pavlyuchenko  86'",NA,NA,NA,NA,"18:00","2008-06-10","Tivoli-Neu","Innsbruck","Attendance: 30,772[1]","Referee: Konrad Plautz (Austria)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"12","6","5","4","4","2","4","6","2","5","3","8",NA,NA,NA,NA,"22","18",NA,NA,NA,NA,"4–1","6iFbuIpe68k"
+"153",2008,"2008_Group_D_1_Greece_Sweden","Group",1,"D",1,"Group match 1","Greece","Sweden","0–2",0,3,NA,0,2,NA,"Ibrahimovic  67'
+Hansson  72'",NA,NA,NA,NA,"20:45","2008-06-10","Stadion Wals-Siezenheim","Salzburg","Attendance: 31,063[4]","Referee: Massimo Busacca (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","3","2","7","3","1","6","6","2","3","1","5",NA,NA,NA,NA,"12","14","3","0",NA,NA,"0–2","6iFbuIpe68k"
+"154",2008,"2008_Group_D_2_Sweden_Spain","Group",1,"D",2,"Group match 2","Sweden","Spain","1–2",0,3,NA,1,2,"Ibrahimovic  34'","Torres  15'
+Villa  90+2'",NA,NA,NA,NA,"18:00","2008-06-14","Tivoli-Neu","Innsbruck","Attendance: 30,772[6]","Referee: Pieter Vink (Netherlands)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","10","5","3","2","2","0","7","2","1","9","1",NA,NA,NA,NA,"20","15","1","1",NA,NA,"1–2","6iFbuIpe68k"
+"155",2008,"2008_Group_D_2_Greece_Russia","Group",1,"D",2,"Group match 2","Greece","Russia","0–1",0,3,NA,0,1,NA,"Zyryanov  33'",NA,NA,NA,NA,"20:45","2008-06-14","Stadion Wals-Siezenheim","Salzburg","Attendance: 31,063[8]","Referee: Roberto Rosetti (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","5","5","11","0","3","7","9","5","1","4","6",NA,NA,NA,NA,"17","18","2","2",NA,NA,"0–1","6iFbuIpe68k"
+"156",2008,"2008_Group_D_3_Greece_Spain","Group",1,"D",3,"Group match 3","Greece","Spain","1–2",0,3,NA,1,2,"Charisteas  42'","De la Red  61'
+Güiza  88'",NA,NA,NA,NA,"20:45","2008-06-18","Stadion Wals-Siezenheim","Salzburg","Attendance: 30,883[10]","Referee: Howard Webb (England)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","5","6","12","4","5","1","5","4","1","2","1",NA,NA,NA,NA,"16","18","3","2",NA,NA,"1–2","6iFbuIpe68k"
+"157",2008,"2008_Group_D_3_Russia_Sweden","Group",1,"D",3,"Group match 3","Russia","Sweden","2–0",3,0,NA,2,0,"Pavlyuchenko  24'
+Arshavin  50'",NA,NA,NA,NA,NA,"20:45","2008-06-18","Tivoli-Neu","Innsbruck","Attendance: 30,772[12]","Referee: Frank De Bleeckere (Belgium)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9","7","11","6","2","0","12","4","1","2","6","7",NA,NA,NA,NA,"14","15","3","2",NA,NA,"2–0","6iFbuIpe68k"
+"158",2008,"2008_Quarterfinal_A_Portugal_Germany","Quarterfinal",3,"A",NA,"Quarterfinal","Portugal","Germany","2–3",0,3,"Germany",2,3,"Nuno Gomes  40'
+Postiga  87'","Schweinsteiger  22'
+Klose  26'
+Ballack  61'",NA,NA,NA,NA,"20:45","2008-06-19","St. Jakob-Park","Basel","Attendance: 39,374[4]","Referee: Peter Fröjdfeldt (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","5","12","5","4","1","8","3","2","2","2","4",NA,NA,NA,NA,"11","15","3","2",NA,NA,"2–3",NA
+"159",2008,"2008_Quarterfinal_B_Croatia_Turkey","Quarterfinal",3,"B",NA,"Quarterfinal","Croatia","Turkey","1–1 (a.e.t.)",1,1,"Turkey",1,1,"Klasnic  119'","Semih  120+2'",1,3,"
+Modric 
+Srna 
+Rakitic 
+Petric ","
+Turan
+Semih
+Altintop","20:45","2008-06-20","Ernst-Happel-Stadion","Vienna","Attendance: 51,428[7]","Referee: Roberto Rosetti (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","2","7","6","2","5","7","4","5","1","1","4",NA,NA,NA,NA,"20","23","0","4",NA,NA,"1–1",NA
+"160",2008,"2008_Quarterfinal_C_Netherlands_Russia","Quarterfinal",3,"C",NA,"Quarterfinal","Netherlands","Russia","1–3 (a.e.t.)",0,3,"Russia",1,3,"Van Nistelrooy  86'","Pavlyuchenko  56'
+Torbinski  112'
+Arshavin  116'",NA,NA,NA,NA,"20:45","2008-06-21","St. Jakob-Park","Basel","Attendance: 38,374[9]","Referee: Luboš Michel (Slovakia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","11","15","13","5","2","4","11","6","4","6","6",NA,NA,NA,NA,"22","27","3","3",NA,NA,"1–3",NA
+"161",2008,"2008_Quarterfinal_D_Spain_Italy","Quarterfinal",3,"D",NA,"Quarterfinal","Spain","Italy","0–0 (a.e.t.)",1,1,"Spain",0,0,NA,NA,4,2,"Villa 
+Cazorla 
+Senna 
+Güiza 
+Fàbregas ","Grosso
+De Rossi
+Camoranesi
+Di Natale","20:45","2008-06-22","Ernst-Happel-Stadion","Vienna","Attendance: 51,178[11]","Referee: Herbert Fandel (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","3","15","5","5","4","8","3","3","4","3","4",NA,NA,NA,NA,"26","25","3","1",NA,NA,"0–0",NA
+"162",2008,"2008_Semifinal_A_Germany_Turkey","Semifinal",4,"A",NA,"Semifinal","Germany","Turkey","3–2",3,0,"Germany",3,2,"Schweinsteiger  26'
+Klose  79'
+Lahm  90'","Boral  22'
+Semih  86'",NA,NA,NA,NA,"20:45","2008-06-25","St. Jakob-Park","Basel","Attendance: 39,374[13]","Referee: Massimo Busacca (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","11","4","6","2","3","2","8","0","1","7","0",NA,NA,NA,NA,"14","15","0","2",NA,NA,"3–2",NA
+"163",2008,"2008_Semifinal_B_Russia_Spain","Semifinal",4,"B",NA,"Semifinal","Russia","Spain","0–3",0,3,"Spain",0,3,NA,"Xavi  50'
+Güiza  73'
+Silva  82'",NA,NA,NA,NA,"20:45","2008-06-26","Ernst-Happel-Stadion","Vienna","Attendance: 51,428[15]","Referee: Frank De Bleeckere (Belgium)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","11","5","7","2","2","3","4","1","4","8","1",NA,NA,NA,NA,"17","14","2","0",NA,NA,"0–3",NA
+"164",2008,"2008_Final_A_Germany_Spain","Final",5,"A",NA,"Final","Germany","Spain","0–1",0,3,"Spain",0,1,NA,"Torres  33'",NA,NA,NA,NA,"20:45","2008-06-29","Ernst-Happel-Stadion","Vienna","Attendance: 51,428[17]","Referee: Roberto Rosetti (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","7","2","5","1","1","4","7","5","4","6","1",NA,NA,NA,NA,"22","19","2","2",NA,NA,"0–1",NA
+"165",2004,"2004_Group_A_1_Portugal_Greece","Group",1,"A",1,"Group match 1","Portugal","Greece","1–2",0,3,NA,1,2,"Ronaldo  90+3'","Karagounis  7'
+Basinas  51' (pen.)",NA,NA,NA,NA,"17:00","2004-06-12","Estádio do Dragão","Porto","Attendance: 48,761","Referee: Pierluigi Collina (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","4","10","3","4","1","10","3","1","4","2","4",NA,NA,NA,NA,"21","24","2","2",NA,NA,"1–2","6iFbuIpe68k"
+"166",2004,"2004_Group_A_1_Spain_Russia","Group",1,"A",1,"Group match 1","Spain","Russia","1–0",3,0,NA,1,0,"Valerón  60'",NA,NA,NA,NA,NA,"19:45","2004-06-12","Estádio Algarve","Faro","Attendance: 28,182","Referee: Urs Meier (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","3","8","3","1","1","4","3","4","0","3","3",NA,NA,NA,NA,"12","21","3","6","0","1","1–0","6iFbuIpe68k"
+"167",2004,"2004_Group_A_2_Greece_Spain","Group",1,"A",2,"Group match 2","Greece","Spain","1–1",1,1,NA,1,1,"Charisteas  66'","Morientes  28'",NA,NA,NA,NA,"17:00","2004-06-16","Estádio do Bessa","Porto","Attendance: 25,444","Referee: Luboš Michel (Slovakia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","2","4","8","3","1","2","15","2","1","1","1",NA,NA,NA,NA,"17","20","5","2",NA,NA,"1–1","6iFbuIpe68k"
+"168",2004,"2004_Group_A_2_Russia_Portugal","Group",1,"A",2,"Group match 2","Russia","Portugal","0–2",0,3,NA,0,2,NA,"Maniche  7'
+Rui Costa  89'",NA,NA,NA,NA,"19:45","2004-06-16","Estádio da Luz","Lisbon","Attendance: 59,273","Referee: Terje Hauge (Norway)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","9","3","6","2","0","1","6","1","3","7","1",NA,NA,NA,NA,"23","18","3","2","1","0","0–2","6iFbuIpe68k"
+"169",2004,"2004_Group_A_3_Spain_Portugal","Group",1,"A",3,"Group match 3","Spain","Portugal","0–1",0,3,NA,0,1,NA,"Nuno Gomes  57'",NA,NA,NA,NA,"19:45","2004-06-20","Estádio José Alvalade","Lisbon","Attendance: 47,491","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","6","4","5","0","4","9","11","3","3","5","1",NA,NA,NA,NA,"23","25","3","2",NA,NA,"0–1","6iFbuIpe68k"
+"170",2004,"2004_Group_A_3_Russia_Greece","Group",1,"A",3,"Group match 3","Russia","Greece","2–1",3,0,NA,2,1,"Kirichenko  2'
+Bulykin  17'","Vryzas  43'",NA,NA,NA,NA,"19:45","2004-06-20","Estádio Algarve","Faro","Attendance: 24,347","Referee: Gilles Veissière (France)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9","4","8","7","1","1","5","8","1","5","3","5",NA,NA,NA,NA,"18","16","6","2",NA,NA,"2–1","6iFbuIpe68k"
+"171",2004,"2004_Group_B_1_Switzerland_Croatia","Group",1,"B",1,"Group match 1","Switzerland","Croatia","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"17:00","2004-06-13","Estádio Dr. Magalhães Pessoa","Leiria","Attendance: 24,090","Referee: Lucílio Batista (Portugal)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","7","4","7","1","2","4","9","3","3","6","4",NA,NA,NA,NA,"21","18","4","5","1","0","0–0","6iFbuIpe68k"
+"172",2004,"2004_Group_B_1_France_England","Group",1,"B",1,"Group match 1","France","England","2–1",3,0,NA,2,1,"Zidane  90+1', 90+3' (pen.)","Lampard  38'",NA,NA,NA,NA,"19:45","2004-06-13","Estádio da Luz","Lisbon","Attendance: 62,487","Referee: Markus Merk (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","4","10","3","0","4","5","2","3","1","2","4",NA,NA,NA,NA,"16","19","2","3",NA,NA,"2–1","6iFbuIpe68k"
+"173",2004,"2004_Group_B_2_England_Switzerland","Group",1,"B",2,"Group match 2","England","Switzerland","3–0",3,0,NA,3,0,"Rooney  23', 75'
+Gerrard  82'",NA,NA,NA,NA,NA,"17:00","2004-06-17","Estádio Cidade de Coimbra","Coimbra","Attendance: 28,214","Referee: Valentin Ivanov (Russia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7","1","2","8","0","2","0","5","4","2","1","3",NA,NA,NA,NA,"18","19","1","3","0","1","3–0","6iFbuIpe68k"
+"174",2004,"2004_Group_B_2_Croatia_France","Group",1,"B",2,"Group match 2","Croatia","France","2–2",1,1,NA,2,2,"Rapaic  48' (pen.)
+Pršo  52'","Tudor  22' (o.g.)
+Trezeguet  64'",NA,NA,NA,NA,"19:45","2004-06-17","Estádio Dr. Magalhães Pessoa","Leiria","Attendance: 29,160","Referee: Kim Milton Nielsen (Denmark)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","6","3","5","1","0","2","9","4","3","5","2",NA,NA,NA,NA,"20","14","4","2",NA,NA,"2–2","6iFbuIpe68k"
+"175",2004,"2004_Group_B_3_Croatia_England","Group",1,"B",3,"Group match 3","Croatia","England","2–4",0,3,NA,2,4,"N. Kovac  5'
+Tudor  73'","Scholes  40'
+Rooney  45+1', 68'
+Lampard  79'",NA,NA,NA,NA,"19:45","2004-06-21","Estádio da Luz","Lisbon","Attendance: 57,047","Referee: Pierluigi Collina (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","14","3","3","2","2","4","6","3","1","10","6",NA,NA,NA,NA,"17","15","1","0",NA,NA,"2–4","6iFbuIpe68k"
+"176",2004,"2004_Group_B_3_Switzerland_France","Group",1,"B",3,"Group match 3","Switzerland","France","1–3",0,3,NA,1,3,"Vonlanthen  26'","Zidane  20'
+Henry  76', 84'",NA,NA,NA,NA,"19:45","2004-06-21","Estádio Cidade de Coimbra","Coimbra","Attendance: 28,111","Referee: Luboš Michel (Slovakia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","8","4","7","0","1","1","7","2","2","5","2",NA,NA,NA,NA,"21","18","3","1",NA,NA,"1–3","6iFbuIpe68k"
+"177",2004,"2004_Group_C_1_Denmark_Italy","Group",1,"C",1,"Group match 1","Denmark","Italy","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"17:00","2004-06-14","Estádio D. Afonso Henriques","Guimarães","Attendance: 29,595","Referee: Manuel Mejuto González (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","5","3","5","3","2","7","5","3","2","4","6",NA,NA,NA,NA,"25","25","2","4",NA,NA,"0–0","6iFbuIpe68k"
+"178",2004,"2004_Group_C_1_Sweden_Bulgaria","Group",1,"C",1,"Group match 1","Sweden","Bulgaria","5–0",3,0,NA,5,0,"Ljungberg  32'
+Larsson  57', 58'
+Ibrahimovic  78' (pen.)
+Allbäck  90+1'",NA,NA,NA,NA,NA,"19:45","2004-06-14","Estádio José Alvalade","Lisbon","Attendance: 31,652","Referee: Mike Riley (England)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"9","3","2","7","3","1","5","3","5","1","3","4",NA,NA,NA,NA,"22","20","2","4",NA,NA,"5–0","6iFbuIpe68k"
+"179",2004,"2004_Group_C_2_Bulgaria_Denmark","Group",1,"C",2,"Group match 2","Bulgaria","Denmark","0–2",0,3,NA,0,2,NA,"Tomasson  44'
+Grønkjær  90+2'",NA,NA,NA,NA,"17:00","2004-06-18","Estádio Municipal de Braga","Braga","Attendance: 24,131","Referee: Lucílio Batista (Portugal)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","8","4","5","0","2","1","8","0","3","5","1",NA,NA,NA,NA,"19","17","7","2","1","0","0–2","6iFbuIpe68k"
+"180",2004,"2004_Group_C_2_Italy_Sweden","Group",1,"C",2,"Group match 2","Italy","Sweden","1–1",1,1,NA,1,1,"Cassano  37'","Ibrahimovic  85'",NA,NA,NA,NA,"19:45","2004-06-18","Estádio do Dragão","Porto","Attendance: 44,926","Referee: Urs Meier (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","4","11","7",NA,NA,"10","5","5","2","3","7",NA,NA,NA,NA,"15","22","3","2",NA,NA,"1–1","6iFbuIpe68k"
+"181",2004,"2004_Group_C_3_Italy_Bulgaria","Group",1,"C",3,"Group match 3","Italy","Bulgaria","2–1",3,0,NA,2,1,"Perrotta  48'
+Cassano  90+4'","M. Petrov  45' (pen.)",NA,NA,NA,NA,"19:45","2004-06-22","Estádio D. Afonso Henriques","Guimarães","Attendance: 16,002","Referee: Valentin Ivanov (Russia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"13","5","11","4","1","1","6","3","11","2","4","7",NA,NA,NA,NA,"14","20","1","4",NA,NA,"2–1","6iFbuIpe68k"
+"182",2004,"2004_Group_C_3_Denmark_Sweden","Group",1,"C",3,"Group match 3","Denmark","Sweden","2–2",1,1,NA,2,2,"Tomasson  28', 66'","Larsson  47' (pen.)
+Jonson  89'",NA,NA,NA,NA,"19:45","2004-06-22","Estádio do Bessa","Porto","Attendance: 26,115","Referee: Markus Merk (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","7","6","8","4","0","7","9","0","3","4","2",NA,NA,NA,NA,"16","15","0","2",NA,NA,"2–2","6iFbuIpe68k"
+"183",2004,"2004_Group_D_1_Czech Republic_Latvia","Group",1,"D",1,"Group match 1","Czech Republic","Latvia","2–1",3,0,NA,2,1,"Baroš  73'
+Heinz  85'","Verpakovskis  45+1'",NA,NA,NA,NA,"17:00","2004-06-15","Estádio Municipal de Aveiro","Aveiro","Attendance: 21,744","Referee: Gilles Veissière (France)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","2","15","4","5","1","13","3","6","1","1","5",NA,NA,NA,NA,"11","20",NA,NA,NA,NA,"2–1","6iFbuIpe68k"
+"184",2004,"2004_Group_D_1_Germany_Netherlands","Group",1,"D",1,"Group match 1","Germany","Netherlands","1–1",1,1,NA,1,1,"Frings  30'","Van Nistelrooy  81'",NA,NA,NA,NA,"19:45","2004-06-15","Estádio do Dragão","Porto","Attendance: 48,197","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","6","10","7","1","1","5","7","1","0","5","3",NA,NA,NA,NA,"16","18","2","2",NA,NA,"1–1","6iFbuIpe68k"
+"185",2004,"2004_Group_D_2_Latvia_Germany","Group",1,"D",2,"Group match 2","Latvia","Germany","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"17:00","2004-06-19","Estádio do Bessa","Porto","Attendance: 22,344","Referee: Mike Riley (England)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","9","1","12","1","1","4","7","1","3","9","3",NA,NA,NA,NA,"25","21","2","3",NA,NA,"0–0","6iFbuIpe68k"
+"186",2004,"2004_Group_D_2_Netherlands_Czech Republic","Group",1,"D",2,"Group match 2","Netherlands","Czech Republic","2–3",0,3,NA,2,3,"Bouma  4'
+Van Nistelrooy  19'","Koller  23'
+Baroš  71'
+Šmicer  88'",NA,NA,NA,NA,"19:45","2004-06-19","Estádio Municipal de Aveiro","Aveiro","Attendance: 29,935","Referee: Manuel Mejuto González (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10","11","3","8","1","3","6","7","6","2","7","6",NA,NA,NA,NA,"24","18","3","1","1","0","2–3","6iFbuIpe68k"
+"187",2004,"2004_Group_D_3_Netherlands_Latvia","Group",1,"D",3,"Group match 3","Netherlands","Latvia","3–0",3,0,NA,3,0,"Van Nistelrooy  27' (pen.), 35'
+Makaay  84'",NA,NA,NA,NA,NA,"19:45","2004-06-23","Estádio Municipal de Braga","Braga","Attendance: 27,904","Referee: Kim Milton Nielsen (Denmark)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"16","2","9","4","3","0","9","3","2","4","1","13",NA,NA,NA,NA,"13","17","0","1",NA,NA,"3–0","6iFbuIpe68k"
+"188",2004,"2004_Group_D_3_Germany_Czech Republic","Group",1,"D",3,"Group match 3","Germany","Czech Republic","1–2",0,3,NA,1,2,"Ballack  21'","Heinz  30'
+Baroš  77'",NA,NA,NA,NA,"19:45","2004-06-23","Estádio José Alvalade","Lisbon","Attendance: 46,849","Referee: Terje Hauge (Norway)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"10","6","7","2",NA,NA,"9","1","5","2","4","8",NA,NA,NA,NA,"19","18","3","1",NA,NA,"1–2","6iFbuIpe68k"
+"189",2004,"2004_Quarterfinal_A_Portugal_England","Quarterfinal",3,"A",NA,"Quarterfinal","Portugal","England","2–2 (a.e.t.)",1,1,"Portugal",2,2,"Postiga  83'
+Rui Costa  110'","Owen  3'
+Lampard  115'",6,5,"
+Deco 
+Simão 
+Rui Costa 
+Ronaldo 
+Maniche 
+Postiga 
+Ricardo ","
+Beckham
+Owen
+Lampard
+Terry
+Hargreaves
+A. Cole
+Vassell","19:45","2004-06-24","Estádio da Luz","Lisbon","Attendance: 62,564","Referee: Urs Meier (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"8","8","17","4","10","4","13","9","5","2","5","6",NA,NA,NA,NA,"16","25","3","3",NA,NA,"2–2",NA
+"190",2004,"2004_Quarterfinal_B_Sweden_Netherlands","Quarterfinal",3,"B",NA,"Quarterfinal","Sweden","Netherlands","0–0 (a.e.t.)",1,1,"Netherlands",0,0,NA,NA,4,5,"Källström 
+Larsson 
+Ibrahimovic 
+Ljungberg 
+Wilhelmsson 
+Mellberg ","Van Nistelrooy
+Heitinga
+Reiziger
+Cocu
+Makaay
+Robben","19:45","2004-06-26","Estádio Algarve","Faro","Attendance: 27,762","Referee: Luboš Michel (Slovakia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7","9","6","10","3","4","5","10","5","3","8","5",NA,NA,NA,NA,"23","29","2","3",NA,NA,"0–0",NA
+"191",2004,"2004_Quarterfinal_C_France_Greece","Quarterfinal",3,"C",NA,"Quarterfinal","France","Greece","0–1",0,3,"Greece",0,1,NA,"Charisteas  65'",NA,NA,NA,NA,"19:45","2004-06-25","Estádio José Alvalade","Lisbon","Attendance: 45,390","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","5","6","0","1","0","3","3","1","1","4","4",NA,NA,NA,NA,"23","14","2","2",NA,NA,"0–1",NA
+"192",2004,"2004_Quarterfinal_D_Czech Republic_Denmark","Quarterfinal",3,"D",NA,"Quarterfinal","Czech Republic","Denmark","3–0",3,0,"Czech Republic",3,0,"Koller  49'
+Baroš  63', 65'",NA,NA,NA,NA,NA,"19:45","2004-06-27","Estádio do Dragão","Porto","Attendance: 41,092","Referee: Valentin Ivanov (Russia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","1","6","6","2","4","7","4","2","2","1","2",NA,NA,NA,NA,"22","17","3","3",NA,NA,"3–0",NA
+"193",2004,"2004_Semifinal_A_Portugal_Netherlands","Semifinal",4,"A",NA,"Semifinal","Portugal","Netherlands","2–1",3,0,"Portugal",2,1,"Ronaldo  26'
+Maniche  58'","Andrade  63' (o.g.)",NA,NA,NA,NA,"19:45","2004-06-30","Estádio José Alvalade","Lisbon","Attendance: 46,679","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"7","1","2","5","3","1","9","2","5","3","1","4",NA,NA,NA,NA,"22","21","3","2",NA,NA,"2–1",NA
+"194",2004,"2004_Semifinal_B_Greece_Czech Republic","Semifinal",4,"B",NA,"Semifinal","Greece","Czech Republic","1–0 (a.e.t.)",3,0,"Greece",1,0,"Dellas  105+1'",NA,NA,NA,NA,NA,"19:45","2004-07-01","Estádio do Dragão","Porto","Attendance: 42,449","Referee: Pierluigi Collina (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","5","4","9","0","2","4","8","4","2","3","4",NA,NA,NA,NA,"16","27","3","3",NA,NA,"1–0",NA
+"195",2004,"2004_Final_A_Portugal_Greece","Final",5,"A",NA,"Final","Portugal","Greece","0–1",0,3,"Greece",0,1,NA,"Charisteas  57'",NA,NA,NA,NA,"19:45","2004-07-04","Estádio da Luz","Lisbon","Attendance: 62,865[7]","Referee: Markus Merk (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","1","11","3","1","0","10","1","4","3","0","5",NA,NA,NA,NA,"19","21","2","4",NA,NA,"0–1",NA
+"196",2000,"2000_Group_A_1_Germany_Romania","Group",1,"A",1,"Group match 1","Germany","Romania","1–1",1,1,NA,1,1,"Scholl  28'","Moldovan  5'",NA,NA,NA,NA,"18:00","2000-06-12","Stade Maurice Dufrasne","Liège","Attendance: 28,500","Referee: Kim Milton Nielsen (Denmark)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"0","2",NA,NA,"1–1","6iFbuIpe68k"
+"197",2000,"2000_Group_A_1_Portugal_England","Group",1,"A",1,"Group match 1","Portugal","England","3–2",3,0,NA,3,2,"Figo  22'
+João Pinto  37'
+Nuno Gomes  59'","Scholes  3'
+McManaman  18'",NA,NA,NA,NA,"20:45","2000-06-12","Philips Stadion","Eindhoven","Attendance: 31,500","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","1",NA,NA,"3–2","6iFbuIpe68k"
+"198",2000,"2000_Group_A_2_Romania_Portugal","Group",1,"A",2,"Group match 2","Romania","Portugal","0–1",0,3,NA,0,1,NA,"Costinha  90+4'",NA,NA,NA,NA,"18:00","2000-06-17","GelreDome","Arnhem","Attendance: 28,400","Referee: Gilles Veissière (France)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","1",NA,NA,"0–1","6iFbuIpe68k"
+"199",2000,"2000_Group_A_2_England_Germany","Group",1,"A",2,"Group match 2","England","Germany","1–0",3,0,NA,1,0,"Shearer  53'",NA,NA,NA,NA,NA,"20:45","2000-06-17","Stade du Pays de Charleroi","Charleroi","Attendance: 29,000","Referee: Pierluigi Collina (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","1",NA,NA,"1–0","6iFbuIpe68k"
+"200",2000,"2000_Group_A_3_England_Romania","Group",1,"A",3,"Group match 3","England","Romania","2–3",0,3,NA,2,3,"Shearer  41' (pen.)
+Owen  45'","Chivu  22'
+Munteanu  48'
+Ganea  89' (pen.)",NA,NA,NA,NA,"20:45","2000-06-20","Stade du Pays de Charleroi","Charleroi","Attendance: 30,000","Referee: Urs Meier (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","5",NA,NA,"2–3","6iFbuIpe68k"
+"201",2000,"2000_Group_A_3_Portugal_Germany","Group",1,"A",3,"Group match 3","Portugal","Germany","3–0",3,0,NA,3,0,"Conceição  35', 54', 71'",NA,NA,NA,NA,NA,"20:45","2000-06-20","Feijenoord Stadion","Rotterdam","Attendance: 44,000","Referee: Dick Jol (Netherlands)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","4",NA,NA,"3–0","6iFbuIpe68k"
+"202",2000,"2000_Group_B_1_Belgium_Sweden","Group",1,"B",1,"Group match 1","Belgium","Sweden","2–1",3,0,NA,2,1,"Goor  43'
+É. Mpenza  46'","Mjällby  53'",NA,NA,NA,NA,"20:45","2000-06-10","King Baudouin Stadium","Brussels","Attendance: 46,700","Referee: Markus Merk (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","2","0","1","2–1","6iFbuIpe68k"
+"203",2000,"2000_Group_B_1_Turkey_Italy","Group",1,"B",1,"Group match 1","Turkey","Italy","1–2",0,3,NA,1,2,"Okan  62'","Conte  52'
+Inzaghi  70' (pen.)",NA,NA,NA,NA,"14:30","2000-06-11","GelreDome","Arnhem","Attendance: 22,500","Referee: Hugh Dallas (Scotland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1–2","6iFbuIpe68k"
+"204",2000,"2000_Group_B_2_Italy_Belgium","Group",1,"B",2,"Group match 2","Italy","Belgium","2–0",3,0,NA,2,0,"Totti  6'
+Fiore  66'",NA,NA,NA,NA,NA,"20:45","2000-06-14","King Baudouin Stadium","Brussels","Attendance: 44,500","Referee: José María García-Aranda (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","1",NA,NA,"2–0","6iFbuIpe68k"
+"205",2000,"2000_Group_B_2_Sweden_Turkey","Group",1,"B",2,"Group match 2","Sweden","Turkey","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"20:45","2000-06-15","Philips Stadion","Eindhoven","Attendance: 27,000","Referee: Dick Jol (Netherlands)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","1",NA,NA,"0–0","6iFbuIpe68k"
+"206",2000,"2000_Group_B_3_Turkey_Belgium","Group",1,"B",3,"Group match 3","Turkey","Belgium","2–0",3,0,NA,2,0,"Sükür  45+2', 70'",NA,NA,NA,NA,NA,"20:45","2000-06-19","King Baudouin Stadium","Brussels","Attendance: 48,000","Referee: Kim Milton Nielsen (Denmark)[note 1]",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","2","0","1","2–0","6iFbuIpe68k"
+"207",2000,"2000_Group_B_3_Italy_Sweden","Group",1,"B",3,"Group match 3","Italy","Sweden","2–1",3,0,NA,2,1,"Di Biagio  39'
+Del Piero  88'","Larsson  77'",NA,NA,NA,NA,"20:45","2000-06-19","Philips Stadion","Eindhoven","Attendance: 30,000","Referee: Vítor Melo Pereira (Portugal)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2–1","6iFbuIpe68k"
+"208",2000,"2000_Group_C_1_Spain_Norway","Group",1,"C",1,"Group match 1","Spain","Norway","0–1",0,3,NA,0,1,NA,"Iversen  65'",NA,NA,NA,NA,"18:00","2000-06-13","Feijenoord Stadion","Rotterdam","Attendance: 41,000","Referee: Gamal Al-Ghandour (Egypt)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","1",NA,NA,"0–1","6iFbuIpe68k"
+"209",2000,"2000_Group_C_1_FR Yugoslavia_Slovenia","Group",1,"C",1,"Group match 1","FR Yugoslavia","Slovenia","3–3",1,1,NA,3,3,"Miloševic  67', 73'
+Drulovic  70'","Zahovic  23', 57'
+Pavlin  52'",NA,NA,NA,NA,"20:45","2000-06-13","Stade du Pays de Charleroi","Charleroi","Attendance: 18,500","Referee: Vítor Melo Pereira (Portugal)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","1","1","0","3–3","6iFbuIpe68k"
+"210",2000,"2000_Group_C_2_Slovenia_Spain","Group",1,"C",2,"Group match 2","Slovenia","Spain","1–2",0,3,NA,1,2,"Zahovic  59'","Raúl  4'
+Etxeberria  60'",NA,NA,NA,NA,"18:00","2000-06-18","Amsterdam Arena","Amsterdam","Attendance: 51,300","Referee: Markus Merk (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","2",NA,NA,"1–2","6iFbuIpe68k"
+"211",2000,"2000_Group_C_2_Norway_FR Yugoslavia","Group",1,"C",2,"Group match 2","Norway","FR Yugoslavia","0–1",0,3,NA,0,1,NA,"Miloševic  8'",NA,NA,NA,NA,"20:45","2000-06-18","Stade Maurice Dufrasne","Liège","Attendance: 28,750","Referee: Hugh Dallas (Scotland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","4","0","1","0–1","6iFbuIpe68k"
+"212",2000,"2000_Group_C_3_FR Yugoslavia_Spain","Group",1,"C",3,"Group match 3","FR Yugoslavia","Spain","3–4",0,3,NA,3,4,"Miloševic  30'
+Govedarica  50'
+Komljenovic  75'","Alfonso  38', 90+5'
+Munitis  51'
+Mendieta  90+4' (pen.)",NA,NA,NA,NA,"18:00","2000-06-21","Jan Breydel Stadium","Bruges","Attendance: 26,611","Referee: Gilles Veissière (France)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","1","1","0","3–4","6iFbuIpe68k"
+"213",2000,"2000_Group_C_3_Slovenia_Norway","Group",1,"C",3,"Group match 3","Slovenia","Norway","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"18:00","2000-06-21","GelreDome","Arnhem","Attendance: 21,000","Referee: Graham Poll (England)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","2",NA,NA,"0–0","6iFbuIpe68k"
+"214",2000,"2000_Group_D_1_France_Denmark","Group",1,"D",1,"Group match 1","France","Denmark","3–0",3,0,NA,3,0,"Blanc  16'
+Henry  64'
+Wiltord  90+2'",NA,NA,NA,NA,NA,"18:00","2000-06-11","Jan Breydel Stadium","Bruges","Attendance: 28,100","Referee: Günter Benkö (Austria)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"0","1",NA,NA,"3–0","6iFbuIpe68k"
+"215",2000,"2000_Group_D_1_Netherlands_Czech Republic","Group",1,"D",1,"Group match 1","Netherlands","Czech Republic","1–0",3,0,NA,1,0,"F. de Boer  89' (pen.)",NA,NA,NA,NA,NA,"20:45","2000-06-11","Amsterdam Arena","Amsterdam","Attendance: 50,800","Referee: Pierluigi Collina (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","3",NA,NA,"1–0","6iFbuIpe68k"
+"216",2000,"2000_Group_D_2_Czech Republic_France","Group",1,"D",2,"Group match 2","Czech Republic","France","1–2",0,3,NA,1,2,"Poborský  35' (pen.)","Henry  7'
+Djorkaeff  60'",NA,NA,NA,NA,"18:00","2000-06-16","Jan Breydel Stadium","Bruges","Attendance: 27,243","Referee: Graham Poll (England)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","1",NA,NA,"1–2","6iFbuIpe68k"
+"217",2000,"2000_Group_D_2_Denmark_Netherlands","Group",1,"D",2,"Group match 2","Denmark","Netherlands","0–3",0,3,NA,0,3,NA,"Kluivert  57'
+R. de Boer  66'
+Zenden  77'",NA,NA,NA,NA,"20:45","2000-06-16","Feijenoord Stadion","Rotterdam","Attendance: 51,425","Referee: Urs Meier (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","4",NA,NA,"0–3","6iFbuIpe68k"
+"218",2000,"2000_Group_D_3_Denmark_Czech Republic","Group",1,"D",3,"Group match 3","Denmark","Czech Republic","0–2",0,3,NA,0,2,NA,"Šmicer  64', 67'",NA,NA,NA,NA,"20:45","2000-06-21","Stade Maurice Dufrasne","Liège","Attendance: 20,000","Referee: Gamal Al-Ghandour (Egypt)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","3",NA,NA,"0–2","6iFbuIpe68k"
+"219",2000,"2000_Group_D_3_France_Netherlands","Group",1,"D",3,"Group match 3","France","Netherlands","2–3",0,3,NA,2,3,"Dugarry  8'
+Trezeguet  31'","Kluivert  14'
+F. de Boer  51'
+Zenden  59'",NA,NA,NA,NA,"20:45","2000-06-21","Amsterdam Arena","Amsterdam","Attendance: 50,000","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","2",NA,NA,"2–3","6iFbuIpe68k"
+"220",2000,"2000_Quarterfinal_A_Spain_France","Quarterfinal",3,"A",NA,"Quarterfinal","Spain","France","1–2",0,3,"France",1,2,"Mendieta  38' (pen.)","Zidane  32'
+Djorkaeff  44'",NA,NA,NA,NA,"20:45","2000-06-25","Jan Breydel Stadium","Bruges","Attendance: 26,614","Referee: Pierluigi Collina (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","1",NA,NA,"1–2",NA
+"221",2000,"2000_Quarterfinal_B_Turkey_Portugal","Quarterfinal",3,"B",NA,"Quarterfinal","Turkey","Portugal","0–2",0,3,"Portugal",0,2,NA,"Nuno Gomes  44', 56'",NA,NA,NA,NA,"18:00","2000-06-24","Amsterdam Arena","Amsterdam","Attendance: 42,000","Referee: Dick Jol (Netherlands)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","5","1","0","0–2",NA
+"222",2000,"2000_Quarterfinal_C_Italy_Romania","Quarterfinal",3,"C",NA,"Quarterfinal","Italy","Romania","2–0",3,0,"Italy",2,0,"Totti  33'
+Inzaghi  43'",NA,NA,NA,NA,NA,"20:45","2000-06-24","King Baudouin Stadium","Brussels","Attendance: 41,000","Referee: Vítor Melo Pereira (Portugal)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","1","0","1","2–0",NA
+"223",2000,"2000_Quarterfinal_D_Netherlands_FR Yugoslavia","Quarterfinal",3,"D",NA,"Quarterfinal","Netherlands","FR Yugoslavia","6–1",3,0,"Netherlands",6,1,"Kluivert  24', 38', 54'
+Govedarica  51' (o.g.)
+Overmars  78', 90+1'","Miloševic  90+2'",NA,NA,NA,NA,"18:00","2000-06-25","Feijenoord Stadion","Rotterdam","Attendance: 44,000","Referee: José María García-Aranda (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","0",NA,NA,"6–1",NA
+"224",2000,"2000_Semifinal_A_France_Portugal","Semifinal",4,"A",NA,"Semifinal","France","Portugal","2–1 (a.e.t.)",3,0,"France",2,1,"Henry  51'
+Zidane  117'  (pen.)","Nuno Gomes  19'",NA,NA,NA,NA,"20:45","2000-06-28","King Baudouin Stadium","Brussels","Attendance: 48,000","Referee: Günter Benkö (Austria)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","5",NA,NA,"2–1",NA
+"225",2000,"2000_Semifinal_B_Italy_Netherlands","Semifinal",4,"B",NA,"Semifinal","Italy","Netherlands","0–0 (a.e.t.)",1,1,"Italy",0,0,NA,NA,3,1,"Di Biagio 
+Pessotto 
+Totti 
+Maldini ","F. de Boer
+Stam
+Kluivert
+Bosvelt","18:00","2000-06-29","Amsterdam Arena","Amsterdam","Attendance: 50,000","Referee: Markus Merk (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"5","4","1","0","0–0",NA
+"226",2000,"2000_Final_A_France_Italy","Final",5,"A",NA,"Final","France","Italy","2–1 (a.e.t./g.g.)",3,0,"France",2,1,"Wiltord  90+3'
+Trezeguet  103' ","Delvecchio  55'",NA,NA,NA,NA,"20:00","2000-07-02","De Kuip","Rotterdam","Attendance: 48,200[8]","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","3",NA,NA,"2–1",NA
+"227",1996,"1996_Group_A_1_England_Switzerland","Group",1,"A",1,"Group match 1","England","Switzerland","1–1",1,1,NA,1,1,"Shearer  23'","Türkyilmaz  83' (pen.)",NA,NA,NA,NA,"15:00","1996-06-08","Wembley Stadium","London","Attendance: 76,567","Referee: Manuel Díaz Vega (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","3",NA,NA,"1–1","6iFbuIpe68k"
+"228",1996,"1996_Group_A_1_Netherlands_Scotland","Group",1,"A",1,"Group match 1","Netherlands","Scotland","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"16:30","1996-06-10","Villa Park","Birmingham","Attendance: 34,363","Referee: Leif Sundell (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","2",NA,NA,"0–0","6iFbuIpe68k"
+"229",1996,"1996_Group_A_2_Switzerland_Netherlands","Group",1,"A",2,"Group match 2","Switzerland","Netherlands","0–2",0,3,NA,0,2,NA,"Cruyff  66'
+Bergkamp  79'",NA,NA,NA,NA,"19:30","1996-06-13","Villa Park","Birmingham","Attendance: 36,800","Referee: Atanas Uzunov (Bulgaria)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","1",NA,NA,"0–2","6iFbuIpe68k"
+"230",1996,"1996_Group_A_2_Scotland_England","Group",1,"A",2,"Group match 2","Scotland","England","0–2",0,3,NA,0,2,NA,"Shearer  53'
+Gascoigne  79'",NA,NA,NA,NA,"15:00","1996-06-15","Wembley Stadium","London","Attendance: 76,864","Referee: Pierluigi Pairetto (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","2",NA,NA,"0–2","6iFbuIpe68k"
+"231",1996,"1996_Group_A_3_Scotland_Switzerland","Group",1,"A",3,"Group match 3","Scotland","Switzerland","1–0",3,0,NA,1,0,"McCoist  36'",NA,NA,NA,NA,NA,"19:30","1996-06-18","Villa Park","Birmingham","Attendance: 34,926","Referee: Václav Krondl (Czech Republic)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","3",NA,NA,"1–0","6iFbuIpe68k"
+"232",1996,"1996_Group_A_3_Netherlands_England","Group",1,"A",3,"Group match 3","Netherlands","England","1–4",0,3,NA,1,4,"Kluivert  78'","Shearer  23' (pen.), 57'
+Sheringham  51', 62'",NA,NA,NA,NA,"19:30","1996-06-18","Wembley Stadium","London","Attendance: 76,798","Referee: Gerd Grabher (Austria)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","3",NA,NA,"1–4","6iFbuIpe68k"
+"233",1996,"1996_Group_B_1_Spain_Bulgaria","Group",1,"B",1,"Group match 1","Spain","Bulgaria","1–1",1,1,NA,1,1,"Alfonso  74'","Stoichkov  65' (pen.)",NA,NA,NA,NA,"14:30","1996-06-09","Elland Road","Leeds","Attendance: 24,006","Referee: Piero Ceccarini (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","3","1","1","1–1","6iFbuIpe68k"
+"234",1996,"1996_Group_B_1_Romania_France","Group",1,"B",1,"Group match 1","Romania","France","0–1",0,3,NA,0,1,NA,"Dugarry  25'",NA,NA,NA,NA,"19:30","1996-06-10","St James' Park","Newcastle","Attendance: 26,323","Referee: Hellmut Krug (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","1",NA,NA,"0–1","6iFbuIpe68k"
+"235",1996,"1996_Group_B_2_Bulgaria_Romania","Group",1,"B",2,"Group match 2","Bulgaria","Romania","1–0",3,0,NA,1,0,"Stoichkov  3'",NA,NA,NA,NA,NA,"16:30","1996-06-13","St James' Park","Newcastle","Attendance: 19,107","Referee: Peter Mikkelsen (Denmark)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","0",NA,NA,"1–0","6iFbuIpe68k"
+"236",1996,"1996_Group_B_2_France_Spain","Group",1,"B",2,"Group match 2","France","Spain","1–1",1,1,NA,1,1,"Djorkaeff  48'","Caminero  85'",NA,NA,NA,NA,"18:00","1996-06-15","Elland Road","Leeds","Attendance: 35,626","Referee: Vadim Zhuk (Belarus)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","3",NA,NA,"1–1","6iFbuIpe68k"
+"237",1996,"1996_Group_B_3_France_Bulgaria","Group",1,"B",3,"Group match 3","France","Bulgaria","3–1",3,0,NA,3,1,"Blanc  21'
+Penev  63' (o.g.)
+Loko  90'","Stoichkov  69'",NA,NA,NA,NA,"16:30","1996-06-18","St James' Park","Newcastle","Attendance: 26,976","Referee: Dermot Gallagher (England)[note 1]",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","2",NA,NA,"3–1","6iFbuIpe68k"
+"238",1996,"1996_Group_B_3_Romania_Spain","Group",1,"B",3,"Group match 3","Romania","Spain","1–2",0,3,NA,1,2,"Raducioiu  29'","Manjarín  11'
+Amor  84'",NA,NA,NA,NA,"16:30","1996-06-18","Elland Road","Leeds","Attendance: 32,719","Referee: Ahmet Çakar (Turkey)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","2",NA,NA,"1–2","6iFbuIpe68k"
+"239",1996,"1996_Group_C_1_Germany_Czech Republic","Group",1,"C",1,"Group match 1","Germany","Czech Republic","2–0",3,0,NA,2,0,"Ziege  26'
+Möller  32'",NA,NA,NA,NA,NA,"17:00","1996-06-09","Old Trafford","Manchester","Attendance: 37,300","Referee: David Elleray (England)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"6","4",NA,NA,"2–0","6iFbuIpe68k"
+"240",1996,"1996_Group_C_1_Italy_Russia","Group",1,"C",1,"Group match 1","Italy","Russia","2–1",3,0,NA,2,1,"Casiraghi  5', 52'","Tsymbalar  21'",NA,NA,NA,NA,"16:30","1996-06-11","Anfield","Liverpool","Attendance: 35,120","Referee: Leslie Mottram (Scotland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","2",NA,NA,"2–1","6iFbuIpe68k"
+"241",1996,"1996_Group_C_2_Czech Republic_Italy","Group",1,"C",2,"Group match 2","Czech Republic","Italy","2–1",3,0,NA,2,1,"Nedved  5'
+Bejbl  35'","Chiesa  18'",NA,NA,NA,NA,"19:30","1996-06-14","Anfield","Liverpool","Attendance: 37,320","Referee: Antonio López Nieto (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","1","0","1","2–1","6iFbuIpe68k"
+"242",1996,"1996_Group_C_2_Russia_Germany","Group",1,"C",2,"Group match 2","Russia","Germany","0–3",0,3,NA,0,3,NA,"Sammer  56'
+Klinsmann  77', 90'",NA,NA,NA,NA,"15:00","1996-06-16","Old Trafford","Manchester","Attendance: 50,760","Referee: Kim Milton Nielsen (Denmark)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","2","1","0","0–3","6iFbuIpe68k"
+"243",1996,"1996_Group_C_3_Russia_Czech Republic","Group",1,"C",3,"Group match 3","Russia","Czech Republic","3–3",1,1,NA,3,3,"Mostovoi  49'
+Tetradze  54'
+Beschastnykh  85'","Suchopárek  5'
+Kuka  19'
+Šmicer  88'",NA,NA,NA,NA,"19:30","1996-06-19","Anfield","Liverpool","Attendance: 21,128","Referee: Anders Frisk (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","2",NA,NA,"3–3","6iFbuIpe68k"
+"244",1996,"1996_Group_C_3_Italy_Germany","Group",1,"C",3,"Group match 3","Italy","Germany","0–0",1,1,NA,0,0,NA,NA,NA,NA,NA,NA,"19:30","1996-06-19","Old Trafford","Manchester","Attendance: 53,740","Referee: Guy Goethals (Belgium)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","0","0","1","0–0","6iFbuIpe68k"
+"245",1996,"1996_Group_D_1_Denmark_Portugal","Group",1,"D",1,"Group match 1","Denmark","Portugal","1–1",1,1,NA,1,1,"B. Laudrup  22'","Sá Pinto  53'",NA,NA,NA,NA,"19:30","1996-06-09","Hillsborough","Sheffield","Attendance: 34,993","Referee: Mario van der Ende (Netherlands)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","5",NA,NA,"1–1","6iFbuIpe68k"
+"246",1996,"1996_Group_D_1_Turkey_Croatia","Group",1,"D",1,"Group match 1","Turkey","Croatia","0–1",0,3,NA,0,1,NA,"Vlaovic  86'",NA,NA,NA,NA,"19:30","1996-06-11","City Ground","Nottingham","Attendance: 22,460","Referee: Serge Muhmenthaler (Switzerland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","3",NA,NA,"0–1","6iFbuIpe68k"
+"247",1996,"1996_Group_D_2_Portugal_Turkey","Group",1,"D",2,"Group match 2","Portugal","Turkey","1–0",3,0,NA,1,0,"Couto  66'",NA,NA,NA,NA,NA,"16:30","1996-06-14","City Ground","Nottingham","Attendance: 22,670","Referee: Sándor Puhl (Hungary)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","4",NA,NA,"1–0","6iFbuIpe68k"
+"248",1996,"1996_Group_D_2_Croatia_Denmark","Group",1,"D",2,"Group match 2","Croatia","Denmark","3–0",3,0,NA,3,0,"Šuker  54' (pen.), 90'
+Boban  81'",NA,NA,NA,NA,NA,"18:00","1996-06-16","Hillsborough","Sheffield","Attendance: 33,671","Referee: Marc Batta (France)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","0",NA,NA,"3–0","6iFbuIpe68k"
+"249",1996,"1996_Group_D_3_Croatia_Portugal","Group",1,"D",3,"Group match 3","Croatia","Portugal","0–3",0,3,NA,0,3,NA,"Figo  4'
+João Pinto  33'
+Domingos  82'",NA,NA,NA,NA,"16:30","1996-06-19","City Ground","Nottingham","Attendance: 20,484","Referee: Bernd Heynemann (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","0",NA,NA,"0–3","6iFbuIpe68k"
+"250",1996,"1996_Group_D_3_Turkey_Denmark","Group",1,"D",3,"Group match 3","Turkey","Denmark","0–3",0,3,NA,0,3,NA,"B. Laudrup  50', 84'
+A. Nielsen  69'",NA,NA,NA,NA,"16:30","1996-06-19","Hillsborough","Sheffield","Attendance: 28,951","Referee: Nikolai Levnikov (Russia)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","2",NA,NA,"0–3","6iFbuIpe68k"
+"251",1996,"1996_Quarterfinal_A_France_Netherlands","Quarterfinal",3,"A",NA,"Quarterfinal","France","Netherlands","0–0 (a.e.t.)",1,1,"France",0,0,NA,NA,5,4,"Zidane 
+Djorkaeff 
+Lizarazu 
+Guérin 
+Blanc ","De Kock
+De Boer
+Kluivert
+Seedorf
+Blind","18:30","1996-06-22","Anfield","Liverpool","Attendance: 37,465[4]","Referee: Antonio López Nieto (Spain)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","3",NA,NA,"0–0",NA
+"252",1996,"1996_Quarterfinal_B_Czech Republic_Portugal","Quarterfinal",3,"B",NA,"Quarterfinal","Czech Republic","Portugal","1–0",3,0,"Czech Republic",1,0,"Poborský  53'",NA,NA,NA,NA,NA,"18:30","1996-06-23","Villa Park","Birmingham","Attendance: 26,832[6]","Referee: Hellmut Krug (Germany)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"4","4","1","0","1–0",NA
+"253",1996,"1996_Quarterfinal_C_Germany_Croatia","Quarterfinal",3,"C",NA,"Quarterfinal","Germany","Croatia","2–1",3,0,"Germany",2,1,"Klinsmann  20' (pen.)
+Sammer  59'","Šuker  51'",NA,NA,NA,NA,"15:00","1996-06-23","Old Trafford","Manchester","Attendance: 43,412[5]","Referee: Leif Sundell (Sweden)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","0","0","1","2–1",NA
+"254",1996,"1996_Quarterfinal_D_Spain_England","Quarterfinal",3,"D",NA,"Quarterfinal","Spain","England","0–0 (a.e.t.)",1,1,"England",0,0,NA,NA,2,4,"Hierro 
+Amor 
+Belsué 
+Nadal ","Shearer
+Platt
+Pearce
+Gascoigne","15:00","1996-06-22","Wembley Stadium","London","Attendance: 75,440[2]","Referee: Marc Batta (France)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","1",NA,NA,"0–0",NA
+"255",1996,"1996_Semifinal_A_France_Czech Republic","Semifinal",4,"A",NA,"Semifinal","France","Czech Republic","0–0 (a.e.t.)",1,1,"Czech Republic",0,0,NA,NA,5,6,"Zidane 
+Djorkaeff 
+Lizarazu 
+Guérin 
+Blanc 
+Pedros ","Kubík
+Nedved
+Berger
+Poborský
+Rada
+Kadlec","16:00","1996-06-26","Old Trafford","Manchester","Attendance: 43,877[7]","Referee: Leslie Mottram (Scotland)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"3","3",NA,NA,"0–0",NA
+"256",1996,"1996_Semifinal_B_Germany_England","Semifinal",4,"B",NA,"Semifinal","Germany","England","1–1 (a.e.t.)",1,1,"Germany",1,1,"Kuntz  16'","Shearer  3'",6,5,"
+Häßler 
+Strunz 
+Reuter 
+Ziege 
+Kuntz 
+Möller ","
+Shearer
+Platt
+Pearce
+Gascoigne
+Sheringham
+Southgate","19:30","1996-06-26","Wembley Stadium","London","Attendance: 75,862[8]","Referee: Sándor Puhl (Hungary)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"2","1",NA,NA,"1–1",NA
+"257",1996,"1996_Final_A_Czech Republic_Germany","Final",5,"A",NA,"Final","Czech Republic","Germany","1–2 (a.e.t.)",0,3,"Germany",1,2,"Berger  59' (pen.)","Bierhoff  73',  95' ",NA,NA,NA,NA,"19:00","1996-06-30","Wembley Stadium","London","Attendance: 73,611[9]","Referee: Pierluigi Pairetto (Italy)",NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,"1","3",NA,NA,"1–2",NA
