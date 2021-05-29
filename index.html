@@ -1,0 +1,65 @@
+<script src="libraries/jquery-3.3.1.min.js"></script>
+<script src="libraries/bootstrap.4.0.min.js"></script>
+<script src="libraries/papaparse.4.3.6.min.js"></script>
+<script src="libraries/popper.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="libraries/bootstrapCollector.css">
+
+<h1>Hello</h1>
+
+<div class="row">
+  <div class="col-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+
+
+      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+        Home
+      </a>
+
+      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+
+      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
+
+      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
+
+    </div>
+  </div>
+  <div class="col-9">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+    </div>
+  </div>
+</div>
+
+<!--
+  User management
+Users set up account on Collector
+need confirmation email
+Username and login (hashed)
+Choose crew name (in user details or general predictions)
+Possible to choose from a list of existing names?
+Which team are you supporting? (in user details or general predictions)
+
+General predictions
+Champions (from list?)
+Total number of goals
+Top scorer (from list?)
+We will later be able to (fuzzy) match with scorers in the leaderboard, based on country and name
+
+Predictions per round
+Explain that predictions are for the score at Full Time (+Extra Time, if applicable). For the knockouts: if a match is decided by a penalty shootout, the score before the penalty shootout counts (which is a draw)
+
+Every form
+Log submission time
+end with: “your prediction will appear within a day” (but hidden until the round starts, so others cannot see your predictions)
+“in case you resubmit/change your predictions, we will only use your latest submission.”
+
+File management
+Store forms as MySQL / CSV
+Maximum number of submissions per user (let the user know)
+How to export to R (Kris’ computer?)
+
+-->
