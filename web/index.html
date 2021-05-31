@@ -1,6 +1,9 @@
+
 <script src="libraries/jquery-3.3.1.min.js"></script>
 <script src="libraries/bootstrap.4.0.min.js"></script>
 <script src="libraries/bootbox.5.4.min.js"></script>
+
+
 
 
 <script src="libraries/papaparse.4.3.6.min.js"></script>
@@ -8,6 +11,7 @@
 
 <link rel="stylesheet" type="text/css" href="libraries/bootstrapCollector.css">
 <link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">
+<link rel="stylesheet" type="text/css" href="libraries/bootstrap-icons.css">
 
 
 <style>
@@ -219,7 +223,7 @@ You can change your predictions as often as you like, before the round starts.
                       </div>
                     </div>
 
-                    <button class="btn btn-primary">Submit</button>
+                    <button class="btn btn-primary" id="general_submit_btn">Submit</button>
 
                   </div>
                 </div>
@@ -262,6 +266,7 @@ You can change your predictions as often as you like, before the round starts.
                         </tr>
                       </thead>
                     </table>
+                    <button class="btn btn-primary" id="round_1_submit_btn">Submit</button>
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round2" role="tabpanel" aria-labelledby="v-pills-round2-tab">
@@ -278,6 +283,7 @@ You can change your predictions as often as you like, before the round starts.
                         </tr>
                       </thead>
                     </table>
+                    <button class="btn btn-primary" id="round_2_submit_btn">Submit</button>
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
@@ -294,6 +300,7 @@ You can change your predictions as often as you like, before the round starts.
                         </tr>
                       </thead>
                     </table>
+                    <button class="btn btn-primary" id="round_3_submit_btn">Submit</button>
 
                   </div>
                 </div>
@@ -413,7 +420,7 @@ You can change your predictions as often as you like, before the round starts.
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Login/Register</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -421,17 +428,31 @@ You can change your predictions as often as you like, before the round starts.
       <div class="modal-body">
         <form>
           <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Email address</span>
+              </div>
+              <input type="email" class="form-control" id="register_email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
             <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
           </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            do the eye thing which hides or shows the password
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            Notes about security
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Username</span>
+            </div>
+            <input type="text" class="form-control" id="register_username" placeholder="Enter username">
           </div>
-        </form>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Password</span>
+            </div>
+            <input type="password" class="form-control pwd" id="register_password" placeholder="Password">
+            <span class="input-group-btn">
+              <button class="btn btn-default reveal" type="button"><i class="bi-eye"></i></button>
+            </span>
+          </div>
+          Notes about security
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -442,8 +463,16 @@ You can change your predictions as often as you like, before the round starts.
     </div>
   </div>
 </div>
-
 <script>
+$(".reveal").on('click',function() {
+    var $pwd = $(".pwd");
+    if ($pwd.attr('type') === 'password') {
+        $pwd.attr('type', 'text');
+    } else {
+        $pwd.attr('type', 'password');
+    }
+});
+
 var match_data;
 var match_obj = {
   phases: {}
@@ -495,10 +524,10 @@ function populate_group_tables(){
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0' max='20' class='form-control goal_input home_goals " + row.Match_ID + "'>"
         ))
         .append($("<td>").append(
-          "<input type='number' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0'  max='20' class='form-control goal_input away_goals " + row.Match_ID + "'>"
         ))
         .append($("<td>").append(row.Away))
       );
@@ -547,10 +576,49 @@ function populate_group_tables(){
 
 }
 
+//https://stackoverflow.com/a/5778844/4490801
+function validateEmail(email)
+{
+ var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+ return email.match(re)
+}
+
 $("#register_btn").on("click", function(){
-  bootbox.prompt("Confirm password:", function(){
-    alert("hi");
-  });
+
+  /*
+  * todo: include email validation!
+  */
+
+  var email = $("#register_email").val();
+  var username = $("#register_username").val();
+  var password = $("#register_password").val();
+
+  if(!validateEmail(email)){
+    bootbox.alert("not a valid email");
+  } else if(email.length == 0 | username.length == 0 | password.length == 0){
+    bootbox.alert("Error: You have a blank input");
+  } else {
+    bootbox.prompt("Confirm password:", function(confirm_password){
+      if(password == confirm_password){
+
+        $.post("https://ocollector.org/uefa2020/prediction.php",{
+          email: email,
+          username: username,
+          password: password
+        }, function(response){
+          bootbox.alert(response);
+        });
+
+
+      } else {
+        bootbox.alert("passwords do not match");
+      }
+    });
+  }
+
+  /*
+
+  */
 });
 </script>
 
