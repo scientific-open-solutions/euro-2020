@@ -19,9 +19,6 @@
 #logout_btn{
   display: none;
 }
-#username_span{
-  font-size:20px;
-}
 </style>
 
 
@@ -39,10 +36,7 @@
     </li>
   </ul>
   <span class="navbar-text">
-    <span id="username_span" class="text-primary"></span>
-    <button type="button" class="btn btn-primary" id="logout_btn">
-      logout
-    </button>
+    <button type="button" class="btn btn-primary" id="logout_btn"></button>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="sign_in_btn">
       Sign in/Register
     </button>
@@ -52,54 +46,53 @@
 <div class="tab-content" id="v-pills-tabContentProfile">
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">iframe for dashboard</div>
   <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-    <form style="margin:50px">
-      <p>You can't change your username or email.</p>
-      <div class="form-group row">
-        <label for="input_User" class="col-sm-2 col-form-label">Username</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="input_User" readonly>
-        </div>
+    <p>You can't change your username or email.</p>
+    <div class="form-group row">
+      <label for="input_username" class="col-sm-2 col-form-label">Username</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="input_username" readonly>
       </div>
-      <div class="form-group row">
-        <label for="input_crew" class="col-sm-2 col-form-label">Crew name</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" id="input_Crew" placeholder="(Optional)">
-        </div>
+    </div>
+    <div class="form-group row">
+      <label for="input_crew" class="col-sm-2 col-form-label">Crew name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="input_crew" placeholder="(Optional)">
       </div>
-      <div class="form-group row">
-        <label for="input_support" class="col-sm-2 col-form-label">I am supporting</label>
-        <div class="col-sm-10">
-          <select class="custom-select mr-sm-2" id="input_Support">
-            <option selected>Choose...</option>
-            <option>Austria</option>
-            <option>Belgium</option>
-            <option>Croatia</option>
-            <option>Czech Republic</option>
-            <option>Denmark</option>
-            <option>England</option>
-            <option>Finland</option>
-            <option>France</option>
-            <option>Germany</option>
-            <option>Hungary</option>
-            <option>Italy</option>
-            <option>Netherlands</option>
-            <option>North Macedonia</option>
-            <option>Poland</option>
-            <option>Portugal</option>
-            <option>Russia</option>
-            <option>Scotland</option>
-            <option>Slovakia</option>
-            <option>Spain</option>
-            <option>Sweden</option>
-            <option>Switzerland</option>
-            <option>Turkey</option>
-            <option>Ukraine</option>
-            <option>Wales</option>
-          </select>
-        </div>
+    </div>
+    <div class="form-group row">
+      <label for="input_supporting" class="col-sm-2 col-form-label">I am supporting</label>
+      <div class="col-sm-10">
+        <select class="custom-select mr-sm-2" id="input_supporting">
+          <option selected>Choose...</option>
+          <option>Austria</option>
+          <option>Belgium</option>
+          <option>Croatia</option>
+          <option>Czech Republic</option>
+          <option>Denmark</option>
+          <option>England</option>
+          <option>Finland</option>
+          <option>France</option>
+          <option>Germany</option>
+          <option>Hungary</option>
+          <option>Italy</option>
+          <option>Netherlands</option>
+          <option>North Macedonia</option>
+          <option>Poland</option>
+          <option>Portugal</option>
+          <option>Russia</option>
+          <option>Scotland</option>
+          <option>Slovakia</option>
+          <option>Spain</option>
+          <option>Sweden</option>
+          <option>Switzerland</option>
+          <option>Turkey</option>
+          <option>Ukraine</option>
+          <option>Wales</option>
+        </select>
       </div>
-      <button class="btn btn-primary">Submit</button>
-    </form>
+    </div>
+    <button class="btn btn-primary" id="profile_submit_btn">Submit</button>
+
 
 
   </div>
@@ -526,7 +519,7 @@ function populate_group_tables(){
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' min='0' max='20' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0' max='20' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "'>"
         ))
         .append($("<td>").append(
           "<input type='number' min='0'  max='20' class='form-control goal_input away_goals " + row.Match_ID + "'>"
@@ -586,9 +579,6 @@ function validateEmail(email)
 }
 
 $("#general_submit_btn").on("click", function(){
-  var email = $("#register_email").val();
-  var username = $("#register_username").val();
-  var password = $("#register_password").val();
 
   var prediction_array = [
     "crew",
@@ -612,9 +602,54 @@ $("#general_submit_btn").on("click", function(){
     "https://ocollector.org/uefa2020/prediction.php",
     data_obj,
     function(response){
-      console.log(response);
+      bootbox.alert(response);
+  });
+});
+
+$("#round_1_submit_btn").on("click", function(){
+  /*
+  * loop through match_id
+  */
+  data_obj = {
+    email : $("#register_email").val(),
+    username : $("#register_username").val(),
+    password : $("#register_password").val(),
+    action: "match_prediction",
+    predictions: []
+  }
+  match_data.forEach(function(row){
+    if(row.Round == 1){
+      data_obj.predictions.push({
+        match_id: row.Match_ID,
+        away_goals: $("."+row.Match_ID+".away_goals").val(),
+        home_goals: $("."+row.Match_ID+".home_goals").val()
+      });
     }
-);
+  });
+  $.post(
+    "https://ocollector.org/uefa2020/prediction.php",
+    data_obj,
+    function(response){
+      bootbox.alert(response);
+  });
+
+});
+
+$("#profile_submit_btn").on("click", function(){
+  var data_obj = {
+    email : $("#register_email").val(),
+    username : $("#register_username").val(),
+    password : $("#register_password").val(),
+    action: "update_profile"
+  };
+  data_obj.crew = $("#input_crew").val();
+  data_obj.supporting = $("#input_supporting").val();
+  $.post(
+    "https://ocollector.org/uefa2020/prediction.php",
+    data_obj,
+    function(response){
+      bootbox.alert(response);
+  });
 });
 
 $("#login_btn").on("click", function(){
@@ -638,7 +673,10 @@ $("#login_btn").on("click", function(){
 
       var prediction_obj = JSON.parse(response);
 
-      $("#username_span").html(prediction_obj.username);
+      $("#logout_btn").html(prediction_obj.username);
+      $("#input_username").val(prediction_obj.username);
+      $("#input_crew").val(prediction_obj.crew);
+      $("#input_supporting").val(prediction_obj.supporting);
       var prediction_array = [
         "crew",
         "support",
@@ -655,6 +693,14 @@ $("#login_btn").on("click", function(){
       });
     });
   }
+});
+
+$("#logout_btn").on("click", function(){
+  bootbox.confirm("Are you sure you want to log out?", function(result){
+    if(result){
+      location.reload();
+    }
+  });
 });
 
 $("#register_btn").on("click", function(){
