@@ -2,22 +2,25 @@
 <script src="libraries/jquery-3.3.1.min.js"></script>
 <script src="libraries/bootstrap.4.0.min.js"></script>
 <script src="libraries/bootbox.5.4.min.js"></script>
-
-
-
-
 <script src="libraries/papaparse.4.3.6.min.js"></script>
-<script src="libraries/popper.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="libraries/bootstrapCollector.css">
 <link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">
 <link rel="stylesheet" type="text/css" href="libraries/bootstrap-icons.css">
+
+<script src="libraries/popper.min.js"></script>
 
 
 <style>
 .goal_input{
   width: 100px;
   text-align: center;
+}
+#logout_btn{
+  display: none;
+}
+#username_span{
+  font-size:20px;
 }
 </style>
 
@@ -36,7 +39,11 @@
     </li>
   </ul>
   <span class="navbar-text">
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    <span id="username_span" class="text-primary"></span>
+    <button type="button" class="btn btn-primary" id="logout_btn">
+      logout
+    </button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="sign_in_btn">
       Sign in/Register
     </button>
   </span>
@@ -60,13 +67,13 @@
         </div>
       </div>
       <div class="form-group row">
-        <label for="input_Crew" class="col-sm-2 col-form-label">Crew name</label>
+        <label for="input_crew" class="col-sm-2 col-form-label">Crew name</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="input_Crew" placeholder="(Optional)">
         </div>
       </div>
       <div class="form-group row">
-        <label for="input_Support" class="col-sm-2 col-form-label">I am supporting</label>
+        <label for="input_support" class="col-sm-2 col-form-label">I am supporting</label>
         <div class="col-sm-10">
           <select class="custom-select mr-sm-2" id="input_Support">
             <option selected>Choose...</option>
@@ -142,7 +149,7 @@ You can change your predictions as often as you like, before the round starts.
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Champions</label>
                       <div class="col-sm-10">
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect_champs">
+                        <select class="custom-select mr-sm-2" id="input_champions">
                           <option selected>Choose...</option>
                           <option>Austria</option>
                           <option>Belgium</option>
@@ -175,7 +182,7 @@ You can change your predictions as often as you like, before the round starts.
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Top scorer's country</label>
                       <div class="col-sm-10">
-                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect_topCountry">
+                        <select class="custom-select mr-sm-2" id="input_top_scorer_team">
                           <option selected>Choose...</option>
                           <option>Austria</option>
                           <option>Belgium</option>
@@ -210,7 +217,7 @@ You can change your predictions as often as you like, before the round starts.
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Top scorer</label>
                       <div class="col-sm-10">
-                        <input type="text" class="form-control" id="inputEmail3" placeholder="First name + surname">
+                        <input type="text" class="form-control" id="input_top_scorer" placeholder="First name + surname">
                       </div>
                     </div>
 
@@ -219,7 +226,7 @@ You can change your predictions as often as you like, before the round starts.
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Total number of goals</label>
                       <div class="col-sm-10">
-                        <input type="number" class="form-control" id="inputEmail3" placeholder=0 min=0 max=999>
+                        <input type="number" class="form-control" id="input_total_goals" placeholder=0 min=0 max=999>
                       </div>
                     </div>
 
@@ -449,6 +456,7 @@ You can change your predictions as often as you like, before the round starts.
             </div>
             <input type="password" class="form-control pwd" id="register_password" placeholder="Password">
             <span class="input-group-btn">
+              <button class="top_icon btn btn-primary bi-github" id="github_logo">
               <button class="btn btn-default reveal" type="button"><i class="bi-eye"></i></button>
             </span>
           </div>
@@ -456,7 +464,7 @@ You can change your predictions as often as you like, before the round starts.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" id="" class="btn btn-primary">Login</button>
+        <button type="button" id="login_btn" class="btn btn-primary">Login</button>
         <button type="button" id="register_btn" class="btn btn-primary">Register</button>
         <button type="button" class="btn btn-primary">Forgot Password</button>
       </div>
@@ -583,6 +591,76 @@ function validateEmail(email)
  return email.match(re)
 }
 
+$("#general_submit_btn").on("click", function(){
+  var email = $("#register_email").val();
+  var username = $("#register_username").val();
+  var password = $("#register_password").val();
+
+  var prediction_array = [
+    "crew",
+    "support",
+    "champions",
+    "top_scorer_team",
+    "top_scorer",
+    "total_goals"
+  ];
+
+  var data_obj = {
+    email : $("#register_email").val(),
+    username : $("#register_username").val(),
+    password : $("#register_password").val(),
+    action: "general_prediction"
+  }
+  prediction_array.forEach(function(prediction){
+    data_obj[prediction] = $("#input_" + prediction).val();
+  });
+  $.post(
+    "https://ocollector.org/uefa2020/prediction.php",
+    data_obj,
+    function(response){
+      console.log(response);
+    }
+);
+
+$("#login_btn").on("click", function(){
+  var email = $("#register_email").val();
+  var username = $("#register_username").val();
+  var password = $("#register_password").val();
+
+  if(email.length == 0 & username.length == 0){
+    bootbox.alert("Error: You have a blank input");
+  } else {
+    $.post("https://ocollector.org/uefa2020/prediction.php",{
+      email: email,
+      username: username,
+      password: password,
+      action: "login"
+    }, function(response){
+      $("#username_span").html(username);
+      $("#logout_btn").show();
+      $("#sign_in_btn").hide();
+      $("#sign_in_btn").click();
+
+      var prediction_obj = JSON.parse(response);
+
+      var prediction_array = [
+        "crew",
+        "support",
+        "champions",
+        "top_scorer_team",
+        "top_scorer",
+        "total_goals"
+      ];
+
+      prediction_array.forEach(function(prediction){
+        $("#input_" + prediction).val(prediction_obj[
+          prediction
+        ]);
+      });
+    });
+  }
+});
+
 $("#register_btn").on("click", function(){
 
   /*
@@ -604,7 +682,8 @@ $("#register_btn").on("click", function(){
         $.post("https://ocollector.org/uefa2020/prediction.php",{
           email: email,
           username: username,
-          password: password
+          password: password,
+          action: "register"
         }, function(response){
           bootbox.alert(response);
         });
