@@ -153,8 +153,8 @@ if($_POST['action'] == "register"){
         echo "invalid login";
     }
 } else if($_POST['action'] == "match_prediction"){
-    $user_id = verify_login($conn,$email,$username,$password) !== false;
-    if($user_id){
+    $user_id = verify_login($conn,$email,$username,$password);
+    if($user_id !== false){
         /*
         * check if they've passed the deadline
         */
@@ -185,8 +185,11 @@ if($_POST['action'] == "register"){
                         /*
                         * insert predictions
                         */
-                    	$sql = "INSERT INTO `match_predictions`(`home_goals`,`away_goals`) 
-                    	    VALUES ('".$this_prediction['home_goals']."','".$this_prediction['away_goals']."');";
+                        echo "<br><br>";
+                        echo "user_id = $user_id";
+                        echo "<br><br>";
+                    	$sql = "INSERT INTO `match_predictions`(`home_goals`,`away_goals`,`timestamp`,`match_id`,`user_id`) 
+                    	    VALUES ('".$this_prediction['home_goals']."','".$this_prediction['away_goals']."',curdate(),'". $this_prediction['match_id'] ."','$user_id');";
                     }
                     if ($conn->query($sql) === TRUE) {
                       echo "success";
