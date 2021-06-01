@@ -178,8 +178,8 @@ if($_POST['action'] == "register"){
                         * update predictions
                         */
                         $sql = "UPDATE `match_predictions` 
-                            SET `home_goals`='".$_POST['home_goals']."',
-                                `away_goals`='".$_POST['away_goals']."'
+                            SET `home_goals`='".$this_prediction['home_goals']."',
+                                `away_goals`='".$this_prediction['away_goals']."'
                                 WHERE `user_id` = '$user_id' OR `match_id` = '".$_POST['match_id']."'";
                     } else {
                         /*
