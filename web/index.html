@@ -1,3 +1,5 @@
+<link rel="shortcut icon" type="image/x-icon" href="../logos/collector.ico" />
+
 
 <script src="libraries/jquery-3.3.1.min.js"></script>
 <script src="libraries/bootstrap.4.0.min.js"></script>
@@ -9,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="libraries/bootstrap-icons.css">
 
 <script src="libraries/popper.min.js"></script>
+
 
 
 <style>
@@ -24,31 +27,42 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li>
-      <img src = "sos_logo_football.png" width = "40px;" style = "margin-right:20px;">
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-    </li>
-    <li class="nav-item" role="presentation">
-      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#v-pills-predictions" role="tab" aria-controls="v-pills-predictions" aria-selected="false">Predictions</a>
-    </li>
-  </ul>
-  <span class="navbar-text">
-    <button type="button" class="btn btn-primary" id="logout_btn"></button>
-    <button type="button" class="btn btn-primary" style = "margin-top:-14px;" data-toggle="modal" data-target="#exampleModal" id="sign_in_btn">
-      Sign in/Register
-    </button>
-  </span>
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li>
+        <img src = "sos_logo_football.png" width = "40px;" style = "margin-right:20px;">
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="pill" href="#v-pills-predictions" role="tab" aria-controls="v-pills-predictions" aria-selected="false">Predictions</a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="pill" href="#v-pills-rules" role="tab" aria-controls="v-pills-rules" aria-selected="false">Rules</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <button type="button" class="btn btn-primary" id="logout_btn"></button>
+      <button type="button" class="btn btn-primary" style = "margin-top:-14px;" data-toggle="modal" data-target="#exampleModal" id="sign_in_btn">
+        Sign in/Register
+      </button>
+    </ul>
+  </div>
 </nav>
 
 <div class="tab-content" id="v-pills-tabContentProfile">
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-    <iframe src="https://www.google.com" title="iframe"></iframe>
+    <!--
+    <iframe src="https://sos-euro.shinyapps.io/EURO2020/" title="iframe" style="width:100%; height:90%"></iframe>
+    -->
   </div>
   <div class="tab-pane fade" style = "padding:20px;" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
     <p>You can't change your username or email.</p>
@@ -103,36 +117,12 @@
   </div>
   <div class="tab-pane fade" style = "padding:20px;" id="v-pills-predictions" role="tabpanel" aria-labelledby="v-pills-predictions-tab">
 
-<div style = "background-color: #67a7c7; margin:auto; width:50%; border-radius:10%;padding:10px; border-radius:4%; margin-bottom:20px;">
-  <strong>'Predict the match' rules and instructions</strong>
-  <br><br>
-  The tournament is divided into 7 rounds (number of matches between brackets):
-  <br>
-  Group match 1 (12), Group match 2 (12), Group match 3 (12),
-  <br>
-  Round of 16 (8), Quarter-final (4), Semi-final (2), Final (1)
-  <br><br>
-  For every round, you predict the result of all matches.
-  <br>
-  You get 10 points if you guess the winner (or a draw) right. Plus 5 bonus points if you get the exact scoreline.
-  <br>
-  Predictions are for the score at full time (this includes stoppage time, and extra time, if applicable).
-  <br>
-  If a match is decided by a penalty shootout, the score before the penalty shootout counts.
-  <br><br>
-  For every round, the deadline is the day before the first match of that round, at 23.59 Central European Summer Time.
-  <br>
-  You can change your predictions as often as you like before the round starts, but this is not possible after the deadline.
-  <br><br>
-  In addition to the round predictions, there are some general predictions for the entire tournament (group matches + knockout matches).
-  <br>
-  These need to be submitted before the tournament starts. You can find the points you can win for these predictions on the Football dashboard.
-  <br><br>
-  <p style = "color:red;">
-    Disclaimer: the creators of the SOS Football dashboard (including the 'Predict the match' game) are not liable for any losses,
-    financial or otherwise, incurred by users who use the 'Predict the match' game for betting purposes.
-  <br><br>
-</div>
+
+    <!--
+    <div style = "background-color: #67a7c7; margin:auto; width:50%; border-radius:10%;padding:10px; border-radius:4%; margin-bottom:20px;">
+
+    </div>
+    -->
 
     <div class="accordion" id="accordionExample">
       <div class="card">
@@ -156,6 +146,7 @@
                 <div class="tab-content" id="v-pills-tabContentGeneral">
                   <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-home-general">
                     <p>Deadline for this round's predictions: 10 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
 
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Champions</label>
@@ -272,6 +263,7 @@
                 <div class="tab-content" id="v-pills-tabContentRound">
                   <div class="tab-pane fade show active" id="v-pills-round1" role="tabpanel" aria-labelledby="v-pills-home-round1">
                     <p>Deadline for this round's predictions: 10 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
 
                     <table class="table table-hover" id="round_1_table">
                       <thead>
@@ -289,6 +281,7 @@
                   </div>
                   <div class="tab-pane fade" id="v-pills-round2" role="tabpanel" aria-labelledby="v-pills-round2-tab">
                     <p>Deadline for this round's predictions: 15 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
 
                     <table class="table table-hover" id="round_2_table">
                       <thead>
@@ -306,6 +299,7 @@
                   </div>
                   <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
                     <p>Deadline for this round's predictions: 20 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
 
                     <table class="table table-hover" id="round_3_table">
                       <thead>
@@ -430,6 +424,48 @@
 
 
   </div>
+  <div class="tab-pane fade" id="v-pills-rules" role="tabpanel">
+    <div class="jumbotron" style="margin:20px;">
+      <h1 class="display-4">'Predict the match' rules and instructions</h1>
+      <hr class="my-4">
+      <p class="lead text">The tournament is divided into 7 rounds (number of matches between brackets):</p>
+      <p>
+        <ul class="list-group text-white" style="width:300px">
+          <li class="list-group-item bg-primary">Group match 1 (12 matches)</li>
+          <li class="list-group-item bg-primary">Group match 2 (12 matches)</li>
+          <li class="list-group-item  bg-primary">Group match 3 (12 matches)</li>
+        </ul>
+        <ul class="list-group text-white" style="width:300px">
+          <li class="list-group-item bg-secondary">Round of 16 (8)</li>
+          <li class="list-group-item bg-danger">Quarter-final (4)</li>
+          <li class="list-group-item bg-info">Semi-final (2)</li>
+          <li class="list-group-item bg-success">Final (1)</li>
+        </ul>
+        For every round, you predict the result of all matches.
+
+      </p>
+      <hr class="my-4">
+      <p class="lead">Scoring</p>
+      You get 10 points if you guess the winner (or a draw) right. Plus 5 bonus points if you get the exact scoreline.
+      <br>
+      Predictions are for the score at full time (this includes stoppage time, and extra time, if applicable).
+      <br>
+      If a match is decided by a penalty shootout, the score before the penalty shootout counts.
+      <br><br>
+      For every round, the deadline is the day before the first match of that round, at 23.59 Central European Summer Time.
+      <br>
+      You can change your predictions as often as you like before the round starts, but this is not possible after the deadline.
+      <br><br>
+      In addition to the round predictions, there are some general predictions for the entire tournament (group matches + knockout matches).
+      <br>
+      These need to be submitted before the tournament starts. You can find the points you can win for these predictions on the Football dashboard.
+      <hr class="my-4">
+      <p style = "color:red;">
+        Disclaimer: the creators of the SOS Football dashboard (including the 'Predict the match' game) are not liable for any losses,
+        financial or otherwise, incurred by users who use the 'Predict the match' game for betting purposes.
+      </p>
+    </div>
+  </div>
 </div>
 
 
@@ -466,10 +502,9 @@
               <span class="input-group-text">Password</span>
             </div>
             <input type="password" class="form-control pwd" id="register_password" placeholder="Password">
-            <span class="input-group-btn">
-              <button class="top_icon btn btn-primary bi-github" id="github_logo">
-              <button class="btn btn-default reveal" type="button"><i class="bi-eye"></i></button>
-            </span>
+            <div class="input-group-append">
+              <button class="btn btn-primary reveal" type="button"><i class="bi-eye"></i></button>              
+            </div>
           </div>
           Notes about security
       </div>
@@ -482,6 +517,8 @@
     </div>
   </div>
 </div>
+
+
 <script>
 $(".reveal").on('click',function() {
     var $pwd = $(".pwd");
@@ -697,7 +734,7 @@ $("#login_btn").on("click", function(){
 
       var prediction_obj = JSON.parse(response);
 
-      $("#logout_btn").html(prediction_obj.username);
+      $("#logout_btn").html("log out " + prediction_obj.username);
       $("#input_username").val(prediction_obj.username);
       $("#input_crew").val(prediction_obj.crew);
       $("#input_supporting").val(prediction_obj.supporting);

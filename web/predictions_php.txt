@@ -1,0 +1,270 @@
+<?php
+
+header("Access-Control-Allow-Origin: *");
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
+function generateRandomString($length = 10) {
+	return substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length/strlen($x)) )),1,$length);
+}
+
+function verify_login(
+    $conn,
+    $email,
+    $username,
+    $password
+){
+    $sql="SELECT * FROM `users` WHERE `username`='$username' OR `hashed_email`=AES_ENCRYPT('$email', 'aeskey')";
+        
+    $result = $conn->query($sql);
+    $user_json = array();
+	$row = mysqli_fetch_array($result);
+    if($result->num_rows == 1){
+        if (password_verify($row['salt'].$password.$row['pepper'], $row['hashed_password'])){
+            return $row['user_id'];       
+        } else {
+            return false;
+        }
+    } else {
+        return false;
+    }
+}
+
+require_once "../../sqlUEFAConnect.php";
+
+$email = $_POST['email'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+    
+
+if($_POST['action'] == "register"){
+    /*
+    * register stuff here
+    */
+    $salt = generateRandomString(20);
+    $pepper = generateRandomString(20);
+    $hashed_password = password_hash($salt.$_POST['password'].$pepper, PASSWORD_BCRYPT);
+    
+    $sql="SELECT * FROM `users` WHERE `username`='$username' OR `hashed_email` = AES_ENCRYPT('$email', 'aeskey')";
+        
+    $result = $conn->query($sql);
+    if($result->num_rows > 0){
+        echo "Error: user exists";
+    } else {
+        $sql = "INSERT INTO `users` (
+            `hashed_email`, 
+            `hashed_password`, 
+            `salt`,
+            `pepper`,
+            `account_status`,
+            `crew`,
+            `supporting`,
+            `username`,
+            `champions`,
+            `total_goals`,
+            `top_scorer`,
+            `top_scorer_team`
+        ) VALUES(
+            AES_ENCRYPT('$email', 'aeskey'),
+            '$hashed_password',
+            '$salt',
+            '$pepper',
+            'u',
+            '',
+            '',
+            '$username',
+            '',
+            0,
+            '',
+            ''
+        );";
+        if ($conn->query($sql) === TRUE) {
+          echo "success";
+        } else {
+          print($conn->error);  
+        }
+    }
+    
+    
+    
+} else if($_POST['action'] == "login"){
+    $sql="SELECT * FROM `users` WHERE `username`='$username' OR `hashed_email`=AES_ENCRYPT('$email', 'aeskey')";
+        
+    $result = $conn->query($sql);
+    $user_json = array();
+	$row = mysqli_fetch_array($result);
+    if($result->num_rows == 1){
+        if (password_verify($row['salt'].$password.$row['pepper'], $row['hashed_password'])){
+            
+            $user_json['crew'] = $row["crew"];
+            $user_json['supporting'] = $row["supporting"];
+            $user_json['username'] = $row["username"];
+            $user_json['champions'] = $row["champions"];
+            $user_json['total_goals'] = $row["total_goals"];
+            $user_json['top_scorer'] = $row["top_scorer"];
+            $user_json['top_scorer_team'] = $row["top_scorer_team"];
+            
+            echo json_encode($user_json);
+            /*
+            * retrieve user info
+            */
+            
+            
+            
+        } else {
+            echo "password failed";
+        }
+    }
+    
+    
+} else if($_POST['action'] == "general_prediction"){
+    
+    if(verify_login($conn,$email,$username,$password) !== false){
+        
+        $sql = "UPDATE `users` 
+            SET `champions` = '".$_POST['champions']."',
+                `total_goals`='".$_POST['total_goals']."',
+                `top_scorer`='".$_POST['top_scorer']."',
+                `top_scorer_team`='".$_POST['top_scorer_team']."'
+                WHERE `hashed_email` = AES_ENCRYPT('$email', 'aeskey') OR `username`='$username';";
+        
+        if ($conn->query($sql) === TRUE) {
+          echo "success";
+        } else {
+          print($conn->error);  
+        }
+    } else {
+        echo "incorrect login";
+    }
+} else if($_POST['action'] == "update_profile"){
+    if(verify_login($conn,$email,$username,$password) !== false){
+        $sql = "UPDATE `users` 
+            SET `crew` = '".$_POST['crew']."',
+                `supporting`='".$_POST['supporting']."'
+                WHERE `hashed_email` = AES_ENCRYPT('$email', 'aeskey') OR `username`='$username';";
+        if ($conn->query($sql) === TRUE) {
+          echo "success";
+        } else {
+          print($conn->error);  
+        }
+    } else {
+        echo "invalid login";
+    }
+} else if($_POST['action'] == "match_prediction"){
+    $user_id = verify_login($conn,$email,$username,$password) !== false;
+    if($user_id){
+        /*
+        * check if they've passed the deadline
+        */
+        foreach($_POST['predictions'] as $this_prediction){
+            $sql="SELECT * FROM `match_deadlines` WHERE `Match_ID`='".$this_prediction['match_id']."'";
+            
+            $result = $conn->query($sql);
+            $row = mysqli_fetch_array($result);
+            if($result->num_rows == 1){
+                
+                //compare today to deadline
+                //echo(time() - strtotime($row['deadline']));
+                if (time() - strtotime($row['deadline']) < 0){
+                    $sql="SELECT * FROM `match_predictions` 
+                        WHERE `Match_ID`='".$this_prediction['match_id']."' AND
+                              `user_id` = '$user_id'";
+                    $result = $conn->query($sql);
+                    print_r($this_prediction);
+                    if($result->num_rows == 1){
+                        /*
+                        * update predictions
+                        */
+                        $sql = "UPDATE `match_predictions` 
+                            SET `home_goals`='".$_POST['home_goals']."',
+                                `away_goals`='".$_POST['away_goals']."'
+                                WHERE `user_id` = '$user_id' OR `match_id` = '".$_POST['match_id']."'";
+                    } else {
+                        /*
+                        * insert predictions
+                        */
+                    	$sql = "INSERT INTO `match_predictions`(`home_goals`,`away_goals`) 
+                    	    VALUES ('".$this_prediction['home_goals']."','".$this_prediction['away_goals']."');";
+                    }
+                    if ($conn->query($sql) === TRUE) {
+                      echo "success";
+                    } else {
+                      print($conn->error);  
+                    }
+                } else {
+                    echo "you submitted too late";
+                }
+            }
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/*
+
+
+//print_r($_POST['email']);
+
+
+
+/*
+* to do
+* check if the username exists
+*/
+
+
+//	$row = mysqli_fetch_array($result);
+
+
+/*
+* to do
+* check if the email exists
+*/
+
+
+
+/*
+* security checks
+*/
+
+/*
+* to do list
+* - allow deletion of all personal information
+* - prevent more than 100 submissions
+* - register
+* - delete account (and all information with the account)
+* - allow request from anywhere while piloting/development
+* - only allow requests from our github pages after piloting/development
+* - warn user if they've missed a deadline
+*/
+
+/*
+$deadlines = new stdClass();
+
+$deadlines->round_1 = "";
+$deadlines->round_2 = "";
+$deadlines->round_3 = "";
+$deadlines->round_16 = "";
+
+print_r($deadlines);
+
+
+
+
+
+
+
+
+*/
+
+?>
