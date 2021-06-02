@@ -276,7 +276,7 @@
                         </tr>
                       </thead>
                     </table>
-                    <button class="btn btn-primary" id="round_1_submit_btn">Submit</button>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_1">Submit</button>
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round2" role="tabpanel" aria-labelledby="v-pills-round2-tab">
@@ -294,7 +294,7 @@
                         </tr>
                       </thead>
                     </table>
-                    <button class="btn btn-primary" id="round_2_submit_btn">Submit</button>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_2">Submit</button>
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
@@ -312,7 +312,7 @@
                         </tr>
                       </thead>
                     </table>
-                    <button class="btn btn-primary" id="round_3_submit_btn">Submit</button>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_3">Submit</button>
 
                   </div>
                 </div>
@@ -665,10 +665,9 @@ $("#general_submit_btn").on("click", function(){
   });
 });
 
-$("#round_1_submit_btn").on("click", function(){
-  /*
-  * loop through match_id
-  */
+$(".round_submit_btn").on("click", function(){
+  var this_round = this.id.replace("round_submit_btn_","");
+
   data_obj = {
     email : $("#register_email").val(),
     username : $("#register_username").val(),
@@ -676,8 +675,11 @@ $("#round_1_submit_btn").on("click", function(){
     action: "match_prediction",
     predictions: []
   }
+  /*
+  * loop through match_id
+  */
   match_data.forEach(function(row){
-    if(row.Round == 1){
+    if(row.Round == this_round){
       data_obj.predictions.push({
         match_id: row.Match_ID,
         away_goals: $("."+row.Match_ID+".away_goals").val(),
@@ -725,31 +727,37 @@ $("#login_btn").on("click", function(){
       password: password,
       action: "login"
     }, function(response){
+      if(response == "password failed"){
+        bootbox.alert("Your log in failed.");
+      } else {
+        $("#logout_btn").show();
+        $("#sign_in_btn").hide();
+        $("#sign_in_btn").click();
 
-      $("#logout_btn").show();
-      $("#sign_in_btn").hide();
-      $("#sign_in_btn").click();
+        var prediction_obj = JSON.parse(response);
 
-      var prediction_obj = JSON.parse(response);
+        prediction_obj.match_predictions.forEach(function(prediction){
+          $("." + prediction.match_id + ".home_goals").val(prediction.home_goals);
+          $("." + prediction.match_id + ".away_goals").val(prediction.away_goals);
+        });
 
-      $("#logout_btn").html("log out " + prediction_obj.username);
-      $("#input_username").val(prediction_obj.username);
-      $("#input_crew").val(prediction_obj.crew);
-      $("#input_supporting").val(prediction_obj.supporting);
-      var prediction_array = [
-        "crew",
-        "support",
-        "champions",
-        "top_scorer_team",
-        "top_scorer",
-        "total_goals"
-      ];
+        $("#logout_btn").html("log out " + prediction_obj.username);
+        $("#input_username").val(prediction_obj.username);
+        $("#input_crew").val(prediction_obj.crew);
+        $("#input_supporting").val(prediction_obj.supporting);
+        var prediction_array = [
+          "crew",
+          "support",
+          "champions",
+          "top_scorer_team",
+          "top_scorer",
+          "total_goals"
+        ];
 
-      prediction_array.forEach(function(prediction){
-        $("#input_" + prediction).val(prediction_obj[
-          prediction
-        ]);
-      });
+        prediction_array.forEach(function(prediction){
+          $("#input_" + prediction).val(prediction_obj[prediction]);
+        });
+      }
     });
   }
 });
@@ -777,7 +785,7 @@ $("#register_btn").on("click", function(){
   } else if(email.length == 0 | username.length == 0 | password.length == 0){
     bootbox.alert("Error: You have a blank input");
   } else {
-    bootbox.prompt("Confirm password:", function(confirm_password){
+    bootbox.prompt("By registering, you agree that your predictions may be used for analyses on this website. These analyses would only include your predictions and the team that you support. <br><br> Confirm password:", function(confirm_password){
       if(password == confirm_password){
 
         $.post("https://ocollector.org/uefa2020/prediction.php",{
@@ -801,21 +809,3 @@ $("#register_btn").on("click", function(){
   */
 });
 </script>
-
-<!--
-
-User management
-need confirmation email
-Username and login (hashed)
-
-
-Every form
-Log submission time
-end with: “your prediction will appear within a day” (but hidden until the round starts, so others cannot see your predictions)
-“in case you resubmit/change your predictions, we will only use your latest submission.”
-
-File management
-Store forms as MySQL / CSV
-Maximum number of submissions per user (let the user know)
-How to export to R (Kris’ computer?)
--->
