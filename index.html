@@ -60,7 +60,7 @@
 
 <div class="tab-content" id="v-pills-tabContentProfile">
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-    <iframe src="https://sos-euro.shinyapps.io/EURO2020/" title="iframe" style="width:100%; height:90%"></iframe>    
+    <iframe src="https://sos-euro.shinyapps.io/EURO2020/" title="iframe" style="width:100%; height:90%"></iframe>
   </div>
   <div class="tab-pane fade" style = "padding:20px;" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
     <p>You can't change your username or email.<br>You can, however, change your crew name. This way, you can decide on a crew name with your friends/family/colleagues later!</p>
@@ -114,14 +114,6 @@
 
   </div>
   <div class="tab-pane fade" style = "padding:20px;" id="v-pills-predictions" role="tabpanel" aria-labelledby="v-pills-predictions-tab">
-
-
-    <!--
-    <div style = "background-color: #67a7c7; margin:auto; width:50%; border-radius:10%;padding:10px; border-radius:4%; margin-bottom:20px;">
-
-    </div>
-    -->
-
     <div class="accordion" id="accordionExample">
       <div class="card">
         <div class="card-header" id="headingOne">
@@ -143,8 +135,41 @@
               <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContentGeneral">
                   <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-home-general">
-                    <p>Deadline for this round's predictions: 10 June, 23:59 CEST</p>
-                    <h1> TIMER HERE </h1>
+
+                    <h5>Deadline for this round's predictions: 10 June, 23:59 CEST</h5>
+                    <h6 id="general_timer" class="text-primary"></h6>
+                    <script>
+                    // by https://www.w3schools.com/howto/howto_js_countdown.asp
+                    // Set the date we're counting down to
+                    var countDownDate = new Date("June 10, 2021 23:59:59").getTime();
+
+                    // Update the count down every 1 second
+                    var x = setInterval(function() {
+
+                      // Get today's date and time
+                      var now = new Date().getTime();
+
+                      // Find the distance between now and the count down date
+                      var distance = countDownDate - now;
+
+                      // Time calculations for days, hours, minutes and seconds
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                      // Display the result in the element with id="demo"
+                      document.getElementById("general_timer").innerHTML = days + "d " + hours + "h "
+                      + minutes + "m " + seconds + "s ";
+
+                      // If the count down is finished, write some text
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById("general_timer").innerHTML = "EXPIRED";
+                      }
+                    }, 1000);
+                    </script>
+
 
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Champions</label>
@@ -260,8 +285,42 @@
               <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContentRound">
                   <div class="tab-pane fade show active" id="v-pills-round1" role="tabpanel" aria-labelledby="v-pills-home-round1">
-                    <p>Deadline for this round's predictions: 10 June, 23:59 CEST</p>
-                    <h1> TIMER HERE </h1>
+                    <h5>Deadline for this round's predictions: 10 June, 23:59 CEST</h5>
+                    <h6 id="round_1_timer" class="text-primary"></h6>
+                    <script>
+                    // by https://www.w3schools.com/howto/howto_js_countdown.asp
+                    // Set the date we're counting down to
+
+
+                    function return_d_h_m_s(countDownDate,element){
+
+                      var now = new Date().getTime();
+                      // Find the distance between now and the count down date
+                      var distance = countDownDate - now;
+
+                      // Time calculations for days, hours, minutes and seconds
+                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                      // Display the result in the element with id="demo"
+                      document.getElementById(element).innerHTML = days + "d " + hours + "h "
+                      + minutes + "m " + seconds + "s ";
+
+                      // If the count down is finished, write some text
+                      if (distance < 0) {
+                        clearInterval(x);
+                        document.getElementById(element).innerHTML = "EXPIRED";
+                      }
+                    }
+
+                    var countDownDate = new Date("June 10, 2021 23:59:59").getTime();
+                    // Update the count down every 1 second
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s(countDownDate, "round_1_timer");
+                    }, 1000);
+                    </script>
 
                     <table class="table table-hover" id="round_1_table">
                       <thead>
@@ -278,8 +337,16 @@
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round2" role="tabpanel" aria-labelledby="v-pills-round2-tab">
-                    <p>Deadline for this round's predictions: 15 June, 23:59 CEST</p>
-                    <h1> TIMER HERE </h1>
+                    <h5>Deadline for this round's predictions: 15 June, 23:59 CEST</h5>
+                    <h6 id="round_2_timer" class="text-primary"></h6>
+                    <script>
+
+                    // Update the count down every 1 second
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s(new Date("June 15, 2021 23:59:59").getTime(), "round_2_timer");
+                    }, 1000);
+                    </script>
 
                     <table class="table table-hover" id="round_2_table">
                       <thead>
@@ -297,7 +364,15 @@
                   </div>
                   <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
                     <p>Deadline for this round's predictions: 20 June, 23:59 CEST</p>
-                    <h1> TIMER HERE </h1>
+                    <h6 id="round_3_timer" class="text-primary"></h6>
+                    <script>
+
+                    // Update the count down every 1 second
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s(new Date("June 20, 2021 23:59:59").getTime(), "round_3_timer");
+                    }, 1000);
+                    </script>
 
                     <table class="table table-hover" id="round_3_table">
                       <thead>
@@ -341,7 +416,16 @@
               <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContentKO">
                   <div class="tab-pane fade show active" id="v-pills-KO16" role="tabpanel" aria-labelledby="v-pills-home-KO16">
-                    <p>Deadline for this round's predictions: 25 June, 23:59 CEST</p>
+                    <h5>Deadline for this round's predictions: 25 June, 23:59 CEST</h5>
+                    <h6 id="round_4_timer" class="text-primary"></h6>
+                    <script>
+
+                    // Update the count down every 1 second
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s(new Date("June 25, 2021 23:59:59").getTime(), "round_4_timer");
+                    }, 1000);
+                    </script>
 
                     <p>This round will become available when the home and away teams are known</p>
 
@@ -359,7 +443,16 @@
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-KOQF" role="tabpanel" aria-labelledby="v-pills-KOQF-tab">
-                    <p>Deadline for this round's predictions: 1 July, 23:59 CEST</p>
+                    <h5>Deadline for this round's predictions: 1 July, 23:59 CEST</h5>
+                    <h6 id="round_5_timer" class="text-primary"></h6>
+                    <script>
+
+                    // Update the count down every 1 second
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s(new Date("July 1, 2021 23:59:59").getTime(), "round_5_timer");
+                    }, 1000);
+                    </script>
 
                     <p>This round will become available when the home and away teams are known</p>
 
@@ -377,7 +470,16 @@
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-KOSF" role="tabpanel" aria-labelledby="v-pills-KOSF-tab">
-                    <p>Deadline for this round's predictions: 6 July, 23:59 CEST</p>
+                    <h5>Deadline for this round's predictions: 6 July, 23:59 CEST</h5>
+                    <h6 id="round_6_timer" class="text-primary"></h6>
+                    <script>
+
+                    // Update the count down every 1 second
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s(new Date("July 6, 2021 23:59:59").getTime(), "round_6_timer");
+                    }, 1000);
+                    </script>
 
                     <p>This round will become available when the home and away teams are known</p>
 
@@ -395,7 +497,16 @@
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-KOF" role="tabpanel" aria-labelledby="v-pills-KOF-tab">
-                    <p>Deadline for this round's predictions: 10 July, 23:59 CEST</p>
+                    <h5>Deadline for this round's predictions: 10 July, 23:59 CEST</h5>
+                    <h6 id="round_7_timer" class="text-primary"></h6>
+                    <script>
+
+                    // Update the count down every 1 second
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s(new Date("July 10, 2021 23:59:59").getTime(), "round_7_timer");
+                    }, 1000);
+                    </script>
 
                     <p>This round will become available when the home and away team are known</p>
 
