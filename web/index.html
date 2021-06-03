@@ -1,0 +1,852 @@
+<link rel="shortcut icon" type="image/x-icon" href="sos_logo_football.png" />
+
+
+<script src="libraries/jquery-3.3.1.min.js"></script>
+<script src="libraries/bootstrap.4.0.min.js"></script>
+<script src="libraries/bootbox.5.4.min.js"></script>
+<script src="libraries/papaparse.4.3.6.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="libraries/bootstrapCollector.css">
+<link rel="stylesheet" type="text/css" href="libraries/bootbox.fix.css">
+<link rel="stylesheet" type="text/css" href="libraries/bootstrap-icons.css">
+
+<script src="libraries/popper.min.js"></script>
+
+
+
+<style>
+.goal_input{
+  width: 100px;
+  text-align: center;
+}
+#logout_btn{
+  display: none;
+}
+</style>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li>
+        <img src = "sos_logo_football.png" style = "margin-right:20px; width:30px;">
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="pill" href="#v-pills-predictions" role="tab" aria-controls="v-pills-predictions" aria-selected="false">Predictions</a>
+      </li>
+
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-toggle="pill" href="#v-pills-rules" role="tab" aria-controls="v-pills-rules" aria-selected="false">Rules</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+    <ul class="navbar-nav ml-auto">
+      <button type="button" class="btn btn-primary" id="logout_btn"></button>
+      <button type="button" class="btn btn-primary" style = "margin-top:-14px;" data-toggle="modal" data-target="#exampleModal" id="sign_in_btn">
+        Sign in/Register
+      </button>
+    </ul>
+  </div>
+</nav>
+
+<div class="tab-content" id="v-pills-tabContentProfile">
+  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+    <iframe src="https://sos-euro.shinyapps.io/EURO2020/" title="iframe" style="width:100%; height:90%"></iframe>
+  </div>
+  <div class="tab-pane fade" style = "padding:20px;" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+    <p>You can't change your username or email.<br>You can, however, change your crew name. This way, you can decide on a crew name with your friends/family/colleagues later!</p>
+    <div class="form-group row">
+      <label for="input_username" class="col-sm-2 col-form-label">Username</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="input_username" readonly>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="input_crew" class="col-sm-2 col-form-label">Crew name</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="input_crew" placeholder="(Optional: Makes it easy to compare your predictions to those of your friends)">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="input_supporting" class="col-sm-2 col-form-label">I am supporting</label>
+      <div class="col-sm-10">
+        <select class="custom-select mr-sm-2" id="input_supporting">
+          <option selected>Choose...</option>
+          <option>Austria</option>
+          <option>Belgium</option>
+          <option>Croatia</option>
+          <option>Czech Republic</option>
+          <option>Denmark</option>
+          <option>England</option>
+          <option>Finland</option>
+          <option>France</option>
+          <option>Germany</option>
+          <option>Hungary</option>
+          <option>Italy</option>
+          <option>Netherlands</option>
+          <option>North Macedonia</option>
+          <option>Poland</option>
+          <option>Portugal</option>
+          <option>Russia</option>
+          <option>Scotland</option>
+          <option>Slovakia</option>
+          <option>Spain</option>
+          <option>Sweden</option>
+          <option>Switzerland</option>
+          <option>Turkey</option>
+          <option>Ukraine</option>
+          <option>Wales</option>
+        </select>
+      </div>
+    </div>
+    <button class="btn btn-primary" id="profile_submit_btn">Submit</button>
+
+
+
+  </div>
+  <div class="tab-pane fade" style = "padding:20px;" id="v-pills-predictions" role="tabpanel" aria-labelledby="v-pills-predictions-tab">
+
+
+    <!--
+    <div style = "background-color: #67a7c7; margin:auto; width:50%; border-radius:10%;padding:10px; border-radius:4%; margin-bottom:20px;">
+
+    </div>
+    -->
+
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              General
+            </button>
+          </h2>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-general-tab" data-toggle="pill" href="#v-pills-round1" role="tab" aria-controls="v-pills-general" aria-selected="true">General</a>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContentGeneral">
+                  <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-home-general">
+                    <p>Deadline for this round's predictions: 10 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Champions</label>
+                      <div class="col-sm-10">
+                        <select class="custom-select mr-sm-2" id="input_champions">
+                          <option selected>Choose...</option>
+                          <option>Austria</option>
+                          <option>Belgium</option>
+                          <option>Croatia</option>
+                          <option>Czech Republic</option>
+                          <option>Denmark</option>
+                          <option>England</option>
+                          <option>Finland</option>
+                          <option>France</option>
+                          <option>Germany</option>
+                          <option>Hungary</option>
+                          <option>Italy</option>
+                          <option>Netherlands</option>
+                          <option>North Macedonia</option>
+                          <option>Poland</option>
+                          <option>Portugal</option>
+                          <option>Russia</option>
+                          <option>Scotland</option>
+                          <option>Slovakia</option>
+                          <option>Spain</option>
+                          <option>Sweden</option>
+                          <option>Switzerland</option>
+                          <option>Turkey</option>
+                          <option>Ukraine</option>
+                          <option>Wales</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Top scorer's country</label>
+                      <div class="col-sm-10">
+                        <select class="custom-select mr-sm-2" id="input_top_scorer_team">
+                          <option selected>Choose...</option>
+                          <option>Austria</option>
+                          <option>Belgium</option>
+                          <option>Croatia</option>
+                          <option>Czech Republic</option>
+                          <option>Denmark</option>
+                          <option>England</option>
+                          <option>Finland</option>
+                          <option>France</option>
+                          <option>Germany</option>
+                          <option>Hungary</option>
+                          <option>Italy</option>
+                          <option>Netherlands</option>
+                          <option>North Macedonia</option>
+                          <option>Poland</option>
+                          <option>Portugal</option>
+                          <option>Russia</option>
+                          <option>Scotland</option>
+                          <option>Slovakia</option>
+                          <option>Spain</option>
+                          <option>Sweden</option>
+                          <option>Switzerland</option>
+                          <option>Turkey</option>
+                          <option>Ukraine</option>
+                          <option>Wales</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <p style = "font-size:11px;">This helps us to identify the player you have predicted to be the top scorer.</p>
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Top scorer</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="input_top_scorer" placeholder="First name + surname">
+                      </div>
+                    </div>
+
+                    <p style = "font-size:11px;">Try to spell the first name and surname right (one surname is enough, if player has multiple surnames).</p>
+
+                    <div class="form-group row">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Total number of goals</label>
+                      <div class="col-sm-10">
+                        <input type="number" class="form-control" id="input_total_goals" placeholder=0 min=0 max=999>
+                      </div>
+                    </div>
+
+                    <button class="btn btn-primary" id="general_submit_btn">Submit</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Group Stage
+            </button>
+          </h2>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-round1-tab" data-toggle="pill" href="#v-pills-round1" role="tab" aria-controls="v-pills-round1" aria-selected="true">Round 1</a>
+                  <a class="nav-link" id="v-pills-round2-tab" data-toggle="pill" href="#v-pills-round2" role="tab" aria-controls="v-pills-round2" aria-selected="false">Round 2</a>
+                  <a class="nav-link" id="v-pills-round3-tab" data-toggle="pill" href="#v-pills-round3" role="tab" aria-controls="v-pills-round3" aria-selected="false">Round 3</a>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContentRound">
+                  <div class="tab-pane fade show active" id="v-pills-round1" role="tabpanel" aria-labelledby="v-pills-home-round1">
+                    <p>Deadline for this round's predictions: 10 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
+
+                    <table class="table table-hover" id="round_1_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_1">Submit</button>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-round2" role="tabpanel" aria-labelledby="v-pills-round2-tab">
+                    <p>Deadline for this round's predictions: 15 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
+
+                    <table class="table table-hover" id="round_2_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_2">Submit</button>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
+                    <p>Deadline for this round's predictions: 20 June, 23:59 CEST</p>
+                    <h1> TIMER HERE </h1>
+
+                    <table class="table table-hover" id="round_3_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_3">Submit</button>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Knockout Stage
+            </button>
+          </h2>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-KO16-tab" data-toggle="pill" href="#v-pills-KO16" role="tab" aria-controls="v-pills-KO16" aria-selected="true">Round of 16</a>
+                  <a class="nav-link" id="v-pills-KOQF-tab" data-toggle="pill" href="#v-pills-KOQF" role="tab" aria-controls="v-pills-KOQF" aria-selected="false">Quarter-final</a>
+                  <a class="nav-link" id="v-pills-KOSF-tab" data-toggle="pill" href="#v-pills-KOSF" role="tab" aria-controls="v-pills-KOSF" aria-selected="false">Semi-final</a>
+                  <a class="nav-link" id="v-pills-KOF-tab" data-toggle="pill" href="#v-pills-KOF" role="tab" aria-controls="v-pills-KOF" aria-selected="false">Final</a>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="tab-content" id="v-pills-tabContentKO">
+                  <div class="tab-pane fade show active" id="v-pills-KO16" role="tabpanel" aria-labelledby="v-pills-home-KO16">
+                    <p>Deadline for this round's predictions: 25 June, 23:59 CEST</p>
+
+                    <p>This round will become available when the home and away teams are known</p>
+
+                    <table class="table table-hover" id="KO_16_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-KOQF" role="tabpanel" aria-labelledby="v-pills-KOQF-tab">
+                    <p>Deadline for this round's predictions: 1 July, 23:59 CEST</p>
+
+                    <p>This round will become available when the home and away teams are known</p>
+
+                    <table class="table table-hover" id="KO_QF_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-KOSF" role="tabpanel" aria-labelledby="v-pills-KOSF-tab">
+                    <p>Deadline for this round's predictions: 6 July, 23:59 CEST</p>
+
+                    <p>This round will become available when the home and away teams are known</p>
+
+                    <table class="table table-hover" id="KO_SF_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
+
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-KOF" role="tabpanel" aria-labelledby="v-pills-KOF-tab">
+                    <p>Deadline for this round's predictions: 10 July, 23:59 CEST</p>
+
+                    <p>This round will become available when the home and away team are known</p>
+
+                    <table class="table table-hover" id="KO_F_table">
+                      <thead>
+                        <tr>
+                          <th scope="col">Group</th>
+                          <th scope="col">Home Team</th>
+                          <th scope="col">Home Goals</th>
+                          <th scope="col">Away Goals</th>
+                          <th scope="col">Away Team</th>
+                        </tr>
+                      </thead>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="tab-pane fade" id="v-pills-rules" role="tabpanel">
+    <div class="jumbotron" style="margin:20px;">
+      <h1 class="display-4">'Predict the match' rules and instructions</h1>
+      <hr class="my-4">
+      <p class="lead text">The tournament is divided into 7 rounds (number of matches between brackets):</p>
+      <p>
+        <ul class="list-group text-white" style="width:300px">
+          <li class="list-group-item bg-primary">Group match 1 (12 matches)</li>
+          <li class="list-group-item bg-primary">Group match 2 (12 matches)</li>
+          <li class="list-group-item  bg-primary">Group match 3 (12 matches)</li>
+          <li class="list-group-item bg-secondary">Round of 16 (8)</li>
+          <li class="list-group-item bg-danger">Quarter-final (4)</li>
+          <li class="list-group-item bg-info">Semi-final (2)</li>
+          <li class="list-group-item bg-success">Final (1)</li>
+        </ul>
+        For every round, you predict the result of all matches.
+
+      </p>
+      <hr class="my-4">
+      <p class="lead">Scoring</p>
+      You get 10 points if you guess the winner (or a draw) right. Plus 5 bonus points if you get the exact scoreline.
+      <br>
+      Predictions are for the score at full time (this includes stoppage time, and extra time, if applicable).
+      <br>
+      If a match is decided by a penalty shootout, the score before the penalty shootout counts.
+      <br><br>
+      For every round, the deadline is the day before the first match of that round, at 23.59 Central European Summer Time.
+      <br>
+      You can change your predictions as often as you like before the round starts, but this is not possible after the deadline.
+      <br><br>
+      In addition to the round predictions, there are some general predictions for the entire tournament (group matches + knockout matches).
+      <br>
+      These need to be submitted before the tournament starts. You can find the points you can win for these predictions on the Football dashboard.
+      <hr class="my-4">
+      <p style = "color:red;">
+        Disclaimer: the creators of the SOS Football dashboard (including the 'Predict the match' game) are not liable for any losses,
+        financial or otherwise, incurred by users who use the 'Predict the match' game for betting purposes.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login/Register</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Email address</span>
+              </div>
+              <input type="email" class="form-control" id="register_email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Username</span>
+            </div>
+            <input type="text" class="form-control" id="register_username" placeholder="Enter username">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Password</span>
+            </div>
+            <input type="password" class="form-control pwd" id="register_password" placeholder="Password">
+            <div class="input-group-append">
+              <button class="btn btn-primary reveal" type="button"><i class="bi-eye"></i></button>
+            </div>
+          </div>
+          Notes about security
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" id="login_btn" class="btn btn-primary">Login</button>
+        <button type="button" id="register_btn" class="btn btn-primary">Register</button>
+        <button type="button" id="delete_btn" class="btn btn-primary">Delete</button>
+        <button type="button" id="forgot_btn" class="btn btn-primary">Reset Password</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+$(".reveal").on('click',function() {
+    var $pwd = $(".pwd");
+    if ($pwd.attr('type') === 'password') {
+        $pwd.attr('type', 'text');
+    } else {
+        $pwd.attr('type', 'password');
+    }
+});
+
+var match_data;
+var match_obj = {
+  phases: {}
+};
+$.get("match_data.csv", function(match_get){
+  match_data = Papa.parse(match_get, {
+    header: true
+  }).data;
+  match_data = match_data.filter(
+    row => row.Year == 2020
+  );
+
+  match_obj.phases.group_match_1 = match_data.filter(
+    row => row.Round_selector == "Group match 1"
+  );
+
+  match_obj.phases.group_match_2 = match_data.filter(
+    row => row.Round_selector == "Group match 2"
+  );
+
+  match_obj.phases.group_match_3 = match_data.filter(
+    row => row.Round_selector == "Group match 3"
+  );
+
+  match_obj.phases.round_16 = match_data.filter(
+    row => row.Round_selector == "Round of 16"
+  );
+
+  match_obj.phases.quarter_final = match_data.filter(
+    row => row.Round_selector == "Quarterfinal"
+  );
+
+  match_obj.phases.semi_final = match_data.filter(
+    row => row.Round_selector == "Semifinal"
+  );
+
+  match_obj.phases.final = match_data.filter(
+    row => row.Round_selector == "Final"
+  );
+
+  populate_group_tables();
+});
+
+function populate_group_tables(){
+
+  match_obj.phases.group_match_1.forEach(function(row){
+    $("#round_1_table")
+      .append($("<tr>")
+        .append($("<td>").append(row.Group))
+        .append($("<td>").append(row.Home))
+        .append($("<td>").append(
+          "<input type='number' min='0' max='20' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "'>"
+        ))
+        .append($("<td>").append(
+          "<input type='number' min='0'  max='20' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+        ))
+        .append($("<td>").append(row.Away))
+      );
+
+
+
+  });
+
+  match_obj.phases.group_match_2.forEach(function(row){
+    $("#round_2_table")
+      .append($("<tr>")
+        .append($("<td>").append(row.Group))
+        .append($("<td>").append(row.Home))
+        .append($("<td>").append(
+          "<input type='number' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+        ))
+        .append($("<td>").append(
+          "<input type='number' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+        ))
+        .append($("<td>").append(row.Away))
+      );
+
+
+
+  });
+
+  match_obj.phases.group_match_3.forEach(function(row){
+    $("#round_3_table")
+      .append($("<tr>")
+        .append($("<td>").append(row.Group))
+        .append($("<td>").append(row.Home))
+        .append($("<td>").append(
+          "<input type='number' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+        ))
+        .append($("<td>").append(
+          "<input type='number' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+        ))
+        .append($("<td>").append(row.Away))
+      );
+
+
+
+  });
+
+
+
+}
+
+//https://stackoverflow.com/a/5778844/4490801
+function validateEmail(email)
+{
+ var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+ return email.match(re)
+}
+
+$("#general_submit_btn").on("click", function(){
+
+  var prediction_array = [
+    "crew",
+    "support",
+    "champions",
+    "top_scorer_team",
+    "top_scorer",
+    "total_goals"
+  ];
+
+  var data_obj = {
+    email : $("#register_email").val(),
+    username : $("#register_username").val(),
+    password : $("#register_password").val(),
+    action: "general_prediction"
+  };
+  prediction_array.forEach(function(prediction){
+    data_obj[prediction] = $("#input_" + prediction).val();
+  });
+  $.post(
+    "https://ocollector.org/uefa2020/prediction.php",
+    data_obj,
+    function(response){
+      bootbox.alert(response);
+  });
+});
+
+$(".round_submit_btn").on("click", function(){
+  var this_round = this.id.replace("round_submit_btn_","");
+
+  data_obj = {
+    email : $("#register_email").val(),
+    username : $("#register_username").val(),
+    password : $("#register_password").val(),
+    action: "match_prediction",
+    predictions: []
+  }
+  /*
+  * loop through match_id
+  */
+  match_data.forEach(function(row){
+    if(row.Round == this_round){
+      data_obj.predictions.push({
+        match_id: row.Match_ID,
+        away_goals: $("."+row.Match_ID+".away_goals").val(),
+        home_goals: $("."+row.Match_ID+".home_goals").val()
+      });
+    }
+  });
+  $.post(
+    "https://ocollector.org/uefa2020/prediction.php",
+    data_obj,
+    function(response){
+      bootbox.alert(response);
+  });
+
+});
+
+$("#profile_submit_btn").on("click", function(){
+  var data_obj = {
+    email : $("#register_email").val(),
+    username : $("#register_username").val(),
+    password : $("#register_password").val(),
+    action: "update_profile"
+  };
+  data_obj.crew = $("#input_crew").val();
+  data_obj.supporting = $("#input_supporting").val();
+  bootbox.confirm("This will make your profile invisible until the SOS team have approved your crew name. Are you sure you want to proceed?", function(result){
+    if(result){
+      $.post(
+        "https://ocollector.org/uefa2020/prediction.php",
+        data_obj,
+        function(response){
+          bootbox.alert(response);
+      });
+    }
+  });
+});
+
+$("#delete_btn").on("click", function(){
+  bootbox.confirm("This will delete all your information. This cannot be reversed. Are you sure you want to proceed?",
+  function(result){
+    if(result){
+      var email = $("#register_email").val();
+      var username = $("#register_username").val();
+      var password = $("#register_password").val();
+
+      if(email.length == 0 & username.length == 0){
+        bootbox.alert("Error: You have a blank input");
+      } else {
+        $.post("https://ocollector.org/uefa2020/prediction.php",{
+          email: email,
+          username: username,
+          password: password,
+          action: "delete"
+        }, function(response){
+          bootbox.alert(response);
+        });
+      }
+    }
+  });
+});
+
+$("#forgot_btn").on("click", function(){
+  var email = $("#register_email").val();
+  if(email.length == 0){
+    bootbox.alert("Error: You need to specify your email address");
+  } else {
+    $.post("https://ocollector.org/uefa2020/prediction.php",{
+      email: email,
+      action: "forgot"
+    }, function(response){
+      bootbox.alert(response);
+    });
+  }
+});
+
+$("#login_btn").on("click", function(){
+  var email = $("#register_email").val();
+  var username = $("#register_username").val();
+  var password = $("#register_password").val();
+
+  if(email.length == 0 & username.length == 0){
+    bootbox.alert("Error: You have a blank input");
+  } else {
+    $.post("https://ocollector.org/uefa2020/prediction.php",{
+      email: email,
+      username: username,
+      password: password,
+      action: "login"
+    }, function(response){
+      if(response == "password failed"){
+        bootbox.alert("Your log in failed.");
+      } else {
+        $("#logout_btn").show();
+        $("#sign_in_btn").hide();
+        $("#sign_in_btn").click();
+
+        var prediction_obj = JSON.parse(response);
+
+        prediction_obj.match_predictions.forEach(function(prediction){
+          $("." + prediction.match_id + ".home_goals").val(prediction.home_goals);
+          $("." + prediction.match_id + ".away_goals").val(prediction.away_goals);
+        });
+
+        $("#logout_btn").html("log out " + prediction_obj.username);
+        $("#input_username").val(prediction_obj.username);
+        $("#input_crew").val(prediction_obj.crew);
+        $("#input_supporting").val(prediction_obj.supporting);
+        var prediction_array = [
+          "crew",
+          "support",
+          "champions",
+          "top_scorer_team",
+          "top_scorer",
+          "total_goals"
+        ];
+
+        prediction_array.forEach(function(prediction){
+          $("#input_" + prediction).val(prediction_obj[prediction]);
+        });
+      }
+    });
+  }
+});
+
+$("#logout_btn").on("click", function(){
+  bootbox.confirm("Are you sure you want to log out?", function(result){
+    if(result){
+      location.reload();
+    }
+  });
+});
+
+$("#register_btn").on("click", function(){
+
+  /*
+  * todo: include email validation!
+  */
+
+  var email = $("#register_email").val();
+  var username = $("#register_username").val();
+  var password = $("#register_password").val();
+
+  if(!validateEmail(email)){
+    bootbox.alert("not a valid email");
+  } else if(email.length == 0 | username.length == 0 | password.length == 0){
+    bootbox.alert("Error: You have a blank input");
+  } else {
+    bootbox.prompt("By registering, you agree that your predictions may be used for analyses on this website. These analyses would only include your predictions and the team that you support. <br><br> Confirm password:", function(confirm_password){
+      if(password == confirm_password){
+
+        $.post("https://ocollector.org/uefa2020/prediction.php",{
+          email: email,
+          username: username,
+          password: password,
+          action: "register"
+        }, function(response){
+          bootbox.alert(response);
+        });
+
+
+      } else {
+        bootbox.alert("passwords do not match");
+      }
+    });
+  }
+
+  /*
+
+  */
+});
+</script>
