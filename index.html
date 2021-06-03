@@ -26,7 +26,7 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li>
@@ -60,7 +60,9 @@
 
 <div class="tab-content" id="v-pills-tabContentProfile">
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+    <!--
     <iframe src="https://sos-euro.shinyapps.io/EURO2020/" title="iframe" style="width:100%; height:90%"></iframe>
+    -->
   </div>
   <div class="tab-pane fade" style = "padding:20px;" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
     <p>You can't change your username or email.<br>You can, however, change your crew name. This way, you can decide on a crew name with your friends/family/colleagues later!</p>
@@ -508,8 +510,8 @@
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" id="login_btn" class="btn btn-primary">Login</button>
         <button type="button" id="register_btn" class="btn btn-primary">Register</button>
-        <button type="button" id="delete_btn" class="btn btn-primary">Delete Account</button>
-        <button type="button" class="btn btn-primary">Forgot Password</button>
+        <button type="button" id="delete_btn" class="btn btn-primary">Delete</button>
+        <button type="button" id="forgot_btn" class="btn btn-primary">Reset Password</button>
       </div>
     </div>
   </div>
@@ -738,6 +740,20 @@ $("#delete_btn").on("click", function(){
       }
     }
   });
+});
+
+$("#forgot_btn").on("click", function(){
+  var email = $("#register_email").val();
+  if(email.length == 0){
+    bootbox.alert("Error: You need to specify your email address");
+  } else {
+    $.post("https://ocollector.org/uefa2020/prediction.php",{
+      email: email,
+      action: "forgot"
+    }, function(response){
+      bootbox.alert(response);
+    });
+  }
 });
 
 $("#login_btn").on("click", function(){
