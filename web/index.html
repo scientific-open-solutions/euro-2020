@@ -26,7 +26,7 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
     <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
       <li>
@@ -60,7 +60,7 @@
 
 <div class="tab-content" id="v-pills-tabContentProfile">
   <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-    <iframe src="https://sos-euro.shinyapps.io/EURO2020/" title="iframe" style="width:100%; height:90%"></iframe>    
+    <iframe src="https://sos-euro.shinyapps.io/EURO2020/" title="iframe" style="width:100%; height:90%"></iframe>
   </div>
   <div class="tab-pane fade" style = "padding:20px;" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
     <p>You can't change your username or email.</p>
@@ -508,6 +508,7 @@
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" id="login_btn" class="btn btn-primary">Login</button>
         <button type="button" id="register_btn" class="btn btn-primary">Register</button>
+        <button type="button" id="delete_btn" class="btn btn-primary">Delete Account</button>
         <button type="button" class="btn btn-primary">Forgot Password</button>
       </div>
     </div>
@@ -703,11 +704,39 @@ $("#profile_submit_btn").on("click", function(){
   };
   data_obj.crew = $("#input_crew").val();
   data_obj.supporting = $("#input_supporting").val();
-  $.post(
-    "https://ocollector.org/uefa2020/prediction.php",
-    data_obj,
-    function(response){
-      bootbox.alert(response);
+  bootbox.confirm("This will make your profile invisible until the SOS team have approved your crew name. Are you sure you want to proceed?", function(result){
+    if(result){
+      $.post(
+        "https://ocollector.org/uefa2020/prediction.php",
+        data_obj,
+        function(response){
+          bootbox.alert(response);
+      });
+    }
+  });
+});
+
+$("#delete_btn").on("click", function(){
+  bootbox.confirm("This will delete all your information. This cannot be reversed. Are you sure you want to proceed?",
+  function(result){
+    if(result){
+      var email = $("#register_email").val();
+      var username = $("#register_username").val();
+      var password = $("#register_password").val();
+
+      if(email.length == 0 & username.length == 0){
+        bootbox.alert("Error: You have a blank input");
+      } else {
+        $.post("https://ocollector.org/uefa2020/prediction.php",{
+          email: email,
+          username: username,
+          password: password,
+          action: "delete"
+        }, function(response){
+          bootbox.alert(response);
+        });
+      }
+    }
   });
 });
 
