@@ -1,6 +1,5 @@
 <link rel="shortcut icon" type="image/x-icon" href="sos_logo_football.png" />
 
-
 <script src="libraries/jquery-3.3.1.min.js"></script>
 <script src="libraries/bootstrap.4.0.min.js"></script>
 <script src="libraries/bootbox.5.4.min.js"></script>
@@ -11,9 +10,6 @@
 <link rel="stylesheet" type="text/css" href="libraries/bootstrap-icons.css">
 
 <script src="libraries/popper.min.js"></script>
-
-
-
 <style>
 .goal_input{
   width: 100px;
@@ -163,8 +159,10 @@
                       }
                     }
                     // by https://www.w3schools.com/howto/howto_js_countdown.asp
-                    // Set the date we're counting down to
-                    return_d_h_m_s("June 10, 2021 23:59:59+0000","general_timer");
+                    setInterval(function() {
+                      // Get today's date and time
+                      return_d_h_m_s("June 10, 2021 23:59:59+0000","general_timer");
+                    }, 1000);
                     </script>
 
 
