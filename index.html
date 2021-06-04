@@ -246,7 +246,7 @@
                     <div class="form-group row">
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Total number of goals</label>
                       <div class="col-sm-10">
-                        <input type="number" class="form-control" id="input_total_goals" placeholder=0 min=0 max=999>
+                        <input type="number" class="form-control" id="input_total_goals" placeholder=0 min=0 max=999  oninput='this.value = Math.round(this.value);'>
                       </div>
                     </div>
 
@@ -660,10 +660,10 @@ function populate_group_tables(){
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' min='0' max='20' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "'>"
+          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "'>"
         ))
         .append($("<td>").append(
-          "<input type='number' min='0'  max='20' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + "'>"
         ))
         .append($("<td>").append(row.Away))
       );
@@ -678,10 +678,10 @@ function populate_group_tables(){
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + "'>"
         ))
         .append($("<td>").append(
-          "<input type='number' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + "'>"
         ))
         .append($("<td>").append(row.Away))
       );
@@ -696,10 +696,10 @@ function populate_group_tables(){
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + "'>"
         ))
         .append($("<td>").append(
-          "<input type='number' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + "'>"
         ))
         .append($("<td>").append(row.Away))
       );
