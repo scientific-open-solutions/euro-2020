@@ -139,16 +139,11 @@
                     <h5>Deadline for this round's predictions: 10 June, 23:59 CEST</h5>
                     <h6 id="general_timer" class="text-primary"></h6>
                     <script>
-                    // by https://www.w3schools.com/howto/howto_js_countdown.asp
-                    // Set the date we're counting down to
-                    var countDownDate = new Date("June 10, 2021 23:59:59").getTime();
 
-                    // Update the count down every 1 second
-                    var x = setInterval(function() {
+                    function return_d_h_m_s(countDownDate,element){
 
-                      // Get today's date and time
-                      var now = new Date().getTime();
-
+                      countDownDate =  Date.parse(new Date(countDownDate).toLocaleString("en-US", {timeZone: "UTC"}));
+                      var now = Date.parse(new Date().toLocaleString("en-US", {timeZone: "UTC"}));
                       // Find the distance between now and the count down date
                       var distance = countDownDate - now;
 
@@ -157,17 +152,19 @@
                       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
                       // Display the result in the element with id="demo"
-                      document.getElementById("general_timer").innerHTML = days + "d " + hours + "h "
+                      document.getElementById(element).innerHTML = days + "d " + hours + "h "
                       + minutes + "m " + seconds + "s ";
 
                       // If the count down is finished, write some text
                       if (distance < 0) {
                         clearInterval(x);
-                        document.getElementById("general_timer").innerHTML = "EXPIRED";
+                        document.getElementById(element).innerHTML = "EXPIRED";
                       }
-                    }, 1000);
+                    }
+                    // by https://www.w3schools.com/howto/howto_js_countdown.asp
+                    // Set the date we're counting down to
+                    return_d_h_m_s("June 10, 2021 23:59:59+0000","general_timer");
                     </script>
 
 
@@ -292,33 +289,11 @@
                     // Set the date we're counting down to
 
 
-                    function return_d_h_m_s(countDownDate,element){
 
-                      var now = new Date().getTime();
-                      // Find the distance between now and the count down date
-                      var distance = countDownDate - now;
 
-                      // Time calculations for days, hours, minutes and seconds
-                      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                      // Display the result in the element with id="demo"
-                      document.getElementById(element).innerHTML = days + "d " + hours + "h "
-                      + minutes + "m " + seconds + "s ";
-
-                      // If the count down is finished, write some text
-                      if (distance < 0) {
-                        clearInterval(x);
-                        document.getElementById(element).innerHTML = "EXPIRED";
-                      }
-                    }
-
-                    var countDownDate = new Date("June 10, 2021 23:59:59").getTime();
-                    // Update the count down every 1 second
                     setInterval(function() {
                       // Get today's date and time
-                      return_d_h_m_s(countDownDate, "round_1_timer");
+                      return_d_h_m_s("June 10, 2021 23:59:59+0000", "round_1_timer");
                     }, 1000);
                     </script>
 
@@ -344,7 +319,7 @@
                     // Update the count down every 1 second
                     setInterval(function() {
                       // Get today's date and time
-                      return_d_h_m_s(new Date("June 15, 2021 23:59:59").getTime(), "round_2_timer");
+                      return_d_h_m_s("June 15, 2021 23:59:59+0000", "round_2_timer");
                     }, 1000);
                     </script>
 
@@ -363,14 +338,14 @@
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
-                    <p>Deadline for this round's predictions: 20 June, 23:59 CEST</p>
+                    <h5>Deadline for this round's predictions: 20 June, 23:59 CEST</h5>
                     <h6 id="round_3_timer" class="text-primary"></h6>
                     <script>
 
                     // Update the count down every 1 second
                     setInterval(function() {
                       // Get today's date and time
-                      return_d_h_m_s(new Date("June 20, 2021 23:59:59").getTime(), "round_3_timer");
+                      return_d_h_m_s("June 20, 2021 23:59:59+0000", "round_3_timer");
                     }, 1000);
                     </script>
 
@@ -423,7 +398,7 @@
                     // Update the count down every 1 second
                     setInterval(function() {
                       // Get today's date and time
-                      return_d_h_m_s(new Date("June 25, 2021 23:59:59").getTime(), "round_4_timer");
+                      return_d_h_m_s("June 25, 2021 23:59:59+0000", "round_4_timer");
                     }, 1000);
                     </script>
 
@@ -450,7 +425,7 @@
                     // Update the count down every 1 second
                     setInterval(function() {
                       // Get today's date and time
-                      return_d_h_m_s(new Date("July 1, 2021 23:59:59").getTime(), "round_5_timer");
+                      return_d_h_m_s("July 1, 2021 23:59:59+0000", "round_5_timer");
                     }, 1000);
                     </script>
 
@@ -477,7 +452,7 @@
                     // Update the count down every 1 second
                     setInterval(function() {
                       // Get today's date and time
-                      return_d_h_m_s(new Date("July 6, 2021 23:59:59").getTime(), "round_6_timer");
+                      return_d_h_m_s("July 6, 2021 23:59:59+0000", "round_6_timer");
                     }, 1000);
                     </script>
 
@@ -504,7 +479,7 @@
                     // Update the count down every 1 second
                     setInterval(function() {
                       // Get today's date and time
-                      return_d_h_m_s(new Date("July 10, 2021 23:59:59").getTime(), "round_7_timer");
+                      return_d_h_m_s("July 10, 2021 23:59:59+0000", "round_7_timer");
                     }, 1000);
                     </script>
 
@@ -613,7 +588,6 @@
               <button class="btn btn-primary reveal" type="button"><i class="bi-eye"></i></button>
             </div>
           </div>
-          Notes about security
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -948,8 +922,6 @@ $("#register_btn").on("click", function(){
         }, function(response){
           bootbox.alert(response);
         });
-
-
       } else {
         bootbox.alert("passwords do not match");
       }
