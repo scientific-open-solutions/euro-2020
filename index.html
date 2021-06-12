@@ -152,6 +152,8 @@
                       }
                     }
                     // by https://www.w3schools.com/howto/howto_js_countdown.asp
+
+
                     setInterval(function() {
                       // Get today's date and time
                       return_d_h_m_s("June 10, 2021 23:59:59+0000","general_timer");
@@ -279,24 +281,13 @@
               <div class="col-9">
                 <div class="tab-content" id="v-pills-tabContentRound">
                   <div class="tab-pane fade show active" id="v-pills-round1" role="tabpanel" aria-labelledby="v-pills-home-round1">
-                    <h5>Deadline for this round's predictions: 10 June, 23:59 CEST</h5>
+                    <h5>Deadline for next match</h5>
                     <h6 id="round_1_timer" class="text-primary"></h6>
-                    <script>
-                    // by https://www.w3schools.com/howto/howto_js_countdown.asp
-                    // Set the date we're counting down to
-
-
-
-
-                    setInterval(function() {
-                      // Get today's date and time
-                      return_d_h_m_s("June 10, 2021 23:59:59+0000", "round_1_timer");
-                    }, 1000);
-                    </script>
 
                     <table class="table table-hover" id="round_1_table">
                       <thead>
                         <tr>
+                          <th scope="col">Kick Off</th>
                           <th scope="col">Group</th>
                           <th scope="col">Home Team</th>
                           <th scope="col">Home Goals</th>
@@ -309,20 +300,13 @@
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round2" role="tabpanel" aria-labelledby="v-pills-round2-tab">
-                    <h5>Deadline for this round's predictions: 15 June, 23:59 CEST</h5>
+                    <h5>Deadline for next match</h5>
                     <h6 id="round_2_timer" class="text-primary"></h6>
-                    <script>
-
-                    // Update the count down every 1 second
-                    setInterval(function() {
-                      // Get today's date and time
-                      return_d_h_m_s("June 15, 2021 23:59:59+0000", "round_2_timer");
-                    }, 1000);
-                    </script>
 
                     <table class="table table-hover" id="round_2_table">
                       <thead>
                         <tr>
+                          <th scope="col">Kick Off</th>
                           <th scope="col">Group</th>
                           <th scope="col">Home Team</th>
                           <th scope="col">Home Goals</th>
@@ -335,20 +319,14 @@
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-round3" role="tabpanel" aria-labelledby="v-pills-round3-tab">
-                    <h5>Deadline for this round's predictions: 20 June, 23:59 CEST</h5>
+                    <h5>Deadline for next match</h5>
                     <h6 id="round_3_timer" class="text-primary"></h6>
-                    <script>
 
-                    // Update the count down every 1 second
-                    setInterval(function() {
-                      // Get today's date and time
-                      return_d_h_m_s("June 20, 2021 23:59:59+0000", "round_3_timer");
-                    }, 1000);
-                    </script>
 
                     <table class="table table-hover" id="round_3_table">
                       <thead>
                         <tr>
+                          <th scope="col">Kick Off</th>
                           <th scope="col">Group</th>
                           <th scope="col">Home Team</th>
                           <th scope="col">Home Goals</th>
@@ -652,17 +630,33 @@ $.get("match_data.csv", function(match_get){
 });
 
 function populate_group_tables(){
-
+  var next_match_1 = false;
   match_obj.phases.group_match_1.forEach(function(row){
+    if(row.completed == "yes"){
+      readonly_text = "readonly";
+    } else {
+      if(next_match_1 == false){
+        next_match_1 = row.match_time;
+
+        // by https://www.w3schools.com/howto/howto_js_countdown.asp
+        // Set the date we're counting down to
+        setInterval(function() {
+          // Get today's date and time
+          return_d_h_m_s(next_match_1 + "+0000", "round_1_timer"); //"June 10, 2021 23:59:59+0000"
+        }, 1000);
+      }
+      readonly_text = "";
+    }
     $("#round_1_table")
       .append($("<tr>")
+        .append($("<td>").append(row.kick_off_cest))
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "'>"
+          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "' " + readonly_text + ">"
         ))
         .append($("<td>").append(
-          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + " round_" + row.Round + "' " + readonly_text + ">"
         ))
         .append($("<td>").append(row.Away))
       );
@@ -671,16 +665,34 @@ function populate_group_tables(){
 
   });
 
+  var next_match_2 = false;
   match_obj.phases.group_match_2.forEach(function(row){
+
+    if(row.completed == "yes"){
+      readonly_text = "readonly";
+    } else {
+      if(next_match_2 == false){
+        next_match_2 = row.match_time;
+
+        // by https://www.w3schools.com/howto/howto_js_countdown.asp
+        // Set the date we're counting down to
+        setInterval(function() {
+          // Get today's date and time
+          return_d_h_m_s(next_match_2 + "+0000", "round_2_timer"); //"June 10, 2021 23:59:59+0000"
+        }, 1000);
+      }
+      readonly_text = "";
+    }
     $("#round_2_table")
       .append($("<tr>")
+        .append($("<td>").append(row.kick_off_cest))
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "' " + readonly_text + ">"
         ))
         .append($("<td>").append(
-          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0' max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + " round_" + row.Round + "' " + readonly_text + ">"
         ))
         .append($("<td>").append(row.Away))
       );
@@ -689,16 +701,34 @@ function populate_group_tables(){
 
   });
 
+  var next_match_3 = false;
   match_obj.phases.group_match_3.forEach(function(row){
+
+    if(row.completed == "yes"){
+      readonly_text = "readonly";
+    } else {
+      if(next_match_3 == false){
+        next_match_3 = row.match_time;
+
+        // by https://www.w3schools.com/howto/howto_js_countdown.asp
+        // Set the date we're counting down to
+        setInterval(function() {
+          // Get today's date and time
+          return_d_h_m_s(next_match_3 + "+0000", "round_3_timer"); //"June 10, 2021 23:59:59+0000"
+        }, 1000);
+      }
+      readonly_text = "";
+    }
     $("#round_3_table")
       .append($("<tr>")
+        .append($("<td>").append(row.kick_off_cest))
         .append($("<td>").append(row.Group))
         .append($("<td>").append(row.Home))
         .append($("<td>").append(
-          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input home_goals " + row.Match_ID + " round_" + row.Round + "' " + readonly_text + ">"
         ))
         .append($("<td>").append(
-          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + "'>"
+          "<input type='number' min='0'  max='20' oninput='this.value = Math.round(this.value);' class='form-control goal_input away_goals " + row.Match_ID + " round_" + row.Round + "' " + readonly_text + ">"
         ))
         .append($("<td>").append(row.Away))
       );
