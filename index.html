@@ -141,6 +141,12 @@
                       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
                       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                      console.log(days);
+                      console.log(hours);
+                      console.log(minutes);
+                      console.log(seconds);
+
                       // Display the result in the element with id="demo"
                       document.getElementById(element).innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
@@ -641,7 +647,7 @@ function populate_group_tables(){
         // Set the date we're counting down to
         setInterval(function() {
           // Get today's date and time
-          console.log(next_match_1)
+          console.log(next_match_1);
           return_d_h_m_s(next_match_1 + "+0000", "round_1_timer"); //"June 10, 2021 23:59:59+0000"
         }, 1000);
       }
