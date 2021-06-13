@@ -509,7 +509,7 @@
       <br>
       If a match is decided by a penalty shootout, the score before the penalty shootout counts.
       <br><br>
-      For every round, the deadline is on the day of the first match of that round, at 01.59 Central European Summer Time.
+      For every match, the deadline is the start of that match.
       <br>
       You can change your predictions as often as you like before the round starts, but this is not possible after the deadline.
       <br><br>
@@ -642,6 +642,7 @@ function populate_group_tables(){
         // Set the date we're counting down to
         setInterval(function() {
           // Get today's date and time
+          console.log(next_match_1)
           return_d_h_m_s(next_match_1 + "+0000", "round_1_timer"); //"June 10, 2021 23:59:59+0000"
         }, 1000);
       }
