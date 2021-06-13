@@ -127,7 +127,6 @@
                   <div class="tab-pane fade show active" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-home-general">
 
                     <h5>Deadline for this round's predictions: 10 June, 23:59 CEST</h5>
-                    <h6 id="general_timer" class="text-primary"></h6>
                     <script>
 
                     function return_d_h_m_s(countDownDate,element){
@@ -162,6 +161,7 @@
 
                     setInterval(function() {
                       // Get today's date and time
+                      console.log("general_timer");
                       return_d_h_m_s("June 10, 2021 23:59:59+0000","general_timer");
                     }, 1000);
                     </script>
@@ -378,6 +378,7 @@
 
                     // Update the count down every 1 second
                     setInterval(function() {
+                      console.log("round_4_timer");
                       // Get today's date and time
                       return_d_h_m_s("June 25, 2021 23:59:59+0000", "round_4_timer");
                     }, 1000);
@@ -405,6 +406,7 @@
 
                     // Update the count down every 1 second
                     setInterval(function() {
+                      console.log("round_5_timer");
                       // Get today's date and time
                       return_d_h_m_s("July 1, 2021 23:59:59+0000", "round_5_timer");
                     }, 1000);
@@ -432,6 +434,7 @@
 
                     // Update the count down every 1 second
                     setInterval(function() {
+                      console.log("round_6_timer");
                       // Get today's date and time
                       return_d_h_m_s("July 6, 2021 23:59:59+0000", "round_6_timer");
                     }, 1000);
@@ -459,6 +462,7 @@
 
                     // Update the count down every 1 second
                     setInterval(function() {
+                      console.log("round_7_timer");
                       // Get today's date and time
                       return_d_h_m_s("July 10, 2021 23:59:59+0000", "round_7_timer");
                     }, 1000);
@@ -648,6 +652,7 @@ function populate_group_tables(){
         // Set the date we're counting down to
         setInterval(function() {
           // Get today's date and time
+          console.log("round_1_timer");
           console.log(next_match_1);
           return_d_h_m_s(next_match_1 + "+0000", "round_1_timer"); //"June 10, 2021 23:59:59+0000"
         }, 1000);
@@ -684,6 +689,7 @@ function populate_group_tables(){
         // by https://www.w3schools.com/howto/howto_js_countdown.asp
         // Set the date we're counting down to
         setInterval(function() {
+          console.log("round_2_timer");
           // Get today's date and time
           return_d_h_m_s(next_match_2 + "+0000", "round_2_timer"); //"June 10, 2021 23:59:59+0000"
         }, 1000);
@@ -720,6 +726,7 @@ function populate_group_tables(){
         // by https://www.w3schools.com/howto/howto_js_countdown.asp
         // Set the date we're counting down to
         setInterval(function() {
+          console.log("round_3_timer");
           // Get today's date and time
           return_d_h_m_s(next_match_3 + "+0000", "round_3_timer"); //"June 10, 2021 23:59:59+0000"
         }, 1000);
