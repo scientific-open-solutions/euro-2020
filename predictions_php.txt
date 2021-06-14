@@ -197,7 +197,7 @@ if($_POST['action'] == "register"){
                       print($conn->error);  
                     }
                 } else {
-                    echo "you submitted too late";
+                    echo "";
                 }
             }
             
