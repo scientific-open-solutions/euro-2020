@@ -634,11 +634,6 @@ function populate_group_tables(){
   match_obj.phases.group_match_1.forEach(function(row){
     var now_time = Date.parse(new Date().toLocaleString("en-US", {timeZone: "UTC"}));
     var match_time = Date.parse(new Date(row.match_time).toLocaleString("en-US", {timeZone: "UTC"}));
-    console.log("now");
-    console.log(now_time);
-    console.log("match");
-    console.log(match_time);
-
     if(match_time < now_time){
       readonly_text = "readonly";
     } else {
