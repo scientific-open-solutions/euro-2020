@@ -772,7 +772,11 @@ $("#general_submit_btn").on("click", function(){
     "https://ocollector.org/uefa2020/prediction.php",
     data_obj,
     function(response){
-      bootbox.alert(response);
+      if(response.indexOf("Your predictions have been succesfully submitted.") !== -1){
+        bootbox.alert("Your predictions have been successfully submitted");
+      } else {
+        bootbox.alert(response);
+      }
   });
 });
 
@@ -802,7 +806,11 @@ $(".round_submit_btn").on("click", function(){
     "https://ocollector.org/uefa2020/prediction.php",
     data_obj,
     function(response){
-      bootbox.alert(response);
+      if(response.indexOf("Your predictions have been succesfully submitted.") !== -1){
+        bootbox.alert("Your predictions have been successfully submitted");
+      } else {
+        bootbox.alert(response);
+      }
   });
 
 });
