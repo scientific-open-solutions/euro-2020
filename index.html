@@ -631,7 +631,7 @@ $.get("match_data.csv", function(match_get){
 
 function populate_group_tables(){
   var next_match_1 = false;
-  var now_time = Date.parse(new Date());
+  var now_time = Date.parse(new Date().getTime());
   match_obj.phases.group_match_1.forEach(function(row){
     var match_time = Date.parse(new Date(row.match_time).toLocaleString("en-US", {timeZone: "UTC"}));
     if(match_time < now_time){
@@ -670,7 +670,7 @@ function populate_group_tables(){
   var next_match_2 = false;
   match_obj.phases.group_match_2.forEach(function(row){
 
-    var now_time = Date.parse(new Date());
+    var now_time = Date.parse(new Date().getTime());
     var match_time = Date.parse(new Date(row.match_time).toLocaleString("en-US", {timeZone: "UTC"}));
     if(match_time < now_time){
       readonly_text = "readonly";
@@ -708,7 +708,7 @@ function populate_group_tables(){
   var next_match_3 = false;
   match_obj.phases.group_match_3.forEach(function(row){
 
-    var now_time = Date.parse(new Date());
+    var now_time = Date.parse(new Date().getTime());
     var match_time = Date.parse(new Date(row.match_time).toLocaleString("en-US", {timeZone: "UTC"}));
     if(match_time < now_time){
       readonly_text = "readonly";
