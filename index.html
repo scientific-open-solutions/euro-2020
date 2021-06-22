@@ -157,10 +157,7 @@
                     // by https://www.w3schools.com/howto/howto_js_countdown.asp
 
 
-                    setInterval(function() {
-                      // Get today's date and time
-                      return_d_h_m_s("June 10, 2021 23:59:59+0000","general_timer");
-                    }, 1000);
+                    
                     </script>
 
 
@@ -383,7 +380,7 @@
                         </tr>
                       </thead>
                     </table>
-
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_4">Submit</button>
                   </div>
                   <div class="tab-pane fade" id="v-pills-KOQF" role="tabpanel" aria-labelledby="v-pills-KOQF-tab">
                     <h5>Deadline for next match</h5>
@@ -401,6 +398,7 @@
                         </tr>
                       </thead>
                     </table>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_5">Submit</button>
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-KOSF" role="tabpanel" aria-labelledby="v-pills-KOSF-tab">
@@ -418,6 +416,7 @@
                         </tr>
                       </thead>
                     </table>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_6">Submit</button>
 
                   </div>
                   <div class="tab-pane fade" id="v-pills-KOF" role="tabpanel" aria-labelledby="v-pills-KOF-tab">
@@ -435,6 +434,7 @@
                         </tr>
                       </thead>
                     </table>
+                    <button class="btn btn-primary round_submit_btn" id="round_submit_btn_7">Submit</button>
 
                   </div>
                 </div>
@@ -886,7 +886,8 @@ $("#general_submit_btn").on("click", function(){
 
 $(".round_submit_btn").on("click", function(){
   var this_round = this.id.replace("round_submit_btn_","");
-
+  console.log("this_round");
+  console.log(this_round);
   data_obj = {
     email : $("#register_email").val(),
     username : $("#register_username").val(),
@@ -906,6 +907,8 @@ $(".round_submit_btn").on("click", function(){
       });
     }
   });
+  console.log("data_obj");
+  console.log(data_obj);
   $.post(
     "https://ocollector.org/uefa2020/prediction.php",
     data_obj,
